@@ -19,7 +19,7 @@
     li {
         position: relative;
         z-index: 1;
-        
+
         button {
             background-color: transparent;
             border: 0 none;
@@ -91,7 +91,7 @@
     > a {
         color: var(--primary-color);
         opacity: 0.7;
-        margin-left: 1rem;
+        margin-right: 1rem;
         display: none;
         transition: all .2s;
         border-radius: var(--border-radius);
@@ -156,7 +156,7 @@
     list-style: none;
     margin: 0;
     padding: 0.25rem 0;
-    margin-left: 4rem;
+    margin-right: 4rem;
     overflow-y: auto;
     overflow-x: hidden;
     align-self: flex-start;
@@ -164,7 +164,7 @@
     > .navbar-item {
         .navbar-item-content {
             border-left: 1px solid var(--surface-border);
-            padding-left: .25rem;
+            padding-right: .25rem;
             transition: all .2s;
 
             &:hover {
@@ -212,16 +212,16 @@
 
             .navbar-item {
                 .navbar-item-content {
-                    padding-left: 1rem;
+                    padding-right: 1rem;
                 }
             }
         }
     }
 }
 
-.doc-section-code { 
+.doc-section-code {
     position: relative;
-    
+
     div {
         &::-webkit-scrollbar {
             width: 5px;
@@ -253,7 +253,7 @@
     padding: 2px;
     backdrop-filter: blur(6px);
     border: 1px solid rgba(255, 255, 255, .1);
-    
+
     button {
         outline: 0 none;
         border-radius: 8px;

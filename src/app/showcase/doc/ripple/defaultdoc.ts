@@ -37,12 +37,12 @@ import { RippleModule } from 'primeng/ripple';
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                margin-right: 1rem;
+                margin-left: 1rem;
                 user-select: none;
                 padding: 0;
-        
+
                 &:last-child {
-                    margin-right: 0;
+                    margin-left: 0;
                 }
             }
         }\`
@@ -59,12 +59,12 @@ export class RippleDefaultDemo {
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-right: 1rem;
+        margin-left: 1rem;
         user-select: none;
         padding: 0;
 
         &:last-child {
-            margin-right: 0;
+            margin-left: 0;
         }
     }
 }`

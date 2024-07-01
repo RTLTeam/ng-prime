@@ -282,7 +282,7 @@ button {
 }
 .layout-topbar-inner .layout-topbar-logo-container {
   width: 250px;
-  margin-right: 4rem;
+  margin-left: 4rem;
 }
 .layout-topbar-inner .layout-topbar-logo,
 .layout-topbar-inner .layout-topbar-icon {
@@ -325,7 +325,7 @@ button {
   flex-direction: column;
   padding: 0 0 0 0;
   flex: 0 0 250px;
-  margin-right: 4rem;
+  margin-left: 4rem;
   overflow: auto;
 }
 .layout-sidebar .logo {
@@ -362,7 +362,7 @@ button {
   width: 2rem;
   height: 2rem;
   border-radius: var(--border-radius);
-  margin-right: 0.5rem;
+  margin-left: 0.5rem;
   border: 1px solid var(--surface-border);
   display: inline-flex;
   align-items: center;
@@ -379,7 +379,7 @@ button {
 .layout-sidebar .layout-menu > li > button .menu-toggle-icon,
 .layout-sidebar .layout-menu > li > a .menu-toggle-icon {
   color: var(--surface-700);
-  margin-left: auto;
+  margin-right: auto;
 }
 .layout-sidebar .layout-menu > li > button:hover .menu-icon,
 .layout-sidebar .layout-menu > li > a:hover .menu-icon {
@@ -518,7 +518,7 @@ button {
   color: var(--primary-color-text);
 }
 .layout-news .layout-news-link {
-  margin-left: 0.5rem;
+  margin-right: 0.5rem;
   line-height: 1.5;
   white-space: nowrap;
 }
@@ -541,7 +541,7 @@ button {
   width: 1.5rem;
   height: 1.5rem;
   transition: background-color 0.3s;
-  margin-left: 0.5rem;
+  margin-right: 0.5rem;
   color: var(--primary-color-text);
 }
 .layout-news .layout-news-close:hover {
@@ -836,7 +836,7 @@ pre[class*=language-] code {
 .doc-section-label > a {
   color: var(--primary-color);
   opacity: 0.7;
-  margin-left: 1rem;
+  margin-right: 1rem;
   display: none;
   transition: all 0.2s;
   border-radius: var(--border-radius);
@@ -898,14 +898,14 @@ pre[class*=language-] code {
   list-style: none;
   margin: 0;
   padding: 0.25rem 0;
-  margin-left: 4rem;
+  margin-right: 4rem;
   overflow-y: auto;
   overflow-x: hidden;
   align-self: flex-start;
 }
 .doc-section-nav > .navbar-item .navbar-item-content {
   border-left: 1px solid var(--surface-border);
-  padding-left: 0.25rem;
+  padding-right: 0.25rem;
   transition: all 0.2s;
 }
 .doc-section-nav > .navbar-item .navbar-item-content:hover {
@@ -939,7 +939,7 @@ pre[class*=language-] code {
   padding: 0;
 }
 .doc-section-nav .navbar-item ul .navbar-item .navbar-item-content {
-  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .doc-section-code {
@@ -1165,7 +1165,7 @@ pre[class*=language-] code {
   font-family: "primeicons";
   font-size: 0.4rem;
   opacity: 0.7;
-  margin-right: 2px;
+  margin-left: 2px;
   height: 13.5px;
   align-items: center;
   font-weight: 700;
@@ -1256,15 +1256,15 @@ pre[class*=language-] code {
 }
 @media screen and (max-width: 1199px) {
   .layout-topbar-inner {
-    padding-left: 2rem;
     padding-right: 2rem;
+    padding-left: 2rem;
   }
   .layout-topbar-inner .menu-button {
     display: block;
   }
   .layout-topbar-inner .layout-topbar-logo-container {
     width: auto;
-    margin-right: 0;
+    margin-left: 0;
   }
   .layout-topbar-inner .DocSearch-Button {
     width: 2rem;
@@ -1340,18 +1340,18 @@ pre[class*=language-] code {
   }
 
   .layout-content {
-    padding-left: 2rem;
     padding-right: 2rem;
+    padding-left: 2rem;
   }
 
   .layout-footer {
-    padding-left: 2rem;
     padding-right: 2rem;
+    padding-left: 2rem;
   }
 
   .blocked-scroll {
     overflow: hidden;
-    padding-right: var(--scrollbar-width);
+    padding-left: var(--scrollbar-width);
   }
 }
 @media (max-width: 768px) {
@@ -1361,8 +1361,8 @@ pre[class*=language-] code {
 }
 @media screen and (max-width: 575px) {
   .layout-topbar-inner {
-    padding-left: 1rem;
     padding-right: 1rem;
+    padding-left: 1rem;
   }
   .layout-topbar-inner .layout-topbar-logo {
     display: none;
@@ -1372,13 +1372,13 @@ pre[class*=language-] code {
   }
 
   .layout-content {
-    padding-left: 1rem;
     padding-right: 1rem;
+    padding-left: 1rem;
   }
 
   .layout-footer {
-    padding-left: 1rem;
     padding-right: 1rem;
+    padding-left: 1rem;
   }
 
   .doc-tabmenu li {
@@ -1390,8 +1390,8 @@ pre[class*=language-] code {
   }
 
   .layout-news {
-    padding-left: 1rem;
     padding-right: 1rem;
+    padding-left: 1rem;
     font-size: 12px;
   }
   .layout-news > i {
@@ -1505,8 +1505,8 @@ pre[class*=language-] code {
 
 .landing-footer-container {
   max-width: 1250px !important;
-  margin-left: auto !important;
   margin-right: auto !important;
+  margin-left: auto !important;
 }
 
 .animated-text {
@@ -1569,8 +1569,8 @@ pre[class*=language-] code {
 @media screen and (min-width: 1660px) {
   .landing-hero {
     width: 1504px !important;
-    margin-left: auto !important;
     margin-right: auto !important;
+    margin-left: auto !important;
   }
 }
 .landing-users .fade-right {
@@ -1581,13 +1581,13 @@ pre[class*=language-] code {
 }
 .landing-users .section-detail {
   max-width: 1250px !important;
-  margin-left: auto !important;
   margin-right: auto !important;
+  margin-left: auto !important;
 }
 .landing-users .users-container {
   max-width: 1250px !important;
-  margin-left: auto !important;
   margin-right: auto !important;
+  margin-left: auto !important;
 }
 .landing-users .users-container .marquee-wrapper {
   user-select: none;
@@ -1994,8 +1994,8 @@ pre[class*=language-] code {
     height: 171px;
     border: none !important;
     animation: none !important;
-    margin-right: 0 !important;
     margin-left: 0 !important;
+    margin-right: 0 !important;
   }
   .landing-templates .templates .lines {
     display: none;
@@ -2025,8 +2025,8 @@ pre[class*=language-] code {
 }
 .landing-features .features-container {
   max-width: 1250px !important;
-  margin-left: auto !important;
   margin-right: auto !important;
+  margin-left: auto !important;
 }
 
 .landing-footer a:focus-visible {

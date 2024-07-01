@@ -9,7 +9,7 @@
     flex-direction: column;
     padding: 0 0 0 0;
     flex: 0 0 250px;
-    margin-right: 4rem;
+    margin-left: 4rem;
     overflow: auto;
 
     .logo {
@@ -30,8 +30,8 @@
 
         > li {
             margin-bottom: .25rem;
-            
-            > button, 
+
+            > button,
             > a {
                 display: flex;
                 width: 100%;
@@ -47,7 +47,7 @@
                     width: 2rem;
                     height: 2rem;
                     border-radius: var(--border-radius);
-                    margin-right: .5rem;
+                    margin-left: .5rem;
                     border: 1px solid var(--surface-border);
                     display: inline-flex;
                     align-items: center;
@@ -55,16 +55,16 @@
                     transition: all .2s;
                     position: relative;
                     background-color: transparent;
-    
+
                     i {
                         color: var(--surface-700);
                         transition: all .2s;
                     }
                 }
-    
+
                 .menu-toggle-icon {
                     color: var(--surface-700);
-                    margin-left: auto;
+                    margin-right: auto;
                 }
 
                 &:hover {
@@ -83,7 +83,7 @@
 
                 &.router-link-active {
                     color: var(--primary-color-default);
-        
+
                     > .menu-icon {
                         i {
                             color: var(--primary-color-default);
@@ -93,7 +93,7 @@
 
                 @include focus-visible(inset);
             }
-            
+
             > div {
                 ol {
                     margin: 0 0 0 1rem;
@@ -117,7 +117,7 @@
                                 outline: 0 none;
                                 box-shadow: inset var(--focus-ring);
                             }
-            
+
                             &:hover {
                                 color: var(--surface-900);
                                 border-left-color: var(--surface-500);
@@ -151,7 +151,7 @@
             right: 0;
             top: 50%;
             transform: translateY(-50%);
-            
+
             .p-tag-value {
                 line-height: 1;
             }

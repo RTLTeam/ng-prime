@@ -7,11 +7,11 @@
     }
 
     .p-paginator-left-content {
-        margin-right: auto;
+        margin-left: auto;
     }
 
     .p-paginator-right-content {
-        margin-left: auto;
+        margin-right: auto;
     }
 
     .p-paginator-page,

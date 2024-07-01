@@ -32,19 +32,19 @@
 
     .p-overlaypanel:after {
         border-width: 8px;
-        margin-left: -8px;
+        margin-right: -8px;
     }
 
     .p-overlaypanel:before {
         border-width: 10px;
-        margin-left: -10px;
+        margin-right: -10px;
     }
 
     .p-overlaypanel-shifted:after,
     .p-overlaypanel-shifted:before {
         left: auto;
         right: 1.25em;
-        margin-left: auto;
+        margin-right: auto;
     }
 
     .p-overlaypanel-flipped:after,

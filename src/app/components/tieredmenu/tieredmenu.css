@@ -36,11 +36,11 @@
     }
 
     .p-tieredmenu .p-menuitem-link .p-submenu-icon:not(svg) {
-        margin-left: auto;
+        margin-right: auto;
     }
 
     .p-tieredmenu .p-menuitem-link .p-icon-wrapper {
-        margin-left: auto;
+        margin-right: auto;
     }
 
     .p-tieredmenu .p-menuitem-active > p-tieredmenusub > .p-submenu-list {

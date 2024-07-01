@@ -81,7 +81,7 @@
   background: #1D4ED8;
 }
 .landing-themes .p-checkbox-label {
-  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 .landing-themes .p-inputtext {
   font-family: var(--font-family);
@@ -129,7 +129,7 @@
   color: #6b7280;
 }
 .landing-themes .p-input-icon-left > .p-inputtext {
-  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 .landing-themes .p-input-icon-left.p-float-label > label {
   left: 2.5rem;
@@ -140,7 +140,7 @@
   color: #6b7280;
 }
 .landing-themes .p-input-icon-right > .p-inputtext {
-  padding-right: 2.5rem;
+  padding-left: 2.5rem;
 }
 .landing-themes ::-webkit-input-placeholder {
   color: #6b7280;
@@ -252,10 +252,10 @@
   transition-duration: 0.2s;
 }
 .landing-themes .p-button .p-button-icon-left {
-  margin-right: 0.5rem;
+  margin-left: 0.5rem;
 }
 .landing-themes .p-button .p-button-icon-right {
-  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 .landing-themes .p-button .p-button-icon-bottom {
   margin-top: 0.5rem;
@@ -264,7 +264,7 @@
   margin-bottom: 0.5rem;
 }
 .landing-themes .p-button .p-badge {
-  margin-left: 0.5rem;
+  margin-right: 0.5rem;
   min-width: 1rem;
   height: 1rem;
   line-height: 1rem;
@@ -304,10 +304,10 @@
   font-size: 1.25rem;
 }
 .landing-themes .p-button.p-button-loading-label-only .p-button-label {
-  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 .landing-themes .p-button.p-button-loading-label-only .p-button-loading-icon {
-  margin-right: 0;
+  margin-left: 0;
 }
 .landing-themes .p-fluid .p-button {
   width: 100%;
@@ -677,7 +677,7 @@
 }
 .landing-themes .p-datatable .p-sortable-column .p-sortable-column-icon {
   color: #374151;
-  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 .landing-themes .p-datatable .p-sortable-column .p-sortable-column-badge {
   border-radius: 50%;
@@ -686,7 +686,7 @@
   line-height: 1.143rem;
   color: #1D4ED8;
   background: #EFF6FF;
-  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 .landing-themes .p-datatable .p-sortable-column:not(.p-highlight):hover {
   background: #f3f4f6;
@@ -753,7 +753,7 @@
   box-shadow: 0 0 0 0.2rem #BFDBFE;
 }
 .landing-themes .p-datatable .p-datatable-tbody > tr > td .p-row-editor-save {
-  margin-right: 0.5rem;
+  margin-left: 0.5rem;
 }
 .landing-themes .p-datatable .p-datatable-tbody > tr:focus-visible {
   outline: 0.15rem solid #BFDBFE;
@@ -923,16 +923,16 @@
   border-bottom-right-radius: 50%;
 }
 .landing-themes .p-paginator .p-dropdown {
-  margin-left: 0.5rem;
   margin-right: 0.5rem;
+  margin-left: 0.5rem;
   height: 3rem;
 }
 .landing-themes .p-paginator .p-dropdown .p-dropdown-label {
-  padding-right: 0;
+  padding-left: 0;
 }
 .landing-themes .p-paginator .p-paginator-page-input {
-  margin-left: 0.5rem;
   margin-right: 0.5rem;
+  margin-left: 0.5rem;
 }
 .landing-themes .p-paginator .p-paginator-page-input .p-inputtext {
   max-width: 3rem;
@@ -991,7 +991,7 @@
   color: #ffffff;
 }
 .landing-themes .p-tag .p-tag-icon {
-  margin-right: 0.25rem;
+  margin-left: 0.25rem;
   font-size: 0.75rem;
 }
 .landing-themes .p-tag .p-icon {

@@ -51,7 +51,7 @@
     }
 
     .p-megamenu-horizontal .p-megamenu-end {
-        margin-left: auto;
+        margin-right: auto;
         align-self: center;
     }
 
@@ -66,11 +66,11 @@
     }
 
     .p-megamenu-vertical .p-megamenu-root-list > .p-menuitem > .p-menuitem-content > .p-menuitem-link > .p-submenu-icon:not(svg) {
-        margin-left: auto;
+        margin-right: auto;
     }
 
     .p-megamenu-vertical .p-megamenu-root-list > .p-menuitem > .p-menuitem-content > .p-menuitem-link > .p-icon-wrapper {
-        margin-left: auto;
+        margin-right: auto;
     }
 
     .p-megamenu-grid {
