@@ -8,7 +8,7 @@ import { useCodeSandbox, useStackBlitz } from './codeeditor';
 @Component({
     selector: 'app-code',
     template: `
-        <div *ngIf="code" class="doc-section-code">
+        <div *ngIf="code" class="doc-section-code" style="direction: ltr">
             <div class="doc-section-code-buttons scalein animation-duration-300">
                 <ng-container *ngIf="fullCodeVisible">
                     <button *ngIf="code.html" (click)="changeLang('html')" class="py-0 px-2 border-round h-2rem" [ngClass]="{ 'code-active': lang === 'html' }"><span>HTML</span></button>

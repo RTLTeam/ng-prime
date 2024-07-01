@@ -1,6 +1,6 @@
 .p-overflow-hidden {
     overflow: hidden;
-    padding-right: var(--scrollbar-width);
+    padding-left: var(--scrollbar-width);
 }
 
 @layer primeng {
