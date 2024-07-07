@@ -27,16 +27,16 @@ import {
     signal
 } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
-import { BlockableUI, Message, PrimeNGConfig, PrimeTemplate, SharedModule, TranslationKeys } from 'primeng/api';
-import { ButtonModule } from 'primeng/button';
-import { DomHandler } from 'primeng/dom';
-import { PlusIcon } from 'primeng/icons/plus';
-import { TimesIcon } from 'primeng/icons/times';
-import { UploadIcon } from 'primeng/icons/upload';
-import { MessagesModule } from 'primeng/messages';
-import { ProgressBarModule } from 'primeng/progressbar';
-import { RippleModule } from 'primeng/ripple';
-import { VoidListener } from 'primeng/ts-helpers';
+import { BlockableUI, Message, PrimeNGConfig, PrimeTemplate, SharedModule, TranslationKeys } from 'ng_prime/api';
+import { ButtonModule } from 'ng_prime/button';
+import { DomHandler } from 'ng_prime/dom';
+import { PlusIcon } from 'ng_prime/icons/plus';
+import { TimesIcon } from 'ng_prime/icons/times';
+import { UploadIcon } from 'ng_prime/icons/upload';
+import { MessagesModule } from 'ng_prime/messages';
+import { ProgressBarModule } from 'ng_prime/progressbar';
+import { RippleModule } from 'ng_prime/ripple';
+import { VoidListener } from 'ng_prime/ts-helpers';
 import { Subscription } from 'rxjs';
 import { FileBeforeUploadEvent, FileProgressEvent, FileRemoveEvent, FileSelectEvent, FileSendEvent, FileUploadErrorEvent, FileUploadEvent, FileUploadHandlerEvent, RemoveUploadedFileEvent } from './fileupload.interface';
 /**

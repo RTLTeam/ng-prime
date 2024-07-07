@@ -25,7 +25,7 @@ export class TemplateDoc {
 
         typescript: `import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { KnobModule } from 'primeng/knob';
+import { KnobModule } from 'ng_prime/knob';
 
 @Component({
     selector: 'knob-template-demo',

@@ -96,22 +96,22 @@ export class PaginatorProgrammaticDoc {
 
     code: Code = {
         basic: `<div class="mb-3">
-    <p-button 
-        type="button" 
-        icon="pi pi-chevron-left" 
-        (click)="prev()" 
-        [disabled]="isFirstPage()" 
+    <p-button
+        type="button"
+        icon="pi pi-chevron-left"
+        (click)="prev()"
+        [disabled]="isFirstPage()"
         styleClass="p-button-text" />
-    <p-button 
-        type="button" 
-        icon="pi pi-refresh" 
-        (click)="reset()" 
+    <p-button
+        type="button"
+        icon="pi pi-refresh"
+        (click)="reset()"
         styleClass="p-button-text" />
-    <p-button 
-        type="button" 
-        icon="pi pi-chevron-right" 
-        (click)="next()" 
-        [disabled]="isLastPage()" 
+    <p-button
+        type="button"
+        icon="pi pi-chevron-right"
+        (click)="next()"
+        [disabled]="isLastPage()"
         styleClass="p-button-text" />
 </div>
 <p-table
@@ -149,22 +149,22 @@ export class PaginatorProgrammaticDoc {
     </ng-template>
 </p-table>`,
         html: `<div class="mb-3">
-    <p-button 
-        type="button" 
-        icon="pi pi-chevron-left" 
-        (click)="prev()" 
-        [disabled]="isFirstPage()" 
-        styleClass="p-button-text" />
-    <p-button 
+    <p-button
         type="button"
-        icon="pi pi-refresh" 
-        (click)="reset()" 
+        icon="pi pi-chevron-left"
+        (click)="prev()"
+        [disabled]="isFirstPage()"
         styleClass="p-button-text" />
-    <p-button 
-        type="button" 
-        icon="pi pi-chevron-right" 
-        (click)="next()" 
-        [disabled]="isLastPage()" 
+    <p-button
+        type="button"
+        icon="pi pi-refresh"
+        (click)="reset()"
+        styleClass="p-button-text" />
+    <p-button
+        type="button"
+        icon="pi pi-chevron-right"
+        (click)="next()"
+        [disabled]="isLastPage()"
         styleClass="p-button-text" />
 </div>
 <div class="card">
@@ -206,9 +206,9 @@ export class PaginatorProgrammaticDoc {
         typescript: `import { Component } from '@angular/core';
 import { Customer } from '@domain/customer';
 import { CustomerService } from '@service/customerservice';
-import { TableModule } from 'primeng/table';
+import { TableModule } from 'ng_prime/table';
 import { CommonModule } from '@angular/common';
-import { ButtonModule } from 'primeng/button';
+import { ButtonModule } from 'ng_prime/button';
 import { HttpClientModule } from '@angular/common/http';
 
 @Component({

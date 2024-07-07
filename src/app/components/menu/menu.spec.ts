@@ -138,17 +138,17 @@ describe('Menu', () => {
         menu.model = [
             {
                 label: 'File',
-                items: [{ label: 'New', icon: 'primeng', target: 'primeng', title: 'primeng', url: 'primeng' }]
+                items: [{ label: 'New', icon: 'ng_prime', target: 'ng_prime', title: 'ng_prime', url: 'ng_prime' }]
             }
         ];
         fixture.detectChanges();
 
         const menuItemLink = fixture.debugElement.query(By.css('.p-menuitem-link'));
         const iconEl = fixture.debugElement.query(By.css('.p-menuitem-icon'));
-        expect(menuItemLink.nativeElement.href).toContain('primeng');
-        expect(menuItemLink.nativeElement.target).toContain('primeng');
-        expect(menuItemLink.nativeElement.title).toContain('primeng');
-        expect(iconEl.nativeElement.className).toContain('primeng');
+        expect(menuItemLink.nativeElement.href).toContain('ng_prime');
+        expect(menuItemLink.nativeElement.target).toContain('ng_prime');
+        expect(menuItemLink.nativeElement.title).toContain('ng_prime');
+        expect(iconEl.nativeElement.className).toContain('ng_prime');
     });
 
     it('should have a disabled item', () => {

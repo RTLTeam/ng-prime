@@ -7,6 +7,6 @@ import { Code } from '@domain/code';
 })
 export class ImportDoc {
     code: Code = {
-        typescript: `import { ColorPickerModule } from 'primeng/colorpicker';`
+        typescript: `import { ColorPickerModule } from 'ng_prime/colorpicker';`
     };
 }

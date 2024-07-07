@@ -1,5 +1,5 @@
 import { TemplateRef } from '@angular/core';
-import { MenuItem } from 'primeng/api';
+import { MenuItem } from 'ng_prime/api';
 
 /**
  * Defines valid templates in Menubar.

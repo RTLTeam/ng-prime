@@ -11,7 +11,7 @@ import { Code } from '@domain/code';
             <p-sidebar [(visible)]="sidebarVisible">
                 <ng-template pTemplate="header">
                     <div class="flex align-items-center gap-2">
-                        <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" shape="circle" />
+                        <p-avatar image="https://primefaces.org/cdn/ng_prime/images/demo/avatar/amyelsner.png" shape="circle" />
                         <span class="font-bold">Amy Elsner</span>
                     </div>
                 </ng-template>
@@ -32,8 +32,8 @@ export class TemplateDoc {
         basic: `<p-sidebar [(visible)]="sidebarVisible">
     <ng-template pTemplate="header">
         <div class="flex align-items-center gap-2">
-            <p-avatar 
-                image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" 
+            <p-avatar
+                image="https://primefaces.org/cdn/ng_prime/images/demo/avatar/amyelsner.png"
                 shape="circle" />
             <span class="font-bold">
                 Amy Elsner
@@ -50,8 +50,8 @@ export class TemplateDoc {
     <p-sidebar [(visible)]="sidebarVisible">
         <ng-template pTemplate="header">
             <div class="flex align-items-center gap-2">
-                <p-avatar 
-                    image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" 
+                <p-avatar
+                    image="https://primefaces.org/cdn/ng_prime/images/demo/avatar/amyelsner.png"
                     shape="circle" />
                 <span class="font-bold">
                     Amy Elsner
@@ -67,8 +67,8 @@ export class TemplateDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { SidebarModule } from 'primeng/sidebar';
-import { ButtonModule } from 'primeng/button';
+import { SidebarModule } from 'ng_prime/sidebar';
+import { ButtonModule } from 'ng_prime/button';
 
 @Component({
     selector: 'sidebar-template-demo',

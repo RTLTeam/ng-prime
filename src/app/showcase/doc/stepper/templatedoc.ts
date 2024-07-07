@@ -105,7 +105,7 @@ import { Code } from '@domain/code';
                         <div class="flex flex-column gap-2 mx-auto" style="min-height: 16rem; max-width: 24rem">
                             <div class="text-center mt-3 mb-3 text-xl font-semibold">Account created successfully</div>
                             <div class="text-center">
-                                <img alt="logo" src="https://primefaces.org/cdn/primeng/images/stepper/content.svg" />
+                                <img alt="logo" src="https://primefaces.org/cdn/ng_prime/images/stepper/content.svg" />
                             </div>
                         </div>
                         <div class="flex pt-4 justify-content-start">
@@ -252,7 +252,7 @@ export class TemplateDoc {
             <div class="flex flex-column gap-2 mx-auto" style="min-height: 16rem; max-width: 24rem">
                 <div class="text-center mt-3 mb-3 text-xl font-semibold">Account created successfully</div>
                 <div class="text-center">
-                    <img alt="logo" src="https://primefaces.org/cdn/primeng/images/stepper/content.svg" />
+                    <img alt="logo" src="https://primefaces.org/cdn/ng_prime/images/stepper/content.svg" />
                 </div>
             </div>
             <div class="flex pt-4 justify-content-start">
@@ -360,7 +360,7 @@ export class TemplateDoc {
                 <div class="flex flex-column gap-2 mx-auto" style="min-height: 16rem; max-width: 24rem">
                     <div class="text-center mt-3 mb-3 text-xl font-semibold">Account created successfully</div>
                     <div class="text-center">
-                        <img alt="logo" src="https://primefaces.org/cdn/primeng/images/stepper/content.svg" />
+                        <img alt="logo" src="https://primefaces.org/cdn/ng_prime/images/stepper/content.svg" />
                     </div>
                 </div>
                 <div class="flex pt-4 justify-content-start">
@@ -372,12 +372,12 @@ export class TemplateDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
-import { StepperModule } from 'primeng/stepper';
-import { InputTextModule } from 'primeng/inputtext';
-import { ToggleButtonModule } from 'primeng/togglebutton';
-import { IconFieldModule } from 'primeng/iconfield';
-import { InputIconModule } from 'primeng/inputicon';
+import { ButtonModule } from 'ng_prime/button';
+import { StepperModule } from 'ng_prime/stepper';
+import { InputTextModule } from 'ng_prime/inputtext';
+import { ToggleButtonModule } from 'ng_prime/togglebutton';
+import { IconFieldModule } from 'ng_prime/iconfield';
+import { InputIconModule } from 'ng_prime/inputicon';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -396,7 +396,7 @@ import { CommonModule } from '@angular/common';
     styles: [
         \`.p-stepper {
             flex-basis: 40rem;
-        } 
+        }
         \`
     ]
 })

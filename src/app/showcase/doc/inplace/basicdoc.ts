@@ -46,7 +46,7 @@ export class BasicDoc {
     </p-inplace>
 </div>`,
         typescript: `import { Component } from '@angular/core';
-import { InplaceModule } from 'primeng/inplace';
+import { InplaceModule } from 'ng_prime/inplace';
 
 @Component({
     selector: 'inplace-basic-demo',

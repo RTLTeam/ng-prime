@@ -1,9 +1,9 @@
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { Component, Inject, PLATFORM_ID, ViewChild } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
-import { ProgressBarModule } from 'primeng/progressbar';
-import { Table, TableModule } from 'primeng/table';
-import { TagModule } from 'primeng/tag';
+import { ButtonModule } from 'ng_prime/button';
+import { ProgressBarModule } from 'ng_prime/progressbar';
+import { Table, TableModule } from 'ng_prime/table';
+import { TagModule } from 'ng_prime/tag';
 import { Customer } from '@domain/customer';
 import { AppComponent } from '../../layout/app.component';
 import { AppConfigService } from '@service/appconfigservice';
@@ -26,7 +26,7 @@ import { Subscription } from 'rxjs';
             <div
                 class="themes-main flex mt-7 justify-content-center px-5 lg:px-8"
                 [style]="{ 'background-size': 'cover' }"
-                [ngStyle]="{ 'background-image': isDarkMode ? 'url(https://primefaces.org/cdn/primeng/images/landing/wave-dark-alt-gray.svg)' : 'url(https://primefaces.org/cdn/primeng/images/landing/wave-light-alt-gray.svg)' }"
+                [ngStyle]="{ 'background-image': isDarkMode ? 'url(https://primefaces.org/cdn/ng_prime/images/landing/wave-dark-alt-gray.svg)' : 'url(https://primefaces.org/cdn/ng_prime/images/landing/wave-light-alt-gray.svg)' }"
             >
                 <div class="box overflow-hidden z-1 p-5 table-container">
                     <p-table
@@ -111,14 +111,14 @@ import { Subscription } from 'rxjs';
                                 </td>
                                 <td style="width: 14%; min-width: 14rem">
                                     <span class="p-column-title">Country</span>
-                                    <img src="https://primefaces.org/cdn/primeng/images/demo/flag/flag_placeholder.png" [class]="'flag flag-' + customer.country.code" width="30" height="20" alt="country flag" />
+                                    <img src="https://primefaces.org/cdn/ng_prime/images/demo/flag/flag_placeholder.png" [class]="'flag flag-' + customer.country.code" width="30" height="20" alt="country flag" />
                                     <span class="ml-2 image-text">{{ customer.country.name }}</span>
                                 </td>
                                 <td style="width: 14%; min-width: 14rem">
                                     <span class="p-column-title">Representative</span>
                                     <img
                                         [alt]="customer.representative.name"
-                                        src="https://primefaces.org/cdn/primeng/images/demo/avatar/{{ customer.representative.image }}"
+                                        src="https://primefaces.org/cdn/ng_prime/images/demo/avatar/{{ customer.representative.image }}"
                                         width="32"
                                         height="32"
                                         style="vertical-align: middle"

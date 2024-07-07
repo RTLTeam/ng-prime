@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuItem } from 'primeng/api';
+import { MenuItem } from 'ng_prime/api';
 import { Code } from '@domain/code';
 
 @Component({
@@ -53,7 +53,7 @@ import { Code } from '@domain/code';
                 <ng-template pTemplate="end">
                     <div class="flex align-items-center gap-2">
                         <input type="text" pInputText placeholder="Search" class="w-8rem sm:w-auto" />
-                        <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" shape="circle" />
+                        <p-avatar image="https://primefaces.org/cdn/ng_prime/images/demo/avatar/amyelsner.png" shape="circle" />
                     </div>
                 </ng-template>
             </p-menubar>
@@ -167,7 +167,7 @@ export class TemplateDoc implements OnInit {
     <ng-template pTemplate="end">
         <div class="flex align-items-center gap-2">
             <input type="text" pInputText placeholder="Search" class="w-8rem sm:w-auto" />
-            <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" shape="circle" />
+            <p-avatar image="https://primefaces.org/cdn/ng_prime/images/demo/avatar/amyelsner.png" shape="circle" />
         </div>
     </ng-template>
 </p-menubar>`,
@@ -217,20 +217,20 @@ export class TemplateDoc implements OnInit {
         <ng-template pTemplate="end">
             <div class="flex align-items-center gap-2">
                 <input type="text" pInputText placeholder="Search" class="w-8rem sm:w-auto" />
-                <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" shape="circle" />
+                <p-avatar image="https://primefaces.org/cdn/ng_prime/images/demo/avatar/amyelsner.png" shape="circle" />
             </div>
         </ng-template>
     </p-menubar>
 </div>`,
 
         typescript: `import { Component, OnInit } from '@angular/core';
-import { MenuItem } from 'primeng/api';
-import { MenubarModule } from 'primeng/menubar';
-import { BadgeModule } from 'primeng/badge';
-import { AvatarModule } from 'primeng/avatar';
-import { InputTextModule } from 'primeng/inputtext';
+import { MenuItem } from 'ng_prime/api';
+import { MenubarModule } from 'ng_prime/menubar';
+import { BadgeModule } from 'ng_prime/badge';
+import { AvatarModule } from 'ng_prime/avatar';
+import { InputTextModule } from 'ng_prime/inputtext';
 import { CommonModule } from '@angular/common';
-import { RippleModule } from 'primeng/ripple';
+import { RippleModule } from 'ng_prime/ripple';
 
 @Component({
     selector: 'menubar-template-demo',

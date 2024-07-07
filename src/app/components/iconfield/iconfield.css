@@ -1,5 +1,5 @@
-@layer primeng {
+@layer ng_prime {
     .p-icon-field {
         position: relative;
-    }    
+    }
 }

@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { TreeNode } from 'primeng/api';
+import { TreeNode } from 'ng_prime/api';
 import { Code } from '@domain/code';
 import { NodeService } from '@service/nodeservice';
 
@@ -125,10 +125,10 @@ export class TemplateDoc {
 </div>`,
 
         typescript: `import { Component, OnInit } from '@angular/core';
-import { TreeNode } from 'primeng/api';
+import { TreeNode } from 'ng_prime/api';
 import { NodeService } from '@service/nodeservice';
-import { ButtonModule } from 'primeng/button';
-import { TreeTableModule } from 'primeng/treetable';
+import { ButtonModule } from 'ng_prime/button';
+import { TreeTableModule } from 'ng_prime/treetable';
 import { CommonModule } from '@angular/common';
 
 interface Column {

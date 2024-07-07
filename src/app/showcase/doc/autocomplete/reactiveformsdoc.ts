@@ -55,19 +55,19 @@ export class ReactiveFormsDoc implements OnInit {
 
     code: Code = {
         basic: `<form [formGroup]="formGroup">
-    <p-autoComplete 
+    <p-autoComplete
         formControlName="selectedCountry"
-        [suggestions]="filteredCountries" 
-        (completeMethod)="filterCountry($event)" 
+        [suggestions]="filteredCountries"
+        (completeMethod)="filterCountry($event)"
         field="name" />
 </form>`,
 
         html: `<div class="card flex justify-content-center">
     <form [formGroup]="formGroup">
-        <p-autoComplete 
+        <p-autoComplete
             formControlName="selectedCountry"
-            [suggestions]="filteredCountries" 
-            (completeMethod)="filterCountry($event)" 
+            [suggestions]="filteredCountries"
+            (completeMethod)="filterCountry($event)"
             field="name" />
     </form>
 </div>`,
@@ -75,7 +75,7 @@ export class ReactiveFormsDoc implements OnInit {
         typescript: `import { Component, OnInit } from '@angular/core';
 import { CountryService } from '@service/countryservice';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
-import { AutoCompleteModule } from 'primeng/autocomplete';
+import { AutoCompleteModule } from 'ng_prime/autocomplete';
 
 interface AutoCompleteCompleteEvent {
     originalEvent: Event;

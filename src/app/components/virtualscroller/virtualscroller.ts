@@ -18,9 +18,9 @@ import {
     booleanAttribute,
     numberAttribute
 } from '@angular/core';
-import { BlockableUI, Footer, Header, PrimeTemplate, ScrollerOptions, SharedModule } from 'primeng/api';
-import { Scroller, ScrollerModule } from 'primeng/scroller';
-import { Nullable } from 'primeng/ts-helpers';
+import { BlockableUI, Footer, Header, PrimeTemplate, ScrollerOptions, SharedModule } from 'ng_prime/api';
+import { Scroller, ScrollerModule } from 'ng_prime/scroller';
+import { Nullable } from 'ng_prime/ts-helpers';
 import { VirtualScrollerLazyLoadEvent } from './virtualscroller.interface';
 /**
  * VirtualScroller is a performant approach to handle huge data efficiently.

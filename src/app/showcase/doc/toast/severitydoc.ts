@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MessageService } from 'primeng/api';
+import { MessageService } from 'ng_prime/api';
 import { Code } from '@domain/code';
 
 @Component({
@@ -53,86 +53,86 @@ export class SeverityDoc {
 
     code: Code = {
         basic: `<p-toast />
-<p-button 
-    type="button" 
-    pRipple 
-    (click)="showSuccess()" 
-    label="Success" 
-    severity="success" />
-<p-button 
+<p-button
     type="button"
-    pRipple 
-    (click)="showInfo()" 
-    label="Info" 
+    pRipple
+    (click)="showSuccess()"
+    label="Success"
+    severity="success" />
+<p-button
+    type="button"
+    pRipple
+    (click)="showInfo()"
+    label="Info"
     severity="info" />
-<p-button 
-    type="button" 
-    pRipple 
-    (click)="showWarn()" 
-    label="Warn" 
+<p-button
+    type="button"
+    pRipple
+    (click)="showWarn()"
+    label="Warn"
     severity="warning" />
-<p-button 
-    type="button" 
-    pRipple 
-    (click)="showError()" 
-    label="Error" 
+<p-button
+    type="button"
+    pRipple
+    (click)="showError()"
+    label="Error"
     severity="danger" />
-<p-button 
-    type="button" 
-    pRipple 
-    (click)="showSecondary()" 
-    label="Secondary" 
+<p-button
+    type="button"
+    pRipple
+    (click)="showSecondary()"
+    label="Secondary"
     severity="secondary" />
-<p-button 
-    type="button" 
-    pRipple 
-    (click)="showContrast()" 
-    label="Contrast" 
+<p-button
+    type="button"
+    pRipple
+    (click)="showContrast()"
+    label="Contrast"
     severity="contrast" />`,
         html: `<div class="card flex justify-content-center gap-2">
     <p-toast />
-    <p-button 
-        type="button" 
-        pRipple 
-        (click)="showSuccess()" 
-        label="Success" 
-        severity="success" />
-    <p-button 
+    <p-button
         type="button"
-        pRipple 
-        (click)="showInfo()" 
-        label="Info" 
+        pRipple
+        (click)="showSuccess()"
+        label="Success"
+        severity="success" />
+    <p-button
+        type="button"
+        pRipple
+        (click)="showInfo()"
+        label="Info"
         severity="info" />
-    <p-button 
-        type="button" 
-        pRipple 
-        (click)="showWarn()" 
-        label="Warn" 
+    <p-button
+        type="button"
+        pRipple
+        (click)="showWarn()"
+        label="Warn"
         severity="warning"  />
-    <p-button 
-        type="button" 
-        pRipple 
-        (click)="showError()" 
-        label="Error" 
+    <p-button
+        type="button"
+        pRipple
+        (click)="showError()"
+        label="Error"
         severity="danger" />
-    <p-button 
-        type="button" 
-        pRipple 
-        (click)="showSecondary()" 
-        label="Secondary" 
+    <p-button
+        type="button"
+        pRipple
+        (click)="showSecondary()"
+        label="Secondary"
         severity="secondary" />
-    <p-button 
-        type="button" 
-        pRipple 
-        (click)="showContrast()" 
-        label="Contrast" 
+    <p-button
+        type="button"
+        pRipple
+        (click)="showContrast()"
+        label="Contrast"
         severity="contrast" />
 </div>`,
         typescript: `import { Component } from '@angular/core';
-import { MessageService } from 'primeng/api';
-import { ToastModule } from 'primeng/toast';
-import { ButtonModule } from 'primeng/button';
-import { RippleModule } from 'primeng/ripple';
+import { MessageService } from 'ng_prime/api';
+import { ToastModule } from 'ng_prime/toast';
+import { ButtonModule } from 'ng_prime/button';
+import { RippleModule } from 'ng_prime/ripple';
 
 @Component({
     selector: 'toast-severity-demo',

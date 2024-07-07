@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MessageService } from 'primeng/api';
+import { MessageService } from 'ng_prime/api';
 import { Code } from '@domain/code';
 
 @Component({
@@ -34,33 +34,33 @@ export class TargetDoc {
     code: Code = {
         basic: `<p-toast key="toast1" />
 <p-toast key="toast2" />
-<p-button 
-    pRipple 
-    (click)="showToast1()" 
+<p-button
+    pRipple
+    (click)="showToast1()"
     label="Show Success" />
-<p-button 
-    pRipple 
-    (click)="showToast2()" 
-    label="Show Warning" 
+<p-button
+    pRipple
+    (click)="showToast2()"
+    label="Show Warning"
     severity="warning" />`,
         html: `<div class="card flex justify-content-center gap-2">
     <p-toast key="toast1" />
     <p-toast key="toast2" />
-    <p-button 
-        pRipple 
-        (click)="showToast1()" 
+    <p-button
+        pRipple
+        (click)="showToast1()"
         label="Show Success" />
-    <p-button 
-        pRipple 
-        (click)="showToast2()" 
-        label="Show Warning" 
+    <p-button
+        pRipple
+        (click)="showToast2()"
+        label="Show Warning"
         severity="warning" />
 </div>`,
         typescript: `import { Component } from '@angular/core';
-import { MessageService } from 'primeng/api';
-import { ToastModule } from 'primeng/toast';
-import { ButtonModule } from 'primeng/button';
-import { RippleModule } from 'primeng/ripple';
+import { MessageService } from 'ng_prime/api';
+import { ToastModule } from 'ng_prime/toast';
+import { ButtonModule } from 'ng_prime/button';
+import { RippleModule } from 'ng_prime/ripple';
 
 @Component({
     selector: 'toast-target-demo',

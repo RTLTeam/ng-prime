@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuItem } from 'primeng/api';
+import { MenuItem } from 'ng_prime/api';
 import { Code } from '@domain/code';
 
 @Component({
@@ -115,9 +115,9 @@ export class ControlledDoc implements OnInit {
 </div>`,
 
         typescript: `import { Component, OnInit } from '@angular/core';
-import { MenuItem } from 'primeng/api';
-import { PanelMenuModule } from 'primeng/panelmenu';
-import { ButtonModule } from 'primeng/button';
+import { MenuItem } from 'ng_prime/api';
+import { PanelMenuModule } from 'ng_prime/panelmenu';
+import { ButtonModule } from 'ng_prime/button';
 
 @Component({
     selector: 'panel-menu-controlled-demo',

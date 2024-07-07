@@ -14,7 +14,7 @@ export class NgxTranslateDoc {
     code: Code = {
         typescript: `
 import { Component, OnInit } from '@angular/core';
-import { PrimeNGConfig } from 'primeng/api';
+import { PrimeNGConfig } from 'ng_prime/api';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -31,7 +31,7 @@ export class AppComponent implements OnInit {
 
     translate(lang: string) {
         this.translateService.use(lang);
-        this.translateService.get('primeng').subscribe(res => this.config.setTranslation(res));
+        this.translateService.get('ng_prime').subscribe(res => this.config.setTranslation(res));
     }
 }`
     };

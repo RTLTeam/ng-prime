@@ -102,7 +102,7 @@ export class CusstomDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { ScrollPanelModule } from 'primeng/scrollpanel';
+import { ScrollPanelModule } from 'ng_prime/scrollpanel';
 
 @Component({
     selector: 'scroll-panel-custom-demo',

@@ -272,7 +272,7 @@
   color: #1174c0;
 }
 
-@layer primeng {
+@layer ng_prime {
   * {
     box-sizing: border-box;
   }

@@ -1252,7 +1252,7 @@ export class CarService {
     getCarsMedium() {
         return Promise.resolve(this.getData().slice(0, 50));
     }
-    
+
     getCarsSmall() {
         return Promise.resolve(this.getData().slice(0, 10));
     }
@@ -10523,7 +10523,7 @@ export class CustomerService {
     }
 
     constructor(private http: HttpClient) {}
-    
+
     getCustomersMini() {
         return Promise.resolve(this.getData().slice(0, 5));
     }
@@ -10549,7 +10549,7 @@ export class CustomerService {
     }
 };`,
     EventService: `import { Injectable } from '@angular/core';
-    
+
 @Injectable()
 export class EventService {
     getData() {
@@ -10574,7 +10574,7 @@ export class EventService {
     }
 };`,
     NodeService: `import { Injectable } from '@angular/core';
-    
+
 @Injectable()
 export class NodeService {
     getTreeNodesData() {
@@ -10955,7 +10955,7 @@ export class NodeService {
                     {
                         key: '7-1',
                         data: {
-                            name: 'primeng.png',
+                            name: 'ng_prime.png',
                             size: '30kb',
                             type: 'Picture'
                         }
@@ -11026,37 +11026,37 @@ export class NodeService {
     }
 
     getFileSystemNodesData() {
-        return [  
-            {  
-                "data":{  
+        return [
+            {
+                "data":{
                     "name":"Applications",
                     "size":"200mb",
                     "type":"Folder"
                 },
-                "children":[  
-                    {  
-                        "data":{  
+                "children":[
+                    {
+                        "data":{
                             "name":"Angular",
                             "size":"25mb",
                             "type":"Folder"
                         },
-                        "children":[  
-                            {  
-                                "data":{  
+                        "children":[
+                            {
+                                "data":{
                                     "name":"angular.app",
                                     "size":"10mb",
                                     "type":"Application"
                                 }
                             },
-                            {  
-                                "data":{  
+                            {
+                                "data":{
                                     "name":"cli.app",
                                     "size":"10mb",
                                     "type":"Application"
                                 }
                             },
-                            {  
-                                "data":{  
+                            {
+                                "data":{
                                     "name":"mobile.app",
                                     "size":"5mb",
                                     "type":"Application"
@@ -11064,15 +11064,15 @@ export class NodeService {
                             }
                         ]
                     },
-                    {  
-                        "data":{  
+                    {
+                        "data":{
                             "name":"editor.app",
                             "size":"25mb",
                             "type":"Application"
                         }
                     },
-                    {  
-                        "data":{  
+                    {
+                        "data":{
                             "name":"settings.app",
                             "size":"50mb",
                             "type":"Application"
@@ -11080,22 +11080,22 @@ export class NodeService {
                     }
                 ]
             },
-            {  
-                "data":{  
+            {
+                "data":{
                     "name":"Cloud",
                     "size":"20mb",
                     "type":"Folder"
                 },
-                "children":[  
-                    {  
-                        "data":{  
+                "children":[
+                    {
+                        "data":{
                             "name":"backup-1.zip",
                             "size":"10mb",
                             "type":"Zip"
                         }
                     },
-                    {  
-                        "data":{  
+                    {
+                        "data":{
                             "name":"backup-2.zip",
                             "size":"10mb",
                             "type":"Zip"
@@ -11103,22 +11103,22 @@ export class NodeService {
                     }
                 ]
             },
-            {  
-                "data": {  
+            {
+                "data": {
                     "name":"Desktop",
                     "size":"150kb",
                     "type":"Folder"
                 },
-                "children":[  
-                    {  
-                        "data":{  
+                "children":[
+                    {
+                        "data":{
                             "name":"note-meeting.txt",
                             "size":"50kb",
                             "type":"Text"
                         }
                     },
-                    {  
-                        "data":{  
+                    {
+                        "data":{
                             "name":"note-todo.txt",
                             "size":"100kb",
                             "type":"Text"
@@ -11126,29 +11126,29 @@ export class NodeService {
                     }
                 ]
             },
-            {  
-                "data":{  
+            {
+                "data":{
                     "name":"Documents",
                     "size":"75kb",
                     "type":"Folder"
                 },
                 "children":[
-                    {  
-                        "data":{  
+                    {
+                        "data":{
                             "name":"Work",
                             "size":"55kb",
                             "type":"Folder"
                         },
-                        "children":[  
-                            {  
-                                "data":{  
+                        "children":[
+                            {
+                                "data":{
                                     "name":"Expenses.doc",
                                     "size":"30kb",
                                     "type":"Document"
                                 }
                             },
-                            {  
-                                "data":{  
+                            {
+                                "data":{
                                     "name":"Resume.doc",
                                     "size":"25kb",
                                     "type":"Resume"
@@ -11156,15 +11156,15 @@ export class NodeService {
                             }
                         ]
                     },
-                    {  
-                        "data":{  
+                    {
+                        "data":{
                             "name":"Home",
                             "size":"20kb",
                             "type":"Folder"
                         },
-                        "children":[  
-                            {  
-                                "data":{  
+                        "children":[
+                            {
+                                "data":{
                                     "name":"Invoices",
                                     "size":"20kb",
                                     "type":"Text"
@@ -11174,29 +11174,29 @@ export class NodeService {
                     }
                 ]
             },
-            {  
-                "data": {  
+            {
+                "data": {
                     "name":"Downloads",
                     "size":"25mb",
                     "type":"Folder"
                 },
-                "children":[  
-                    {  
-                        "data": {  
+                "children":[
+                    {
+                        "data": {
                             "name":"Spanish",
                             "size":"10mb",
                             "type":"Folder"
                         },
-                        "children":[  
-                            {  
-                                "data":{  
+                        "children":[
+                            {
+                                "data":{
                                     "name":"tutorial-a1.txt",
                                     "size":"5mb",
                                     "type":"Text"
                                 }
                             },
-                            {  
-                                "data":{  
+                            {
+                                "data":{
                                     "name":"tutorial-a2.txt",
                                     "size":"5mb",
                                     "type":"Text"
@@ -11204,22 +11204,22 @@ export class NodeService {
                             }
                         ]
                     },
-                    {  
-                        "data":{  
+                    {
+                        "data":{
                             "name":"Travel",
                             "size":"15mb",
                             "type":"Text"
                         },
-                        "children":[  
-                            {  
-                                "data":{  
+                        "children":[
+                            {
+                                "data":{
                                     "name":"Hotel.pdf",
                                     "size":"10mb",
                                     "type":"PDF"
                                 }
                             },
-                            {  
-                                "data":{  
+                            {
+                                "data":{
                                     "name":"Flight.pdf",
                                     "size":"5mb",
                                     "type":"PDF"
@@ -11229,29 +11229,29 @@ export class NodeService {
                     }
                 ]
             },
-            {  
-                "data": {  
+            {
+                "data": {
                     "name":"Main",
                     "size":"50mb",
                     "type":"Folder"
                 },
-                "children":[  
-                    {  
-                        "data":{  
+                "children":[
+                    {
+                        "data":{
                             "name":"bin",
                             "size":"50kb",
                             "type":"Link"
                         }
                     },
-                    {  
-                        "data":{  
+                    {
+                        "data":{
                             "name":"etc",
                             "size":"100kb",
                             "type":"Link"
                         }
                     },
-                    {  
-                        "data":{  
+                    {
+                        "data":{
                             "name":"var",
                             "size":"100kb",
                             "type":"Link"
@@ -11259,22 +11259,22 @@ export class NodeService {
                     }
                 ]
             },
-            {  
-                "data":{  
+            {
+                "data":{
                     "name":"Other",
                     "size":"5mb",
                     "type":"Folder"
                 },
-                "children":[  
-                    {  
-                        "data":{  
+                "children":[
+                    {
+                        "data":{
                             "name":"todo.txt",
                             "size":"3mb",
                             "type":"Text"
                         }
                     },
-                    {  
-                        "data":{  
+                    {
+                        "data":{
                             "name":"logo.png",
                             "size":"2mb",
                             "type":"Picture"
@@ -11282,29 +11282,29 @@ export class NodeService {
                     }
                 ]
             },
-            {  
-                "data":{  
+            {
+                "data":{
                     "name":"Pictures",
                     "size":"150kb",
                     "type":"Folder"
                 },
-                "children":[  
-                    {  
-                        "data":{  
+                "children":[
+                    {
+                        "data":{
                             "name":"barcelona.jpg",
                             "size":"90kb",
                             "type":"Picture"
                         }
                     },
-                    {  
-                        "data":{  
-                            "name":"primeng.png",
+                    {
+                        "data":{
+                            "name":"ng_prime.png",
                             "size":"30kb",
                             "type":"Picture"
                         }
                     },
-                    {  
-                        "data":{  
+                    {
+                        "data":{
                             "name":"prime.jpg",
                             "size":"30kb",
                             "type":"Picture"
@@ -11312,22 +11312,22 @@ export class NodeService {
                     }
                 ]
             },
-            {  
-                "data":{  
+            {
+                "data":{
                     "name":"Videos",
                     "size":"1500mb",
                     "type":"Folder"
                 },
-                "children":[  
-                    {  
-                        "data":{  
+                "children":[
+                    {
+                        "data":{
                             "name":"primefaces.mkv",
                             "size":"1000mb",
                             "type":"Video"
                         }
                     },
-                    {  
-                        "data":{  
+                    {
+                        "data":{
                             "name":"intro.avi",
                             "size":"500mb",
                             "type":"Video"
@@ -11337,7 +11337,7 @@ export class NodeService {
             }
         ]
     }
-    
+
     getTreeTableNodes() {
         return Promise.resolve(this.getTreeTableNodesData());
     }
@@ -11357,7 +11357,7 @@ export class NodeService {
     getFilesystem() {
         return Promise.resolve(this.getFileSystemNodesData());
     }
-    
+
 };`,
     PhotoService: `import { Injectable } from '@angular/core';
 
@@ -11366,92 +11366,92 @@ export class PhotoService {
     getData() {
         return [
             {
-                itemImageSrc: 'https://primefaces.org/cdn/primeng/images/galleria/galleria1.jpg',
-                thumbnailImageSrc: 'https://primefaces.org/cdn/primeng/images/galleria/galleria1s.jpg',
+                itemImageSrc: 'https://primefaces.org/cdn/ng_prime/images/galleria/galleria1.jpg',
+                thumbnailImageSrc: 'https://primefaces.org/cdn/ng_prime/images/galleria/galleria1s.jpg',
                 alt: 'Description for Image 1',
                 title: 'Title 1'
             },
             {
-                itemImageSrc: 'https://primefaces.org/cdn/primeng/images/galleria/galleria2.jpg',
-                thumbnailImageSrc: 'https://primefaces.org/cdn/primeng/images/galleria/galleria2s.jpg',
+                itemImageSrc: 'https://primefaces.org/cdn/ng_prime/images/galleria/galleria2.jpg',
+                thumbnailImageSrc: 'https://primefaces.org/cdn/ng_prime/images/galleria/galleria2s.jpg',
                 alt: 'Description for Image 2',
                 title: 'Title 2'
             },
             {
-                itemImageSrc: 'https://primefaces.org/cdn/primeng/images/galleria/galleria3.jpg',
-                thumbnailImageSrc: 'https://primefaces.org/cdn/primeng/images/galleria/galleria3s.jpg',
+                itemImageSrc: 'https://primefaces.org/cdn/ng_prime/images/galleria/galleria3.jpg',
+                thumbnailImageSrc: 'https://primefaces.org/cdn/ng_prime/images/galleria/galleria3s.jpg',
                 alt: 'Description for Image 3',
                 title: 'Title 3'
             },
             {
-                itemImageSrc: 'https://primefaces.org/cdn/primeng/images/galleria/galleria4.jpg',
-                thumbnailImageSrc: 'https://primefaces.org/cdn/primeng/images/galleria/galleria4s.jpg',
+                itemImageSrc: 'https://primefaces.org/cdn/ng_prime/images/galleria/galleria4.jpg',
+                thumbnailImageSrc: 'https://primefaces.org/cdn/ng_prime/images/galleria/galleria4s.jpg',
                 alt: 'Description for Image 4',
                 title: 'Title 4'
             },
             {
-                itemImageSrc: 'https://primefaces.org/cdn/primeng/images/galleria/galleria5.jpg',
-                thumbnailImageSrc: 'https://primefaces.org/cdn/primeng/images/galleria/galleria5s.jpg',
+                itemImageSrc: 'https://primefaces.org/cdn/ng_prime/images/galleria/galleria5.jpg',
+                thumbnailImageSrc: 'https://primefaces.org/cdn/ng_prime/images/galleria/galleria5s.jpg',
                 alt: 'Description for Image 5',
                 title: 'Title 5'
             },
             {
-                itemImageSrc: 'https://primefaces.org/cdn/primeng/images/galleria/galleria6.jpg',
-                thumbnailImageSrc: 'https://primefaces.org/cdn/primeng/images/galleria/galleria6s.jpg',
+                itemImageSrc: 'https://primefaces.org/cdn/ng_prime/images/galleria/galleria6.jpg',
+                thumbnailImageSrc: 'https://primefaces.org/cdn/ng_prime/images/galleria/galleria6s.jpg',
                 alt: 'Description for Image 6',
                 title: 'Title 6'
             },
             {
-                itemImageSrc: 'https://primefaces.org/cdn/primeng/images/galleria/galleria7.jpg',
-                thumbnailImageSrc: 'https://primefaces.org/cdn/primeng/images/galleria/galleria7s.jpg',
+                itemImageSrc: 'https://primefaces.org/cdn/ng_prime/images/galleria/galleria7.jpg',
+                thumbnailImageSrc: 'https://primefaces.org/cdn/ng_prime/images/galleria/galleria7s.jpg',
                 alt: 'Description for Image 7',
                 title: 'Title 7'
             },
             {
-                itemImageSrc: 'https://primefaces.org/cdn/primeng/images/galleria/galleria8.jpg',
-                thumbnailImageSrc: 'https://primefaces.org/cdn/primeng/images/galleria/galleria8s.jpg',
+                itemImageSrc: 'https://primefaces.org/cdn/ng_prime/images/galleria/galleria8.jpg',
+                thumbnailImageSrc: 'https://primefaces.org/cdn/ng_prime/images/galleria/galleria8s.jpg',
                 alt: 'Description for Image 8',
                 title: 'Title 8'
             },
             {
-                itemImageSrc: 'https://primefaces.org/cdn/primeng/images/galleria/galleria9.jpg',
-                thumbnailImageSrc: 'https://primefaces.org/cdn/primeng/images/galleria/galleria9s.jpg',
+                itemImageSrc: 'https://primefaces.org/cdn/ng_prime/images/galleria/galleria9.jpg',
+                thumbnailImageSrc: 'https://primefaces.org/cdn/ng_prime/images/galleria/galleria9s.jpg',
                 alt: 'Description for Image 9',
                 title: 'Title 9'
             },
             {
-                itemImageSrc: 'https://primefaces.org/cdn/primeng/images/galleria/galleria10.jpg',
-                thumbnailImageSrc: 'https://primefaces.org/cdn/primeng/images/galleria/galleria10s.jpg',
+                itemImageSrc: 'https://primefaces.org/cdn/ng_prime/images/galleria/galleria10.jpg',
+                thumbnailImageSrc: 'https://primefaces.org/cdn/ng_prime/images/galleria/galleria10s.jpg',
                 alt: 'Description for Image 10',
                 title: 'Title 10'
             },
             {
-                itemImageSrc: 'https://primefaces.org/cdn/primeng/images/galleria/galleria11.jpg',
-                thumbnailImageSrc: 'https://primefaces.org/cdn/primeng/images/galleria/galleria11s.jpg',
+                itemImageSrc: 'https://primefaces.org/cdn/ng_prime/images/galleria/galleria11.jpg',
+                thumbnailImageSrc: 'https://primefaces.org/cdn/ng_prime/images/galleria/galleria11s.jpg',
                 alt: 'Description for Image 11',
                 title: 'Title 11'
             },
             {
-                itemImageSrc: 'https://primefaces.org/cdn/primeng/images/galleria/galleria12.jpg',
-                thumbnailImageSrc: 'https://primefaces.org/cdn/primeng/images/galleria/galleria12s.jpg',
+                itemImageSrc: 'https://primefaces.org/cdn/ng_prime/images/galleria/galleria12.jpg',
+                thumbnailImageSrc: 'https://primefaces.org/cdn/ng_prime/images/galleria/galleria12s.jpg',
                 alt: 'Description for Image 12',
                 title: 'Title 12'
             },
             {
-                itemImageSrc: 'https://primefaces.org/cdn/primeng/images/galleria/galleria13.jpg',
-                thumbnailImageSrc: 'https://primefaces.org/cdn/primeng/images/galleria/galleria13s.jpg',
+                itemImageSrc: 'https://primefaces.org/cdn/ng_prime/images/galleria/galleria13.jpg',
+                thumbnailImageSrc: 'https://primefaces.org/cdn/ng_prime/images/galleria/galleria13s.jpg',
                 alt: 'Description for Image 13',
                 title: 'Title 13'
             },
             {
-                itemImageSrc: 'https://primefaces.org/cdn/primeng/images/galleria/galleria14.jpg',
-                thumbnailImageSrc: 'https://primefaces.org/cdn/primeng/images/galleria/galleria14s.jpg',
+                itemImageSrc: 'https://primefaces.org/cdn/ng_prime/images/galleria/galleria14.jpg',
+                thumbnailImageSrc: 'https://primefaces.org/cdn/ng_prime/images/galleria/galleria14s.jpg',
                 alt: 'Description for Image 14',
                 title: 'Title 14'
             },
             {
-                itemImageSrc: 'https://primefaces.org/cdn/primeng/images/galleria/galleria15.jpg',
-                thumbnailImageSrc: 'https://primefaces.org/cdn/primeng/images/galleria/galleria15s.jpg',
+                itemImageSrc: 'https://primefaces.org/cdn/ng_prime/images/galleria/galleria15.jpg',
+                thumbnailImageSrc: 'https://primefaces.org/cdn/ng_prime/images/galleria/galleria15s.jpg',
                 alt: 'Description for Image 15',
                 title: 'Title 15'
             }
@@ -11463,7 +11463,7 @@ export class PhotoService {
     }
 };`,
     ProductService: `import { Injectable } from '@angular/core';
-    
+
 @Injectable()
 export class ProductService {
     getProductsData() {
@@ -12687,7 +12687,7 @@ export class ProductService {
 };`,
     TicketService: `import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs';
-    
+
     @Injectable()
     export class TicketService {
         ticketInformation = {
@@ -12709,19 +12709,19 @@ import { Subject } from 'rxjs';
                 remember: false
             }
         };
-    
+
         private paymentComplete = new Subject<any>();
-    
+
         paymentComplete$ = this.paymentComplete.asObservable();
-    
+
         getTicketInformation() {
             return this.ticketInformation;
         }
-    
+
         setTicketInformation(ticketInformation) {
             this.ticketInformation = ticketInformation;
         }
-    
+
         complete() {
             this.paymentComplete.next(this.ticketInformation.personalInformation);
         }

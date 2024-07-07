@@ -20,13 +20,13 @@ import {
     numberAttribute
 } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
-import { PrimeNGConfig, PrimeTemplate, SharedModule } from 'primeng/api';
-import { AutoFocusModule } from 'primeng/autofocus';
-import { TimesIcon } from 'primeng/icons/times';
-import { TimesCircleIcon } from 'primeng/icons/timescircle';
-import { InputTextModule } from 'primeng/inputtext';
-import { Nullable } from 'primeng/ts-helpers';
-import { UniqueComponentId } from 'primeng/utils';
+import { PrimeNGConfig, PrimeTemplate, SharedModule } from 'ng_prime/api';
+import { AutoFocusModule } from 'ng_prime/autofocus';
+import { TimesIcon } from 'ng_prime/icons/times';
+import { TimesCircleIcon } from 'ng_prime/icons/timescircle';
+import { InputTextModule } from 'ng_prime/inputtext';
+import { Nullable } from 'ng_prime/ts-helpers';
+import { UniqueComponentId } from 'ng_prime/utils';
 import { ChipsAddEvent, ChipsClickEvent, ChipsRemoveEvent } from './chips.interface';
 
 export const CHIPS_VALUE_ACCESSOR: any = {

@@ -13,7 +13,7 @@ import { Code } from 'src/app/showcase/domain/code';
 })
 export class BootstrapDoc {
     code: Code = {
-        basic: `@layer bootstrap-reboot, primeng
+        basic: `@layer bootstrap-reboot, ng_prime
 
 @import "bootstrap-reboot.css" layer(bootstrap-rebooot);`
     };

@@ -1,6 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { MenuItem, MessageService } from 'primeng/api';
-import { TerminalService } from 'primeng/terminal';
+import { MenuItem, MessageService } from 'ng_prime/api';
+import { TerminalService } from 'ng_prime/terminal';
 import { Subscription } from 'rxjs';
 import { Code } from '@domain/code';
 import { NodeService } from '@service/nodeservice';
@@ -43,7 +43,7 @@ import { PhotoService } from '@service/photoservice';
                 </p-dialog>
 
                 <p-dialog [maximizable]="true" [(visible)]="displayTerminal" [breakpoints]="{ '960px': '50vw' }" [style]="{ width: '30vw' }" [draggable]="false" [resizable]="false">
-                    <p-terminal welcomeMessage="Welcome to PrimeNG (cmd: 'date', 'greet {0}', 'random')" prompt="primeng $" />
+                    <p-terminal welcomeMessage="Welcome to PrimeNG (cmd: 'date', 'greet {0}', 'random')" prompt="ng_prime $" />
                 </p-dialog>
 
                 <p-galleria
@@ -105,7 +105,7 @@ export class AdvancedDoc implements OnInit, OnDestroy {
                     positionLeft: 15,
                     showDelay: 1000
                 },
-                icon: 'https://primefaces.org/cdn/primeng/images/dock/finder.svg',
+                icon: 'https://primefaces.org/cdn/ng_prime/images/dock/finder.svg',
                 command: () => {
                     this.displayFinder = true;
                 }
@@ -119,7 +119,7 @@ export class AdvancedDoc implements OnInit, OnDestroy {
                     positionLeft: 15,
                     showDelay: 1000
                 },
-                icon: 'https://primefaces.org/cdn/primeng/images/dock/terminal.svg',
+                icon: 'https://primefaces.org/cdn/ng_prime/images/dock/terminal.svg',
                 command: () => {
                     this.displayTerminal = true;
                 }
@@ -133,7 +133,7 @@ export class AdvancedDoc implements OnInit, OnDestroy {
                     positionLeft: 15,
                     showDelay: 1000
                 },
-                icon: 'https://primefaces.org/cdn/primeng/images/dock/appstore.svg',
+                icon: 'https://primefaces.org/cdn/ng_prime/images/dock/appstore.svg',
                 command: () => {
                     this.messageService.add({ severity: 'error', summary: 'An unexpected error occurred while signing in.', detail: 'UNTRUSTED_CERT_TITLE', key: 'tc' });
                 }
@@ -147,7 +147,7 @@ export class AdvancedDoc implements OnInit, OnDestroy {
                     positionLeft: 15,
                     showDelay: 1000
                 },
-                icon: 'https://primefaces.org/cdn/primeng/images/dock/safari.svg',
+                icon: 'https://primefaces.org/cdn/ng_prime/images/dock/safari.svg',
                 command: () => {
                     this.messageService.add({ severity: 'warn', summary: 'Safari has stopped working', key: 'tc' });
                 }
@@ -161,7 +161,7 @@ export class AdvancedDoc implements OnInit, OnDestroy {
                     positionLeft: 15,
                     showDelay: 1000
                 },
-                icon: 'https://primefaces.org/cdn/primeng/images/dock/photos.svg',
+                icon: 'https://primefaces.org/cdn/ng_prime/images/dock/photos.svg',
                 command: () => {
                     this.displayGalleria = true;
                 }
@@ -175,7 +175,7 @@ export class AdvancedDoc implements OnInit, OnDestroy {
                     positionLeft: 15,
                     showDelay: 1000
                 },
-                icon: 'https://primefaces.org/cdn/primeng/images/dock/github.svg'
+                icon: 'https://primefaces.org/cdn/ng_prime/images/dock/github.svg'
             },
             {
                 label: 'Trash',
@@ -186,7 +186,7 @@ export class AdvancedDoc implements OnInit, OnDestroy {
                     positionLeft: 15,
                     showDelay: 1000
                 },
-                icon: 'https://primefaces.org/cdn/primeng/images/dock/trash.png',
+                icon: 'https://primefaces.org/cdn/ng_prime/images/dock/trash.png',
                 command: () => {
                     this.messageService.add({ severity: 'info', summary: 'Empty Trash', key: 'tc' });
                 }
@@ -394,25 +394,25 @@ export class AdvancedDoc implements OnInit, OnDestroy {
 
     <p-toast position="top-center" key="tc" />
 
-    <p-dialog 
-        [(visible)]="displayFinder" 
-        [breakpoints]="{ '960px': '50vw' }" 
-        [style]="{ width: '30vw', height: '18rem' }" 
-        [draggable]="false" 
+    <p-dialog
+        [(visible)]="displayFinder"
+        [breakpoints]="{ '960px': '50vw' }"
+        [style]="{ width: '30vw', height: '18rem' }"
+        [draggable]="false"
         [resizable]="false">
             <p-tree [value]="nodes" />
     </p-dialog>
 
-    <p-dialog 
-        [maximizable]="true" 
-        [(visible)]="displayTerminal" 
-        [breakpoints]="{ '960px': '50vw' }" 
-        [style]="{ width: '30vw' }" 
-        [draggable]="false" 
+    <p-dialog
+        [maximizable]="true"
+        [(visible)]="displayTerminal"
+        [breakpoints]="{ '960px': '50vw' }"
+        [style]="{ width: '30vw' }"
+        [draggable]="false"
         [resizable]="false">
-            <p-terminal 
-                welcomeMessage="Welcome to PrimeNG (cmd: 'date', 'greet {0}', 'random')" 
-                prompt="primeng $" />
+            <p-terminal
+                welcomeMessage="Welcome to PrimeNG (cmd: 'date', 'greet {0}', 'random')"
+                prompt="ng_prime $" />
     </p-dialog>
 
     <p-galleria
@@ -455,25 +455,25 @@ export class AdvancedDoc implements OnInit, OnDestroy {
 
         <p-toast position="top-center" key="tc" />
 
-        <p-dialog 
-            [(visible)]="displayFinder" 
-            [breakpoints]="{ '960px': '50vw' }" 
-            [style]="{ width: '30vw', height: '18rem' }" 
-            [draggable]="false" 
+        <p-dialog
+            [(visible)]="displayFinder"
+            [breakpoints]="{ '960px': '50vw' }"
+            [style]="{ width: '30vw', height: '18rem' }"
+            [draggable]="false"
             [resizable]="false">
                 <p-tree [value]="nodes" />
         </p-dialog>
 
-        <p-dialog 
-            [maximizable]="true" 
-            [(visible)]="displayTerminal" 
-            [breakpoints]="{ '960px': '50vw' }" 
-            [style]="{ width: '30vw' }" 
-            [draggable]="false" 
+        <p-dialog
+            [maximizable]="true"
+            [(visible)]="displayTerminal"
+            [breakpoints]="{ '960px': '50vw' }"
+            [style]="{ width: '30vw' }"
+            [draggable]="false"
             [resizable]="false">
-                <p-terminal 
-                    welcomeMessage="Welcome to PrimeNG (cmd: 'date', 'greet {0}', 'random')" 
-                    prompt="primeng $" />
+                <p-terminal
+                    welcomeMessage="Welcome to PrimeNG (cmd: 'date', 'greet {0}', 'random')"
+                    prompt="ng_prime $" />
         </p-dialog>
 
         <p-galleria
@@ -496,19 +496,19 @@ export class AdvancedDoc implements OnInit, OnDestroy {
 </div>`,
 
         typescript: `import { Component, OnDestroy, OnInit } from '@angular/core';
-import { MenuItem, MessageService } from 'primeng/api';
-import { TerminalModule } from 'primeng/terminal';
-import { TerminalService } from 'primeng/terminal';
+import { MenuItem, MessageService } from 'ng_prime/api';
+import { TerminalModule } from 'ng_prime/terminal';
+import { TerminalService } from 'ng_prime/terminal';
 import { Subscription } from 'rxjs';
 import { NodeService } from '@service/nodeservice';
 import { PhotoService } from '@service/photoservice';
-import { DockModule } from 'primeng/dock';
-import { MenubarModule } from 'primeng/menubar';
-import { ToastModule } from 'primeng/toast';
-import { DialogModule } from 'primeng/dialog';
-import { TreeModule } from 'primeng/tree';
-import { GalleriaModule } from 'primeng/galleria';
-        
+import { DockModule } from 'ng_prime/dock';
+import { MenubarModule } from 'ng_prime/menubar';
+import { ToastModule } from 'ng_prime/toast';
+import { DialogModule } from 'ng_prime/dialog';
+import { TreeModule } from 'ng_prime/tree';
+import { GalleriaModule } from 'ng_prime/galleria';
+
 
 @Component({
     selector: 'dock-advanced-demo',
@@ -521,54 +521,54 @@ import { GalleriaModule } from 'primeng/galleria';
                 width: 100%;
                 height: 450px;
                 position: relative;
-                background-image: url('https://primefaces.org/cdn/primeng/images/dock/window.jpg');
+                background-image: url('https://primefaces.org/cdn/ng_prime/images/dock/window.jpg');
                 background-repeat: no-repeat;
                 background-size: cover;
             }
-        
+
             .p-dock {
                 z-index: 1000;
             }
-        
+
             .dock-advanced {
                 .p-dialog-mask,
                 .p-toast {
                     position: absolute;
                 }
-        
+
                 .p-dialog {
                     .p-dialog-header {
                         padding: .2rem;
                     }
-        
+
                     .p-dialog-content {
                         padding: 0;
                     }
-        
+
                     p {
                         margin-top: 0;
                     }
-        
+
                     .p-terminal {
                         background-color: #212121;
                         color: #ffffff;
                         border: 0 none;
                         min-height: 18rem;
                         height: 100%;
-        
+
                         .p-terminal-command {
                             color: #80CBC4;
                         }
-        
+
                         .p-terminal-prompt {
                             color: #FFD54F;
                         }
-        
+
                         .p-terminal-response {
                             color: #9FA8DA;
                         }
                     }
-        
+
                     .p-tree {
                         height: 100%;
                         border-radius: 0;
@@ -577,34 +577,34 @@ import { GalleriaModule } from 'primeng/galleria';
                         border-bottom-width: 0;
                     }
                 }
-        
+
                 .p-toast {
                     top: 20px;
                 }
             }
-        
+
             .p-menubar {
                 padding-top: 0;
                 padding-bottom: 0;
                 border-radius: 0;
-        
+
                 .p-menuitem:first-child {
                     font-weight: bold;
                     padding: 0 1rem;
                 }
-        
+
                 .p-menuitem-link {
                     padding: 0.5rem .75rem;
                 }
-        
+
                 .p-menubar-root-list > .p-menuitem > .p-menuitem-link {
                     padding: 0.5rem .75rem;
-        
+
                     > .p-submenu-icon {
                         display: none;
                     }
                 }
-        
+
                 .p-menubar-end {
                     span, i {
                         padding: 0 .75rem;
@@ -612,13 +612,13 @@ import { GalleriaModule } from 'primeng/galleria';
                 }
             }
         }
-        
+
         .dark-tooltip {
             .p-tooltip {
                 .p-tooltip-arrow {
                     border-top-color: var(--surface-900);
                 }
-        
+
                 .p-tooltip-text {
                     background-color: var(--surface-900);
                 }
@@ -659,7 +659,7 @@ export class DockAdvancedDemo implements OnInit {
                     positionLeft: 15,
                     showDelay: 1000
                 },
-                icon: 'https://primefaces.org/cdn/primeng/images/dock/finder.svg',
+                icon: 'https://primefaces.org/cdn/ng_prime/images/dock/finder.svg',
                 command: () => {
                     this.displayFinder = true;
                 }
@@ -673,7 +673,7 @@ export class DockAdvancedDemo implements OnInit {
                     positionLeft: 15,
                     showDelay: 1000
                 },
-                icon: 'https://primefaces.org/cdn/primeng/images/dock/terminal.svg',
+                icon: 'https://primefaces.org/cdn/ng_prime/images/dock/terminal.svg',
                 command: () => {
                     this.displayTerminal = true;
                 }
@@ -687,7 +687,7 @@ export class DockAdvancedDemo implements OnInit {
                     positionLeft: 15,
                     showDelay: 1000
                 },
-                icon: 'https://primefaces.org/cdn/primeng/images/dock/appstore.svg',
+                icon: 'https://primefaces.org/cdn/ng_prime/images/dock/appstore.svg',
                 command: () => {
                     this.messageService.add({ severity: 'error', summary: 'An unexpected error occurred while signing in.', detail: 'UNTRUSTED_CERT_TITLE', key: 'tc' });
                 }
@@ -701,7 +701,7 @@ export class DockAdvancedDemo implements OnInit {
                     positionLeft: 15,
                     showDelay: 1000
                 },
-                icon: 'https://primefaces.org/cdn/primeng/images/dock/safari.svg',
+                icon: 'https://primefaces.org/cdn/ng_prime/images/dock/safari.svg',
                 command: () => {
                     this.messageService.add({ severity: 'warn', summary: 'Safari has stopped working', key: 'tc' });
                 }
@@ -715,7 +715,7 @@ export class DockAdvancedDemo implements OnInit {
                     positionLeft: 15,
                     showDelay: 1000
                 },
-                icon: 'https://primefaces.org/cdn/primeng/images/dock/photos.svg',
+                icon: 'https://primefaces.org/cdn/ng_prime/images/dock/photos.svg',
                 command: () => {
                     this.displayGalleria = true;
                 }
@@ -729,7 +729,7 @@ export class DockAdvancedDemo implements OnInit {
                     positionLeft: 15,
                     showDelay: 1000
                 },
-                icon: 'https://primefaces.org/cdn/primeng/images/dock/github.svg'
+                icon: 'https://primefaces.org/cdn/ng_prime/images/dock/github.svg'
             },
             {
                 label: 'Trash',
@@ -740,7 +740,7 @@ export class DockAdvancedDemo implements OnInit {
                     positionLeft: 15,
                     showDelay: 1000
                 },
-                icon: 'https://primefaces.org/cdn/primeng/images/dock/trash.png',
+                icon: 'https://primefaces.org/cdn/ng_prime/images/dock/trash.png',
                 command: () => {
                     this.messageService.add({ severity: 'info', summary: 'Empty Trash', key: 'tc' });
                 }
@@ -931,7 +931,7 @@ export class DockAdvancedDemo implements OnInit {
         width: 100%;
         height: 450px;
         position: relative;
-        background-image: url('https://primefaces.org/cdn/primeng/images/dock/window.jpg');
+        background-image: url('https://primefaces.org/cdn/ng_prime/images/dock/window.jpg');
         background-repeat: no-repeat;
         background-size: cover;
     }

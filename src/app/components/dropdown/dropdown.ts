@@ -31,22 +31,22 @@ import {
     ViewRef
 } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
-import { FilterService, OverlayOptions, PrimeNGConfig, PrimeTemplate, SelectItem, SharedModule, TranslationKeys } from 'primeng/api';
-import { AutoFocusModule } from 'primeng/autofocus';
-import { DomHandler } from 'primeng/dom';
-import { Overlay, OverlayModule } from 'primeng/overlay';
-import { RippleModule } from 'primeng/ripple';
-import { Scroller, ScrollerModule } from 'primeng/scroller';
-import { ScrollerOptions } from 'primeng/api';
-import { TooltipModule } from 'primeng/tooltip';
-import { ObjectUtils, UniqueComponentId } from 'primeng/utils';
-import { TimesIcon } from 'primeng/icons/times';
-import { CheckIcon } from 'primeng/icons/check';
-import { BlankIcon } from 'primeng/icons/blank';
-import { ChevronDownIcon } from 'primeng/icons/chevrondown';
-import { SearchIcon } from 'primeng/icons/search';
+import { FilterService, OverlayOptions, PrimeNGConfig, PrimeTemplate, SelectItem, SharedModule, TranslationKeys } from 'ng_prime/api';
+import { AutoFocusModule } from 'ng_prime/autofocus';
+import { DomHandler } from 'ng_prime/dom';
+import { Overlay, OverlayModule } from 'ng_prime/overlay';
+import { RippleModule } from 'ng_prime/ripple';
+import { Scroller, ScrollerModule } from 'ng_prime/scroller';
+import { ScrollerOptions } from 'ng_prime/api';
+import { TooltipModule } from 'ng_prime/tooltip';
+import { ObjectUtils, UniqueComponentId } from 'ng_prime/utils';
+import { TimesIcon } from 'ng_prime/icons/times';
+import { CheckIcon } from 'ng_prime/icons/check';
+import { BlankIcon } from 'ng_prime/icons/blank';
+import { ChevronDownIcon } from 'ng_prime/icons/chevrondown';
+import { SearchIcon } from 'ng_prime/icons/search';
 import { DropdownChangeEvent, DropdownFilterEvent, DropdownFilterOptions, DropdownLazyLoadEvent } from './dropdown.interface';
-import { Nullable } from 'primeng/ts-helpers';
+import { Nullable } from 'ng_prime/ts-helpers';
 
 export const DROPDOWN_VALUE_ACCESSOR: any = {
     provide: NG_VALUE_ACCESSOR,

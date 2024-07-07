@@ -1,4 +1,4 @@
-@layer primeng {
+@layer ng_prime {
     .p-toolbar {
         display: flex;
         align-items: center;

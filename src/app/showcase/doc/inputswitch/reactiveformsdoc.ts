@@ -34,7 +34,7 @@ export class ReactiveFormsDoc implements OnInit {
 
         typescript: `import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
-import { InputSwitchModule } from 'primeng/inputswitch';
+import { InputSwitchModule } from 'ng_prime/inputswitch';
 
 @Component({
     selector: 'input-switch-reactive-forms-demo',

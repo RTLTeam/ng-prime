@@ -51,25 +51,25 @@ export class ForceSelectionDoc implements OnInit {
     }
 
     code: Code = {
-        basic: `<p-autoComplete 
-    [(ngModel)]="selectedCountry" 
-    [forceSelection]="true" 
-    [suggestions]="filteredCountries" 
+        basic: `<p-autoComplete
+    [(ngModel)]="selectedCountry"
+    [forceSelection]="true"
+    [suggestions]="filteredCountries"
     (completeMethod)="filterCountry($event)"
     field="name" />`,
 
         html: `<div class="card flex justify-content-center">
-    <p-autoComplete 
-        [(ngModel)]="selectedCountry" 
-        [forceSelection]="true" 
-        [suggestions]="filteredCountries" 
-        (completeMethod)="filterCountry($event)" 
+    <p-autoComplete
+        [(ngModel)]="selectedCountry"
+        [forceSelection]="true"
+        [suggestions]="filteredCountries"
+        (completeMethod)="filterCountry($event)"
         field="name" />
 </div>`,
 
         typescript: `import { Component, OnInit } from '@angular/core';
 import { CountryService } from '@service/countryservice';
-import { AutoCompleteModule } from 'primeng/autocomplete';
+import { AutoCompleteModule } from 'ng_prime/autocomplete';
 import { FormsModule } from '@angular/forms';
 
 interface AutoCompleteCompleteEvent {

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuItem } from 'primeng/api';
+import { MenuItem } from 'ng_prime/api';
 import { Code } from '@domain/code';
 
 @Component({
@@ -141,11 +141,11 @@ export class TemplateDoc implements OnInit {
 </div>`,
 
         typescript: `import { Component, OnInit } from '@angular/core';
-import { MenuItem } from 'primeng/api';
-import { TieredMenuModule } from 'primeng/tieredmenu';
-import { BadgeModule } from 'primeng/badge';
+import { MenuItem } from 'ng_prime/api';
+import { TieredMenuModule } from 'ng_prime/tieredmenu';
+import { BadgeModule } from 'ng_prime/badge';
 import { CommonModule } from '@angular/common';
-import { RippleModule } from 'primeng/ripple';
+import { RippleModule } from 'ng_prime/ripple';
 
 @Component({
     selector: 'tiered-menu-template-demo',

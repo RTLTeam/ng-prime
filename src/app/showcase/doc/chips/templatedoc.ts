@@ -21,7 +21,7 @@ export class TemplateDoc {
     code: Code = {
         basic: `<p-chips [(ngModel)]="values">
     <ng-template let-item pTemplate="item">
-        {{ item }} - (active) <i class="pi pi-user ml-2"></i> 
+        {{ item }} - (active) <i class="pi pi-user ml-2"></i>
      </ng-template>
 </p-chips>`,
 
@@ -35,7 +35,7 @@ export class TemplateDoc {
 
         typescript: `import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { ChipsModule } from 'primeng/chips';
+import { ChipsModule } from 'ng_prime/chips';
 
 @Component({
     selector: 'chips-template-demo',

@@ -1,7 +1,7 @@
 contact_links:
     - name: Feature request
-      url: https://github.com/orgs/primefaces/discussions/categories/primeng
+      url: https://github.com/orgs/primefaces/discussions/categories/ng_prime
       about: Propose an enhancement at discussions.
     - name: Support
-      url: https://primeng.org/support/
+      url: https://ng_prime.org/support/
       about: Professional support for the open source innovation.

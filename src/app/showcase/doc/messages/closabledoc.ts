@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Message } from 'primeng/api';
+import { Message } from 'ng_prime/api';
 import { Code } from '@domain/code';
 
 @Component({
@@ -30,8 +30,8 @@ export class ClosableDoc implements OnInit {
     <p-messages [(value)]="messages" [closable]="false" />
 </div>`,
         typescript: `import { Component, OnInit } from '@angular/core';
-import { Message } from 'primeng/api';
-import { MessagesModule } from 'primeng/messages';
+import { Message } from 'ng_prime/api';
+import { MessagesModule } from 'ng_prime/messages';
 
 @Component({
     selector: 'messages-closable-demo',

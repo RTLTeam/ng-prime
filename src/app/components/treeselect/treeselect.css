@@ -1,4 +1,4 @@
-@layer primeng {
+@layer ng_prime {
     .p-treeselect {
         display: inline-flex;
         cursor: pointer;

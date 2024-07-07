@@ -1,6 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { Code } from '@domain/code';
-import { Sidebar } from 'primeng/sidebar';
+import { Sidebar } from 'ng_prime/sidebar';
 
 @Component({
     selector: 'headless-doc',
@@ -197,7 +197,7 @@ import { Sidebar } from 'primeng/sidebar';
                         <div class="mt-auto">
                             <hr class="mb-3 mx-3 border-top-1 border-none surface-border" />
                             <a pRipple class="m-3 flex align-items-center cursor-pointer p-3 gap-2 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
-                                <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" shape="circle" />
+                                <p-avatar image="https://primefaces.org/cdn/ng_prime/images/demo/avatar/amyelsner.png" shape="circle" />
                                 <span class="font-bold">Amy Elsner</span>
                             </a>
                         </div>
@@ -407,7 +407,7 @@ export class HeadlessDoc {
             <div class="mt-auto">
                 <hr class="mb-3 mx-3 border-top-1 border-none surface-border" />
                 <a pRipple class="m-3 flex align-items-center cursor-pointer p-3 gap-2 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
-                    <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" shape="circle" />
+                    <p-avatar image="https://primefaces.org/cdn/ng_prime/images/demo/avatar/amyelsner.png" shape="circle" />
                     <span class="font-bold">Amy Elsner</span>
                 </a>
             </div>
@@ -605,7 +605,7 @@ export class HeadlessDoc {
             <div class="mt-auto">
                 <hr class="mb-3 mx-3 border-top-1 border-none surface-border" />
                 <a pRipple class="m-3 flex align-items-center cursor-pointer p-3 gap-2 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
-                    <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" shape="circle" />
+                    <p-avatar image="https://primefaces.org/cdn/ng_prime/images/demo/avatar/amyelsner.png" shape="circle" />
                     <span class="font-bold">Amy Elsner</span>
                 </a>
             </div>
@@ -616,12 +616,12 @@ export class HeadlessDoc {
 </div>`,
 
         typescript: `import { Component, ViewChild } from '@angular/core';
-import { SidebarModule } from 'primeng/sidebar';
-import { ButtonModule } from 'primeng/button';
-import { RippleModule } from 'primeng/ripple';
-import { AvatarModule } from 'primeng/avatar';
-import { StyleClassModule } from 'primeng/styleclass';
-import { Sidebar } from 'primeng/sidebar';
+import { SidebarModule } from 'ng_prime/sidebar';
+import { ButtonModule } from 'ng_prime/button';
+import { RippleModule } from 'ng_prime/ripple';
+import { AvatarModule } from 'ng_prime/avatar';
+import { StyleClassModule } from 'ng_prime/styleclass';
+import { Sidebar } from 'ng_prime/sidebar';
 
 @Component({
     selector: 'sidebar-headless-demo',

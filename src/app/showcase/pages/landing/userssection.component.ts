@@ -18,17 +18,17 @@ import { AppConfigService } from '@service/appconfigservice';
                 <div class="marquee-wrapper overflow-hidden flex">
                     <div class="marquee">
                         <div class="w-full" *ngFor="let user of usersData.slice(0, 6)">
-                            <img src="https://primefaces.org/cdn/primeng/images/landing/whouses/{{ user.name }}-{{ isDarkMode ? 'light' : 'dark' }}.svg" [width]="user.width" [height]="user.height" [alt]="user.name" />
+                            <img src="https://primefaces.org/cdn/ng_prime/images/landing/whouses/{{ user.name }}-{{ isDarkMode ? 'light' : 'dark' }}.svg" [width]="user.width" [height]="user.height" [alt]="user.name" />
                         </div>
                     </div>
                     <div class="marquee">
                         <div class="w-full" *ngFor="let user of usersData.slice(0, 6)">
-                            <img src="https://primefaces.org/cdn/primeng/images/landing/whouses/{{ user.name }}-{{ isDarkMode ? 'light' : 'dark' }}.svg" [width]="user.width" [height]="user.height" [alt]="user.name" />
+                            <img src="https://primefaces.org/cdn/ng_prime/images/landing/whouses/{{ user.name }}-{{ isDarkMode ? 'light' : 'dark' }}.svg" [width]="user.width" [height]="user.height" [alt]="user.name" />
                         </div>
                     </div>
                     <div class="marquee">
                         <div class="w-full" *ngFor="let user of usersData.slice(0, 6)">
-                            <img src="https://primefaces.org/cdn/primeng/images/landing/whouses/{{ user.name }}-{{ isDarkMode ? 'light' : 'dark' }}.svg" [width]="user.width" [height]="user.height" [alt]="user.name" />
+                            <img src="https://primefaces.org/cdn/ng_prime/images/landing/whouses/{{ user.name }}-{{ isDarkMode ? 'light' : 'dark' }}.svg" [width]="user.width" [height]="user.height" [alt]="user.name" />
                         </div>
                     </div>
                 </div>
@@ -39,17 +39,17 @@ import { AppConfigService } from '@service/appconfigservice';
                 <div class="marquee-wrapper overflow-hidden flex">
                     <div class="marquee marquee-reverse">
                         <div class="w-full" *ngFor="let user of usersData.slice(6)">
-                            <img src="https://primefaces.org/cdn/primeng/images/landing/whouses/{{ user.name }}-{{ isDarkMode ? 'light' : 'dark' }}.svg" [width]="user.width" [height]="user.height" [alt]="user.name" />
+                            <img src="https://primefaces.org/cdn/ng_prime/images/landing/whouses/{{ user.name }}-{{ isDarkMode ? 'light' : 'dark' }}.svg" [width]="user.width" [height]="user.height" [alt]="user.name" />
                         </div>
                     </div>
                     <div class="marquee marquee-reverse">
                         <div class="w-full" *ngFor="let user of usersData.slice(6)">
-                            <img src="https://primefaces.org/cdn/primeng/images/landing/whouses/{{ user.name }}-{{ isDarkMode ? 'light' : 'dark' }}.svg" [width]="user.width" [height]="user.height" [alt]="user.name" />
+                            <img src="https://primefaces.org/cdn/ng_prime/images/landing/whouses/{{ user.name }}-{{ isDarkMode ? 'light' : 'dark' }}.svg" [width]="user.width" [height]="user.height" [alt]="user.name" />
                         </div>
                     </div>
                     <div class="marquee marquee-reverse">
                         <div class="w-full" *ngFor="let user of usersData.slice(6)">
-                            <img src="https://primefaces.org/cdn/primeng/images/landing/whouses/{{ user.name }}-{{ isDarkMode ? 'light' : 'dark' }}.svg" [width]="user.width" [height]="user.height" [alt]="user.name" />
+                            <img src="https://primefaces.org/cdn/ng_prime/images/landing/whouses/{{ user.name }}-{{ isDarkMode ? 'light' : 'dark' }}.svg" [width]="user.width" [height]="user.height" [alt]="user.name" />
                         </div>
                     </div>
                 </div>

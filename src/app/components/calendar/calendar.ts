@@ -24,21 +24,21 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
-import { OverlayService, PrimeNGConfig, PrimeTemplate, SharedModule, TranslationKeys } from 'primeng/api';
-import { ButtonModule } from 'primeng/button';
-import { ConnectedOverlayScrollHandler, DomHandler } from 'primeng/dom';
-import { RippleModule } from 'primeng/ripple';
-import { ObjectUtils, UniqueComponentId, ZIndexUtils } from 'primeng/utils';
+import { OverlayService, PrimeNGConfig, PrimeTemplate, SharedModule, TranslationKeys } from 'ng_prime/api';
+import { ButtonModule } from 'ng_prime/button';
+import { ConnectedOverlayScrollHandler, DomHandler } from 'ng_prime/dom';
+import { RippleModule } from 'ng_prime/ripple';
+import { ObjectUtils, UniqueComponentId, ZIndexUtils } from 'ng_prime/utils';
 import { Subscription } from 'rxjs';
-import { ChevronLeftIcon } from 'primeng/icons/chevronleft';
-import { ChevronRightIcon } from 'primeng/icons/chevronright';
-import { ChevronUpIcon } from 'primeng/icons/chevronup';
-import { ChevronDownIcon } from 'primeng/icons/chevrondown';
-import { TimesIcon } from 'primeng/icons/times';
-import { CalendarIcon } from 'primeng/icons/calendar';
-import { Nullable, VoidListener } from 'primeng/ts-helpers';
+import { ChevronLeftIcon } from 'ng_prime/icons/chevronleft';
+import { ChevronRightIcon } from 'ng_prime/icons/chevronright';
+import { ChevronUpIcon } from 'ng_prime/icons/chevronup';
+import { ChevronDownIcon } from 'ng_prime/icons/chevrondown';
+import { TimesIcon } from 'ng_prime/icons/times';
+import { CalendarIcon } from 'ng_prime/icons/calendar';
+import { Nullable, VoidListener } from 'ng_prime/ts-helpers';
 import { NavigationState, CalendarResponsiveOptions, CalendarTypeView, LocaleSettings, Month, CalendarMonthChangeEvent, CalendarYearChangeEvent } from './calendar.interface';
-import { AutoFocusModule } from 'primeng/autofocus';
+import { AutoFocusModule } from 'ng_prime/autofocus';
 
 export const CALENDAR_VALUE_ACCESSOR: any = {
     provide: NG_VALUE_ACCESSOR,
@@ -2858,7 +2858,7 @@ export class Calendar implements OnInit, OnDestroy, ControlValueAccessor {
     }
 
     onUserInput(event: KeyboardEvent | any) {
-        // IE 11 Workaround for input placeholder : https://github.com/primefaces/primeng/issues/2026
+        // IE 11 Workaround for input placeholder : https://github.com/primefaces/ng_prime/issues/2026
         if (!this.isKeydown) {
             return;
         }

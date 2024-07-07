@@ -2,7 +2,7 @@ import { TestBed, ComponentFixture } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { Chips } from './chips';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { TimesCircleIcon } from 'primeng/icons/timescircle';
+import { TimesCircleIcon } from 'ng_prime/icons/timescircle';
 
 describe('Chips', () => {
     let chips: Chips;
@@ -38,7 +38,7 @@ describe('Chips', () => {
     it('should change inputStyle inputStyleClass inputId placeholder and tabIndex', () => {
         chips.inputStyle = { height: '300px' };
         chips.inputStyleClass = 'Primeng ROCKS!';
-        chips.inputId = 'primeng';
+        chips.inputId = 'ng_prime';
         chips.tabindex = 13;
         chips.placeholder = 'rocks!';
         fixture.detectChanges();
@@ -46,7 +46,7 @@ describe('Chips', () => {
         const inputEl = fixture.debugElement.query(By.css('input'));
         expect(inputEl.nativeElement.className).toContain('Primeng ROCKS!');
         expect(inputEl.nativeElement.style.height).toEqual('300px');
-        expect(inputEl.nativeElement.id).toEqual('primeng');
+        expect(inputEl.nativeElement.id).toEqual('ng_prime');
         expect(inputEl.nativeElement.tabIndex).toEqual(13);
         expect(inputEl.nativeElement.placeholder).toEqual('rocks!');
     });
@@ -99,7 +99,7 @@ describe('Chips', () => {
         const onKeydownSpy = spyOn(chips, 'onKeyDown').and.callThrough();
         const updateMaxedOutSpy = spyOn(chips, 'updateMaxedOut').and.callThrough();
         const inputEl = fixture.debugElement.query(By.css('input'));
-        inputEl.nativeElement.value = 'primeng';
+        inputEl.nativeElement.value = 'ng_prime';
         fixture.detectChanges();
 
         let event = { code: 'Enter', target: inputEl.nativeElement, preventDefault() {} };
@@ -112,7 +112,7 @@ describe('Chips', () => {
         expect(onKeydownSpy).toHaveBeenCalled();
         expect(updateMaxedOutSpy).toHaveBeenCalled();
         expect(chips.value.length).toEqual(1);
-        expect(chips.value[0]).toEqual('primeng');
+        expect(chips.value[0]).toEqual('ng_prime');
         expect(inputEl.nativeElement.placeholder).toEqual('');
     });
 
@@ -120,22 +120,22 @@ describe('Chips', () => {
         fixture.detectChanges();
 
         const inputEl = fixture.debugElement.query(By.css('input'));
-        inputEl.nativeElement.value = 'primeng';
+        inputEl.nativeElement.value = 'ng_prime';
         fixture.detectChanges();
 
         let event = { code: 'Enter', target: inputEl.nativeElement, preventDefault() {} };
         chips.onKeyDown(event as KeyboardEvent);
         fixture.detectChanges();
 
-        inputEl.nativeElement.value = 'primeng';
+        inputEl.nativeElement.value = 'ng_prime';
         fixture.detectChanges();
 
         chips.onKeyDown(event as KeyboardEvent);
         fixture.detectChanges();
 
         expect(chips.value.length).toEqual(2);
-        expect(chips.value[0]).toEqual('primeng');
-        expect(chips.value[1]).toEqual('primeng');
+        expect(chips.value[0]).toEqual('ng_prime');
+        expect(chips.value[1]).toEqual('ng_prime');
     });
 
     it('should not add duplicate item', () => {
@@ -143,21 +143,21 @@ describe('Chips', () => {
         fixture.detectChanges();
 
         const inputEl = fixture.debugElement.query(By.css('input'));
-        inputEl.nativeElement.value = 'primeng';
+        inputEl.nativeElement.value = 'ng_prime';
         fixture.detectChanges();
 
         let event = { code: 'Enter', target: inputEl.nativeElement, preventDefault() {} };
         chips.onKeyDown(event as KeyboardEvent);
         fixture.detectChanges();
 
-        inputEl.nativeElement.value = 'primeng';
+        inputEl.nativeElement.value = 'ng_prime';
         fixture.detectChanges();
 
         chips.onKeyDown(event as KeyboardEvent);
         fixture.detectChanges();
 
         expect(chips.value.length).toEqual(1);
-        expect(chips.value[0]).toEqual('primeng');
+        expect(chips.value[0]).toEqual('ng_prime');
     });
 
     it('should not add duplicate item, case-insensitive', () => {
@@ -166,7 +166,7 @@ describe('Chips', () => {
         fixture.detectChanges();
 
         const inputEl = fixture.debugElement.query(By.css('input'));
-        inputEl.nativeElement.value = 'primeng';
+        inputEl.nativeElement.value = 'ng_prime';
         fixture.detectChanges();
 
         let event = { code: 'Enter', target: inputEl.nativeElement, preventDefault() {} };
@@ -180,7 +180,7 @@ describe('Chips', () => {
         fixture.detectChanges();
 
         expect(chips.value.length).toEqual(1);
-        expect(chips.value[0]).toEqual('primeng');
+        expect(chips.value[0]).toEqual('ng_prime');
     });
 
     it('should add item with tab key', () => {
@@ -191,7 +191,7 @@ describe('Chips', () => {
         const onKeydownSpy = spyOn(chips, 'onKeyDown').and.callThrough();
         const updateMaxedOutSpy = spyOn(chips, 'updateMaxedOut').and.callThrough();
         const inputEl = fixture.debugElement.query(By.css('input'));
-        inputEl.nativeElement.value = 'primeng';
+        inputEl.nativeElement.value = 'ng_prime';
         fixture.detectChanges();
 
         let event = { code: 'Tab', target: inputEl.nativeElement, preventDefault() {} };
@@ -202,7 +202,7 @@ describe('Chips', () => {
         expect(onKeydownSpy).toHaveBeenCalled();
         expect(updateMaxedOutSpy).toHaveBeenCalled();
         expect(chips.value.length).toEqual(1);
-        expect(chips.value[0]).toEqual('primeng');
+        expect(chips.value[0]).toEqual('ng_prime');
     });
 
     it('should add item with blur', () => {
@@ -212,7 +212,7 @@ describe('Chips', () => {
         const addItemSpy = spyOn(chips, 'addItem').and.callThrough();
         const updateMaxedOutSpy = spyOn(chips, 'updateMaxedOut').and.callThrough();
         const inputEl = fixture.debugElement.query(By.css('input'));
-        inputEl.nativeElement.value = 'primeng';
+        inputEl.nativeElement.value = 'ng_prime';
         fixture.detectChanges();
 
         inputEl.nativeElement.dispatchEvent(new Event('blur'));
@@ -221,7 +221,7 @@ describe('Chips', () => {
         expect(addItemSpy).toHaveBeenCalled();
         expect(updateMaxedOutSpy).toHaveBeenCalled();
         expect(chips.value.length).toEqual(1);
-        expect(chips.value[0]).toEqual('primeng');
+        expect(chips.value[0]).toEqual('ng_prime');
     });
 
     it('should change max', () => {
@@ -229,14 +229,14 @@ describe('Chips', () => {
         fixture.detectChanges();
 
         const inputEl = fixture.debugElement.query(By.css('input'));
-        inputEl.nativeElement.value = 'primeng';
+        inputEl.nativeElement.value = 'ng_prime';
         fixture.detectChanges();
 
         let event = { code: 'Enter', target: inputEl.nativeElement, preventDefault() {} };
         chips.onKeyDown(event as KeyboardEvent);
         fixture.detectChanges();
 
-        inputEl.nativeElement.value = 'primeng';
+        inputEl.nativeElement.value = 'ng_prime';
         fixture.detectChanges();
 
         chips.onKeyDown(event as KeyboardEvent);
@@ -247,8 +247,8 @@ describe('Chips', () => {
         fixture.detectChanges();
 
         expect(chips.value.length).toEqual(2);
-        expect(chips.value[0]).toEqual('primeng');
-        expect(chips.value[1]).toEqual('primeng');
+        expect(chips.value[0]).toEqual('ng_prime');
+        expect(chips.value[1]).toEqual('ng_prime');
         expect(inputEl.nativeElement.disabled).toEqual(true);
         event.code = 'Backspace';
         chips.onKeyDown(event as KeyboardEvent);
@@ -267,7 +267,7 @@ describe('Chips', () => {
     });
 
     it('should delete item', () => {
-        chips.value = ['primeng'];
+        chips.value = ['ng_prime'];
         const inputEl = fixture.debugElement.query(By.css('input'));
 
         fixture.detectChanges();
@@ -275,7 +275,7 @@ describe('Chips', () => {
         let data;
         chips.onRemove.subscribe((value) => (data = value));
         expect(chips.value.length).toEqual(1);
-        expect(chips.value[0]).toEqual('primeng');
+        expect(chips.value[0]).toEqual('ng_prime');
         fixture.detectChanges();
 
         // let event = { which: 8, preventDefault() {} };
@@ -291,13 +291,13 @@ describe('Chips', () => {
     });
 
     it('should delete item with icon', () => {
-        chips.value = ['primeng'];
+        chips.value = ['ng_prime'];
         fixture.detectChanges();
 
         let data;
         chips.onRemove.subscribe((value) => (data = value));
         expect(chips.value.length).toEqual(1);
-        expect(chips.value[0]).toEqual('primeng');
+        expect(chips.value[0]).toEqual('ng_prime');
         fixture.detectChanges();
 
         const tokenIconEl = fixture.debugElement.query(By.css('.p-chips-token-icon'));
@@ -310,11 +310,11 @@ describe('Chips', () => {
     });
 
     it('should not delete item', () => {
-        chips.value = ['primeng'];
+        chips.value = ['ng_prime'];
         fixture.detectChanges();
 
         expect(chips.value.length).toEqual(1);
-        expect(chips.value[0]).toEqual('primeng');
+        expect(chips.value[0]).toEqual('ng_prime');
         fixture.detectChanges();
 
         chips.disabled = true;
@@ -325,25 +325,25 @@ describe('Chips', () => {
         fixture.detectChanges();
 
         expect(chips.value.length).toEqual(1);
-        expect(chips.value[0]).toEqual('primeng');
+        expect(chips.value[0]).toEqual('ng_prime');
     });
 
     it('should use field varaible', () => {
         chips.field = 'name';
-        chips.value = [{ name: 'primeng' }];
+        chips.value = [{ name: 'ng_prime' }];
         fixture.detectChanges();
 
         const labelEl = fixture.debugElement.query(By.css('.p-chips-token-label'));
-        expect(labelEl.nativeElement.textContent).toEqual('primeng');
-        expect(chips.value[0].name).toEqual('primeng');
+        expect(labelEl.nativeElement.textContent).toEqual('ng_prime');
+        expect(chips.value[0].name).toEqual('ng_prime');
     });
 
     it('should use field varaible (2)', () => {
-        chips.field = 'name.primeng';
+        chips.field = 'name.ng_prime';
         chips.value = [
             {
                 name: {
-                    primeng: 'rocks'
+                    ng_prime: 'rocks'
                 }
             }
         ];
@@ -351,6 +351,6 @@ describe('Chips', () => {
 
         const labelEl = fixture.debugElement.query(By.css('.p-chips-token-label'));
         expect(labelEl.nativeElement.textContent).toEqual('rocks');
-        expect(chips.value[0].name.primeng).toEqual('rocks');
+        expect(chips.value[0].name.ng_prime).toEqual('rocks');
     });
 });

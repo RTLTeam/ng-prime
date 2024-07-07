@@ -24,7 +24,7 @@ import { ProductService } from '@service/productservice';
                         <div class="col-12" *ngFor="let item of products; let first = first" class="col-12">
                             <div class="flex flex-column sm:flex-row sm:align-items-center p-4 gap-3" [ngClass]="{ 'border-top-1 surface-border': !first }">
                                 <div class="md:w-10rem relative">
-                                    <img class="block xl:block mx-auto border-round w-full" [src]="'https://primefaces.org/cdn/primeng/images/demo/product/' + item.image" [alt]="item.name" />
+                                    <img class="block xl:block mx-auto border-round w-full" [src]="'https://primefaces.org/cdn/ng_prime/images/demo/product/' + item.image" [alt]="item.name" />
                                     <p-tag [value]="item.inventoryStatus" [severity]="getSeverity(item)" class="absolute" [style.left.px]="4" [style.top.px]="4" />
                                 </div>
                                 <div class="flex flex-column md:flex-row justify-content-between md:align-items-center flex-1 gap-4">
@@ -58,7 +58,7 @@ import { ProductService } from '@service/productservice';
                             <div class="p-4 border-1 surface-border surface-card border-round flex flex-column">
                                 <div class="surface-50 flex justify-content-center border-round p-3">
                                     <div class="relative mx-auto">
-                                        <img class="border-round w-full" [src]="'https://primefaces.org/cdn/primeng/images/demo/product/' + product.image" [alt]="product.name" style="max-width: 300px;" />
+                                        <img class="border-round w-full" [src]="'https://primefaces.org/cdn/ng_prime/images/demo/product/' + product.image" [alt]="product.name" style="max-width: 300px;" />
                                         <p-tag [value]="product.inventoryStatus" [severity]="getSeverity(product)" class="absolute" [style.left.px]="4" [style.top.px]="4" />
                                     </div>
                                 </div>
@@ -131,7 +131,7 @@ export class LayoutDoc {
             <div class="col-12" *ngFor="let item of products; let first = first" class="col-12">
                 <div class="flex flex-column sm:flex-row sm:align-items-center p-4 gap-3" [ngClass]="{ 'border-top-1 surface-border': !first }">
                     <div class="md:w-10rem relative">
-                        <img class="block xl:block mx-auto border-round w-full" [src]="'https://primefaces.org/cdn/primeng/images/demo/product/' + item.image" [alt]="item.name" />
+                        <img class="block xl:block mx-auto border-round w-full" [src]="'https://primefaces.org/cdn/ng_prime/images/demo/product/' + item.image" [alt]="item.name" />
                         <p-tag [value]="item.inventoryStatus" [severity]="getSeverity(item)" class="absolute" [style.left.px]="4" [style.top.px]="4" />
                     </div>
                     <div class="flex flex-column md:flex-row justify-content-between md:align-items-center flex-1 gap-4">
@@ -165,7 +165,7 @@ export class LayoutDoc {
                 <div class="p-4 border-1 surface-border surface-card border-round flex flex-column">
                     <div class="surface-50 flex justify-content-center border-round p-3">
                         <div class="relative mx-auto">
-                            <img class="border-round w-full" [src]="'https://primefaces.org/cdn/primeng/images/demo/product/' + product.image" [alt]="product.name" style="max-width: 300px;" />
+                            <img class="border-round w-full" [src]="'https://primefaces.org/cdn/ng_prime/images/demo/product/' + product.image" [alt]="product.name" style="max-width: 300px;" />
                             <p-tag [value]="product.inventoryStatus" [severity]="getSeverity(product)" class="absolute" [style.left.px]="4" [style.top.px]="4" />
                         </div>
                     </div>
@@ -208,7 +208,7 @@ export class LayoutDoc {
                     <div class="col-12" *ngFor="let item of products; let first = first" class="col-12">
                         <div class="flex flex-column sm:flex-row sm:align-items-center p-4 gap-3" [ngClass]="{ 'border-top-1 surface-border': !first }">
                             <div class="md:w-10rem relative">
-                                <img class="block xl:block mx-auto border-round w-full" [src]="'https://primefaces.org/cdn/primeng/images/demo/product/' + item.image" [alt]="item.name" />
+                                <img class="block xl:block mx-auto border-round w-full" [src]="'https://primefaces.org/cdn/ng_prime/images/demo/product/' + item.image" [alt]="item.name" />
                                 <p-tag [value]="item.inventoryStatus" [severity]="getSeverity(item)" class="absolute" [style.left.px]="4" [style.top.px]="4" />
                             </div>
                             <div class="flex flex-column md:flex-row justify-content-between md:align-items-center flex-1 gap-4">
@@ -242,7 +242,7 @@ export class LayoutDoc {
                         <div class="p-4 border-1 surface-border surface-card border-round flex flex-column">
                             <div class="surface-50 flex justify-content-center border-round p-3">
                                 <div class="relative mx-auto">
-                                    <img class="border-round w-full" [src]="'https://primefaces.org/cdn/primeng/images/demo/product/' + product.image" [alt]="product.name" style="max-width: 300px;" />
+                                    <img class="border-round w-full" [src]="'https://primefaces.org/cdn/ng_prime/images/demo/product/' + product.image" [alt]="product.name" style="max-width: 300px;" />
                                     <p-tag [value]="product.inventoryStatus" [severity]="getSeverity(product)"></p-tag>
                                 </div>
                             </div>
@@ -277,10 +277,10 @@ export class LayoutDoc {
         typescript: `import { Component } from '@angular/core';
 import { Product } from '@domain/product';
 import { ProductService } from '@service/productservice';
-import { DataViewModule } from 'primeng/dataview';
-import { TagModule } from 'primeng/tag';
-import { RatingModule } from 'primeng/rating';
-import { ButtonModule } from 'primeng/button';
+import { DataViewModule } from 'ng_prime/dataview';
+import { TagModule } from 'ng_prime/tag';
+import { RatingModule } from 'ng_prime/rating';
+import { ButtonModule } from 'ng_prime/button';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -325,7 +325,7 @@ export class DataViewLayoutDemo {
 }`,
 
         data: `
-/* ProductService */        
+/* ProductService */
 {
     id: '1000',
     code: 'f230fh0g3',

@@ -294,7 +294,7 @@
   color: #7254f3;
 }
 
-@layer primeng {
+@layer ng_prime {
   * {
     box-sizing: border-box;
   }
@@ -6375,7 +6375,7 @@
   }
 }
 /* Customizations to the designer theme should be defined here */
-@layer primeng {
+@layer ng_prime {
   .p-datepicker .p-datepicker-header .p-datepicker-prev,
 .p-datepicker .p-datepicker-header .p-datepicker-next {
     color: #ffffff;

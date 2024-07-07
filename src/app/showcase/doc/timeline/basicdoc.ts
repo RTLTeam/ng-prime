@@ -48,7 +48,7 @@ export class BasicDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { TimelineModule } from 'primeng/timeline';
+import { TimelineModule } from 'ng_prime/timeline';
 
 @Component({
     selector: 'timeline-basic-demo',

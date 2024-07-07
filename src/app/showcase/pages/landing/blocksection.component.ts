@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
             <div class="section-header">PrimeBlocks</div>
             <p class="section-detail">400+ ready to copy-paste UI blocks to build spectacular applications in no time.</p>
             <div class="flex justify-content-center mt-4">
-                <a href="https://blocks.primeng.org" target="_blank" class="font-semibold p-3 border-round flex align-items-center linkbox active" style="z-index: 99">
+                <a href="https://blocks.ng_prime.org" target="_blank" class="font-semibold p-3 border-round flex align-items-center linkbox active" style="z-index: 99">
                     <span>Explore All</span>
                     <i class="pi pi-arrow-right ml-2"></i>
                 </a>
@@ -20,7 +20,7 @@ import { Component } from '@angular/core';
                     <div class="prime-block flex align-self-stretch p-1">
                         <div class="block-sidebar w-1 p-3">
                             <div class="logo">
-                                <img src="https://primefaces.org/cdn/primeng/images/landing/blocks/logo-1.svg" alt="block logo" width="20" height="18" />
+                                <img src="https://primefaces.org/cdn/ng_prime/images/landing/blocks/logo-1.svg" alt="block logo" width="20" height="18" />
                             </div>
                             <div class="sidebar-menu mt-5">
                                 <div class="bar w-8 my-3"></div>
@@ -113,7 +113,7 @@ import { Component } from '@angular/core';
                     <div class="prime-block p-1 flex align-self-stretch flex-column">
                         <div class="block-header py-3 px-4 flex justify-content-between align-items-center">
                             <div class="logo pr-5">
-                                <img width="20" height="18" src="https://primefaces.org/cdn/primeng/images/landing/blocks/logo-1.svg" alt="block logo" />
+                                <img width="20" height="18" src="https://primefaces.org/cdn/ng_prime/images/landing/blocks/logo-1.svg" alt="block logo" />
                             </div>
                             <div class="flex-auto sidebar-menu flex">
                                 <div class="bar w-2rem mx-2"></div>
@@ -155,7 +155,7 @@ import { Component } from '@angular/core';
                     <div class="prime-block flex align-self-stretch p-1">
                         <div class="block-sidebar p-3">
                             <div class="logo">
-                                <img width="14" height="16" src="https://primefaces.org/cdn/primeng/images/landing/blocks/logo-2.svg" alt="block logo" />
+                                <img width="14" height="16" src="https://primefaces.org/cdn/ng_prime/images/landing/blocks/logo-2.svg" alt="block logo" />
                             </div>
                             <div class="sidebar-menu mt-5">
                                 <div class="circle my-3"></div>
@@ -221,7 +221,7 @@ import { Component } from '@angular/core';
                     <div class="prime-block flex align-self-stretch p-1">
                         <div class="block-sidebar w-1 p-3">
                             <div class="logo">
-                                <img src="https://primefaces.org/cdn/primeng/images/landing/blocks/logo-1.svg" width="20" height="18" alt="block logo" />
+                                <img src="https://primefaces.org/cdn/ng_prime/images/landing/blocks/logo-1.svg" width="20" height="18" alt="block logo" />
                             </div>
                             <div class="sidebar-menu mt-5">
                                 <div class="bar w-8 my-3"></div>
@@ -285,7 +285,7 @@ import { Component } from '@angular/core';
                     <div class="prime-block flex align-self-stretch p-1">
                         <div class="block-sidebar p-3">
                             <div class="logo">
-                                <img src="https://primefaces.org/cdn/primeng/images/landing/blocks/logo-2.svg" width="14" height="16" alt="block logo" />
+                                <img src="https://primefaces.org/cdn/ng_prime/images/landing/blocks/logo-2.svg" width="14" height="16" alt="block logo" />
                             </div>
                             <div class="sidebar-menu mt-5">
                                 <div class="circle my-3"></div>
@@ -348,7 +348,7 @@ import { Component } from '@angular/core';
                     <div class="prime-block p-1 flex align-self-stretch flex-column">
                         <div class="block-header py-3 px-4 flex justify-content-between align-items-center">
                             <div class="logo pr-5">
-                                <img src="https://primefaces.org/cdn/primeng/images/landing/blocks/logo-1.svg" width="20" height="18" alt="block logo" />
+                                <img src="https://primefaces.org/cdn/ng_prime/images/landing/blocks/logo-1.svg" width="20" height="18" alt="block logo" />
                             </div>
                             <div class="flex-auto sidebar-menu flex">
                                 <div class="bar w-2rem mx-2"></div>
@@ -363,7 +363,7 @@ import { Component } from '@angular/core';
                             <div class="block-main h-full flex justify-content-center align-items-center flex-column">
                                 <div class="block-item block-item-active animation-2 mx-3 w-8rem text-center flex flex-column align-items-center overflow-visible">
                                     <div class="-mt-4">
-                                        <img src="https://primefaces.org/cdn/primeng/images/landing/blocks/question.svg" width="24" height="24" alt="question mark" />
+                                        <img src="https://primefaces.org/cdn/ng_prime/images/landing/blocks/question.svg" width="24" height="24" alt="question mark" />
                                     </div>
                                     <div class="bar w-2rem mt-2"></div>
                                     <div class="bar w-6rem mt-2"></div>

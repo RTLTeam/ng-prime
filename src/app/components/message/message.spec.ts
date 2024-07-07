@@ -2,10 +2,10 @@ import { TestBed, ComponentFixture } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { UIMessage } from './message';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { InfoCircleIcon } from 'primeng/icons/infocircle';
-import { ExclamationTriangleIcon } from 'primeng/icons/exclamationtriangle';
-import { TimesCircleIcon } from 'primeng/icons/timescircle';
-import { CheckIcon } from 'primeng/icons/check';
+import { InfoCircleIcon } from 'ng_prime/icons/infocircle';
+import { ExclamationTriangleIcon } from 'ng_prime/icons/exclamationtriangle';
+import { TimesCircleIcon } from 'ng_prime/icons/timescircle';
+import { CheckIcon } from 'ng_prime/icons/check';
 
 describe('UIMessage', () => {
     let message: UIMessage;

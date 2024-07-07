@@ -17,7 +17,7 @@
         "skipLibCheck": true,
         "types": [],
         "paths": {
-            "primeng/*": ["src/app/components/*/public_api"]
+            "ng_prime/*": ["src/app/components/*/public_api"]
         }
     },
     "angularCompilerOptions": {
@@ -27,8 +27,8 @@
         "enableI18nLegacyMessageIdFormat": false,
         "strictInjectionParameters": true,
         "strictInputAccessModifiers": true,
-        "flatModuleOutFile": "primeng.js",
-        "flatModuleId": "primeng"
+        "flatModuleOutFile": "ng_prime.js",
+        "flatModuleId": "ng_prime"
     },
     "files": [
         "./public_api.ts"

@@ -1,6 +1,6 @@
 import { TestBed, ComponentFixture } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
-import { OrderListModule, OrderList } from 'primeng/orderlist';
+import { OrderListModule, OrderList } from 'ng_prime/orderlist';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { Component } from '@angular/core';
 
@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
     template: `<p-orderList [value]="cars">
         <ng-template let-car pTemplate="item">
             <div>
-                <img src="https://primefaces.org/cdn/primeng/images/demo/car/{{ car.brand }}.png" style="display:inline-block;margin:2px 0 2px 2px" width="48" />
+                <img src="https://primefaces.org/cdn/ng_prime/images/demo/car/{{ car.brand }}.png" style="display:inline-block;margin:2px 0 2px 2px" width="48" />
                 <div style="font-size:14px;float:right;margin:15px 5px 0 0">{{ car.brand }} - {{ car.year }} - {{ car.color }}</div>
             </div>
         </ng-template>

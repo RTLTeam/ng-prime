@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, afterNextRender } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { StyleClassModule } from 'primeng/styleclass';
+import { StyleClassModule } from 'ng_prime/styleclass';
 import News from '../../data/news.json';
 import { AppConfigService } from '@service/appconfigservice';
 
@@ -13,7 +13,7 @@ import { AppConfigService } from '@service/appconfigservice';
     imports: [CommonModule, FormsModule, StyleClassModule]
 })
 export class AppNewsComponent {
-    storageKey: string = 'primeng';
+    storageKey: string = 'ng_prime';
 
     announcement: any;
 

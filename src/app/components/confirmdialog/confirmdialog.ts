@@ -25,14 +25,14 @@ import {
     booleanAttribute,
     numberAttribute
 } from '@angular/core';
-import { ConfirmEventType, Confirmation, ConfirmationService, Footer, PrimeNGConfig, PrimeTemplate, SharedModule, TranslationKeys } from 'primeng/api';
-import { ButtonModule } from 'primeng/button';
-import { DomHandler } from 'primeng/dom';
-import { CheckIcon } from 'primeng/icons/check';
-import { TimesIcon } from 'primeng/icons/times';
-import { RippleModule } from 'primeng/ripple';
-import { Nullable } from 'primeng/ts-helpers';
-import { UniqueComponentId, ZIndexUtils } from 'primeng/utils';
+import { ConfirmEventType, Confirmation, ConfirmationService, Footer, PrimeNGConfig, PrimeTemplate, SharedModule, TranslationKeys } from 'ng_prime/api';
+import { ButtonModule } from 'ng_prime/button';
+import { DomHandler } from 'ng_prime/dom';
+import { CheckIcon } from 'ng_prime/icons/check';
+import { TimesIcon } from 'ng_prime/icons/times';
+import { RippleModule } from 'ng_prime/ripple';
+import { Nullable } from 'ng_prime/ts-helpers';
+import { UniqueComponentId, ZIndexUtils } from 'ng_prime/utils';
 import { Subscription } from 'rxjs';
 
 const showAnimation = animation([style({ transform: '{{transform}}', opacity: 0 }), animate('{{transition}}', style({ transform: 'none', opacity: 1 }))]);

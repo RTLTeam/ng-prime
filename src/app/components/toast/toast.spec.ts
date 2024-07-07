@@ -3,10 +3,10 @@ import { By } from '@angular/platform-browser';
 import { Toast, ToastItem } from './toast';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { Component } from '@angular/core';
-import { MessageService } from 'primeng/api';
-import { ExclamationTriangleIcon } from 'primeng/icons/exclamationtriangle';
-import { CheckIcon } from 'primeng/icons/check';
-import { TimesIcon } from 'primeng/icons/times';
+import { MessageService } from 'ng_prime/api';
+import { ExclamationTriangleIcon } from 'ng_prime/icons/exclamationtriangle';
+import { CheckIcon } from 'ng_prime/icons/check';
+import { TimesIcon } from 'ng_prime/icons/times';
 
 @Component({
     template: ` <p-toast></p-toast> `,

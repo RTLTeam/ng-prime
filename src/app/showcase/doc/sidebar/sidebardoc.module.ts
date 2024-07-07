@@ -2,9 +2,9 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { SidebarModule } from 'primeng/sidebar';
-import { ButtonModule } from 'primeng/button';
-import { AvatarModule } from 'primeng/avatar';
+import { SidebarModule } from 'ng_prime/sidebar';
+import { ButtonModule } from 'ng_prime/button';
+import { AvatarModule } from 'ng_prime/avatar';
 import { AppDocModule } from '@layout/doc/app.doc.module';
 import { AppCodeModule } from '@layout/doc/app.code.component';
 import { BasicDoc } from './basicdoc';
@@ -16,8 +16,8 @@ import { FullScreenDoc } from './fullscreendoc';
 import { SizeDoc } from './sizedoc';
 import { HeadlessDoc } from './headlessdoc';
 import { AccessibilityDoc } from './accessibilitydoc';
-import { RippleModule } from 'primeng/ripple';
-import { StyleClassModule } from 'primeng/styleclass';
+import { RippleModule } from 'ng_prime/ripple';
+import { StyleClassModule } from 'ng_prime/styleclass';
 
 @NgModule({
     imports: [CommonModule, FormsModule, AppCodeModule, RouterModule, SidebarModule, ButtonModule, AppDocModule, AvatarModule, RippleModule, StyleClassModule],

@@ -16,7 +16,7 @@ interface AutoCompleteCompleteEvent {
             <p-autoComplete [(ngModel)]="selectedCountryAdvanced" [suggestions]="filteredCountries" (completeMethod)="filterCountry($event)" field="name" placeholder="Search">
                 <ng-template let-country pTemplate="item">
                     <div class="flex align-items-center gap-2">
-                        <img src="https://primefaces.org/cdn/primeng/images/demo/flag/flag_placeholder.png" [class]="'flag flag-' + country.code.toLowerCase()" style="width: 18px" />
+                        <img src="https://primefaces.org/cdn/ng_prime/images/demo/flag/flag_placeholder.png" [class]="'flag flag-' + country.code.toLowerCase()" style="width: 18px" />
                         <div>{{ country.name }}</div>
                     </div>
                 </ng-template>
@@ -53,16 +53,16 @@ export class TemplateDoc {
     }
 
     code: Code = {
-        basic: `<p-autoComplete 
-    [(ngModel)]="selectedCountryAdvanced" 
-    [suggestions]="filteredCountries" 
-    (completeMethod)="filterCountry($event)" 
+        basic: `<p-autoComplete
+    [(ngModel)]="selectedCountryAdvanced"
+    [suggestions]="filteredCountries"
+    (completeMethod)="filterCountry($event)"
     field="name">
         <ng-template let-country pTemplate="item">
             <div class="flex align-items-center gap-2">
-                <img 
-                    src="https://primefaces.org/cdn/primeng/images/demo/flag/flag_placeholder.png" 
-                    [class]="'flag flag-' + country.code.toLowerCase()" 
+                <img
+                    src="https://primefaces.org/cdn/ng_prime/images/demo/flag/flag_placeholder.png"
+                    [class]="'flag flag-' + country.code.toLowerCase()"
                     style="width: 18px" />
                 <div>{{ country.name }}</div>
             </div>
@@ -70,16 +70,16 @@ export class TemplateDoc {
 </p-autoComplete>`,
 
         html: `<div class="card flex justify-content-center">
-    <p-autoComplete 
-    [(ngModel)]="selectedCountryAdvanced" 
-    [suggestions]="filteredCountries" 
-    (completeMethod)="filterCountry($event)" 
+    <p-autoComplete
+    [(ngModel)]="selectedCountryAdvanced"
+    [suggestions]="filteredCountries"
+    (completeMethod)="filterCountry($event)"
     field="name">
         <ng-template let-country pTemplate="item">
             <div class="flex align-items-center gap-2">
-                <img 
-                    src="https://primefaces.org/cdn/primeng/images/demo/flag/flag_placeholder.png" 
-                    [class]="'flag flag-' + country.code.toLowerCase()" 
+                <img
+                    src="https://primefaces.org/cdn/ng_prime/images/demo/flag/flag_placeholder.png"
+                    [class]="'flag flag-' + country.code.toLowerCase()"
                     style="width: 18px" />
                 <div>{{ country.name }}</div>
             </div>
@@ -88,9 +88,9 @@ export class TemplateDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { SelectItemGroup } from 'primeng/api';
+import { SelectItemGroup } from 'ng_prime/api';
 import { CountryService } from '@service/countryservice';
-import { AutoCompleteModule } from 'primeng/autocomplete';
+import { AutoCompleteModule } from 'ng_prime/autocomplete';
 import { FormsModule } from '@angular/forms';
 
 interface AutoCompleteCompleteEvent {
@@ -110,7 +110,7 @@ export class AutocompleteTemplateDemo {
 
     selectedCountryAdvanced: any[] | undefined;
 
-    filteredCountries: any[] | undefined; 
+    filteredCountries: any[] | undefined;
 
     constructor(private countryService: CountryService) {}
 

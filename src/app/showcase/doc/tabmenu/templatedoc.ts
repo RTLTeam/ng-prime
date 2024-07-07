@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuItem } from 'primeng/api';
+import { MenuItem } from 'ng_prime/api';
 import { Code } from '@domain/code';
 
 @Component({
@@ -12,7 +12,7 @@ import { Code } from '@domain/code';
             <p-tabMenu [model]="items" [activeItem]="activeItem">
                 <ng-template pTemplate="item" let-item>
                     <a pRipple class="flex align-items-center gap-2 p-menuitem-link">
-                        <img [alt]="item.name" [src]="'https://primefaces.org/cdn/primeng/images/demo/avatar/' + item.image" style="width: 32px" />
+                        <img [alt]="item.name" [src]="'https://primefaces.org/cdn/ng_prime/images/demo/avatar/' + item.image" style="width: 32px" />
                         <span class="font-bold">{{ item.name }}</span>
                     </a>
                 </ng-template>
@@ -39,9 +39,9 @@ export class TemplateDoc implements OnInit {
         basic: `<p-tabMenu [model]="items" [activeItem]="activeItem">
     <ng-template pTemplate="item" let-item>
         <a pRipple class="flex align-items-center gap-2 p-menuitem-link">
-            <img 
-                [alt]="item.name" 
-                [src]="'https://primefaces.org/cdn/primeng/images/demo/avatar/' + item.image" 
+            <img
+                [alt]="item.name"
+                [src]="'https://primefaces.org/cdn/ng_prime/images/demo/avatar/' + item.image"
                 style="width: 32px" />
             <span class="font-bold">
                 {{ item.name }}
@@ -54,9 +54,9 @@ export class TemplateDoc implements OnInit {
     <p-tabMenu [model]="items" [activeItem]="activeItem">
         <ng-template pTemplate="item" let-item>
             <a pRipple class="flex align-items-center gap-2 p-menuitem-link">
-                <img 
-                    [alt]="item.name" 
-                    [src]="'https://primefaces.org/cdn/primeng/images/demo/avatar/' + item.image" 
+                <img
+                    [alt]="item.name"
+                    [src]="'https://primefaces.org/cdn/ng_prime/images/demo/avatar/' + item.image"
                     style="width: 32px" />
                 <span class="font-bold">
                     {{ item.name }}
@@ -67,8 +67,8 @@ export class TemplateDoc implements OnInit {
 </div>`,
 
         typescript: `import { Component, OnInit } from '@angular/core';
-import { TabMenuModule } from 'primeng/tabmenu';
-import { RippleModule } from 'primeng/ripple';
+import { TabMenuModule } from 'ng_prime/tabmenu';
+import { RippleModule } from 'ng_prime/ripple';
 
 @Component({
     selector: 'tab-menu-template-demo',
@@ -97,7 +97,7 @@ export class TabMenuTemplateDemo implements OnInit {
         module: `
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { TabMenuModule } from 'primeng/tabmenu';
+import { TabMenuModule } from 'ng_prime/tabmenu';
 import { TabMenuDemo } from './tabmenudemo';
 
 @NgModule({

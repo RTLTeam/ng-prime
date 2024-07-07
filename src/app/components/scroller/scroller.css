@@ -1,4 +1,4 @@
-@layer primeng {
+@layer ng_prime {
     p-scroller {
         flex: 1;
         outline: 0 none;

@@ -7,7 +7,7 @@ var gulp = require('gulp'),
     flatten = require('gulp-flatten');
 
 gulp.task('build-css', function () {
-    return gulp.src(['src/app/components/common/common.css', 'src/app/components/**/*.css']).pipe(concat('primeng.css')).pipe(gulp.dest('dist/resources'));
+    return gulp.src(['src/app/components/common/common.css', 'src/app/components/**/*.css']).pipe(concat('ng_prime.css')).pipe(gulp.dest('dist/ng_prime/resources'));
 });
 
 gulp.task('build-css-prod', function () {
@@ -25,28 +25,28 @@ gulp.task('build-css-prod', function () {
             'src/app/components/ripple/ripple.css',
             'src/app/components/tooltip/tooltip.css'
         ])
-        .pipe(concat('primeng.css'))
-        .pipe(gulp.dest('dist/resources'))
+        .pipe(concat('ng_prime.css'))
+        .pipe(gulp.dest('dist/ng_prime/resources'))
         .pipe(uglifycss({ uglyComments: true }))
-        .pipe(rename('primeng.min.css'))
-        .pipe(gulp.dest('dist/resources'));
+        .pipe(rename('ng_prime.min.css'))
+        .pipe(gulp.dest('dist/ng_prime/resources'));
 });
 
 gulp.task('copy-component-css', function () {
-    return gulp.src(['src/app/components/**/*.css', 'src/app/components/**/images/*.png', 'src/app/components/**/images/*.gif']).pipe(gulp.dest('dist/resources/components'));
+    return gulp.src(['src/app/components/**/*.css', 'src/app/components/**/images/*.png', 'src/app/components/**/images/*.gif']).pipe(gulp.dest('dist/ng_prime/resources/components'));
 });
 
 gulp.task('images', function () {
-    return gulp.src(['src/app/components/**/images/*.png', 'src/app/components/**/images/*.gif']).pipe(flatten()).pipe(gulp.dest('dist/resources/images'));
+    return gulp.src(['src/app/components/**/images/*.png', 'src/app/components/**/images/*.gif']).pipe(flatten()).pipe(gulp.dest('dist/ng_prime/resources/images'));
 });
 
 gulp.task('themes', function () {
-    return gulp.src(['src/assets/components/themes/**/*']).pipe(gulp.dest('dist/resources/themes'));
+    return gulp.src(['src/assets/components/themes/**/*']).pipe(gulp.dest('dist/ng_prime/resources/themes'));
 });
 
 //Copy readme
 gulp.task('readme', function () {
-    return gulp.src(['README.md']).pipe(gulp.dest('dist'));
+    return gulp.src(['README.md']).pipe(gulp.dest('dist/ng_prime'));
 });
 
 //Building project with run sequence

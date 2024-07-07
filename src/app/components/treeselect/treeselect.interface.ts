@@ -1,5 +1,5 @@
 import { TemplateRef } from '@angular/core';
-import { TreeNode } from 'primeng/api';
+import { TreeNode } from 'ng_prime/api';
 import { TreeSelect } from './treeselect';
 /**
  * Custom node collapse event.

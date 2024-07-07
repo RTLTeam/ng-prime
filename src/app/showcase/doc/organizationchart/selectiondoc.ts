@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { TreeNode } from 'primeng/api';
+import { TreeNode } from 'ng_prime/api';
 import { Code } from '@domain/code';
 
 @Component({
@@ -32,7 +32,7 @@ export class SelectionDoc {
             expanded: true,
             type: 'person',
             data: {
-                image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
+                image: 'https://primefaces.org/cdn/ng_prime/images/demo/avatar/amyelsner.png',
                 name: 'Amy Elsner',
                 title: 'CEO'
             },
@@ -41,7 +41,7 @@ export class SelectionDoc {
                     expanded: true,
                     type: 'person',
                     data: {
-                        image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/annafali.png',
+                        image: 'https://primefaces.org/cdn/ng_prime/images/demo/avatar/annafali.png',
                         name: 'Anna Fali',
                         title: 'CMO'
                     },
@@ -58,7 +58,7 @@ export class SelectionDoc {
                     expanded: true,
                     type: 'person',
                     data: {
-                        image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/stephenshaw.png',
+                        image: 'https://primefaces.org/cdn/ng_prime/images/demo/avatar/stephenshaw.png',
                         name: 'Stephen Shaw',
                         title: 'CTO'
                     },
@@ -76,15 +76,15 @@ export class SelectionDoc {
     ];
 
     code: Code = {
-        basic: `<p-organizationChart 
-    [value]="data" 
-    selectionMode="multiple" 
-    [(selection)]="selectedNodes" 
+        basic: `<p-organizationChart
+    [value]="data"
+    selectionMode="multiple"
+    [(selection)]="selectedNodes"
     [collapsible]="true">
         <ng-template let-node pTemplate="person">
             <div class="p-2 text-center">
-                <img 
-                    [src]="node.data.image" 
+                <img
+                    [src]="node.data.image"
                     class="mb-3 w-3rem h-3rem" />
                 <div class="font-bold">
                     {{ node.data.name }}
@@ -97,15 +97,15 @@ export class SelectionDoc {
 </p-organizationChart>`,
 
         html: `<div class="card flex justify-content-center overflow-x-auto">
-    <p-organizationChart 
-        [value]="data" 
-        selectionMode="multiple" 
-        [(selection)]="selectedNodes" 
+    <p-organizationChart
+        [value]="data"
+        selectionMode="multiple"
+        [(selection)]="selectedNodes"
         [collapsible]="true">
             <ng-template let-node pTemplate="person">
                 <div class="p-2 text-center">
-                    <img 
-                        [src]="node.data.image" 
+                    <img
+                        [src]="node.data.image"
                         class="mb-3 w-3rem h-3rem" />
                     <div class="font-bold">
                         {{ node.data.name }}
@@ -119,8 +119,8 @@ export class SelectionDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { TreeNode } from 'primeng/api';
-import { OrganizationChartModule } from 'primeng/organizationchart';
+import { TreeNode } from 'ng_prime/api';
+import { OrganizationChartModule } from 'ng_prime/organizationchart';
 
 @Component({
     selector: 'organization-chart-selection-demo',
@@ -136,7 +136,7 @@ export class OrganizationChartSelectionDemo {
             expanded: true,
             type: 'person',
             data: {
-                image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
+                image: 'https://primefaces.org/cdn/ng_prime/images/demo/avatar/amyelsner.png',
                 name: 'Amy Elsner',
                 title: 'CEO'
             },
@@ -145,7 +145,7 @@ export class OrganizationChartSelectionDemo {
                     expanded: true,
                     type: 'person',
                     data: {
-                        image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/annafali.png',
+                        image: 'https://primefaces.org/cdn/ng_prime/images/demo/avatar/annafali.png',
                         name: 'Anna Fali',
                         title: 'CMO'
                     },
@@ -162,7 +162,7 @@ export class OrganizationChartSelectionDemo {
                     expanded: true,
                     type: 'person',
                     data: {
-                        image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/stephenshaw.png',
+                        image: 'https://primefaces.org/cdn/ng_prime/images/demo/avatar/stephenshaw.png',
                         name: 'Stephen Shaw',
                         title: 'CTO'
                     },

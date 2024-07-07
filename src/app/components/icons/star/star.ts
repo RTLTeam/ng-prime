@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { BaseIcon } from 'primeng/baseicon';
-import { UniqueComponentId } from 'primeng/utils';
+import { BaseIcon } from 'ng_prime/baseicon';
+import { UniqueComponentId } from 'ng_prime/utils';
 
 @Component({
     selector: 'StarIcon',

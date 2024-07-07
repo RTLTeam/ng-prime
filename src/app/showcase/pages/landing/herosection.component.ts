@@ -2,18 +2,18 @@ import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { ChangeDetectorRef, Component, Inject, OnDestroy, OnInit, PLATFORM_ID } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { MenuItem, SelectItem } from 'primeng/api';
-import { BadgeModule } from 'primeng/badge';
-import { CalendarModule } from 'primeng/calendar';
-import { ChartModule } from 'primeng/chart';
-import { ChipModule } from 'primeng/chip';
-import { DropdownModule } from 'primeng/dropdown';
-import { InputNumberModule } from 'primeng/inputnumber';
-import { InputSwitchModule } from 'primeng/inputswitch';
-import { RadioButtonModule } from 'primeng/radiobutton';
-import { SelectButtonModule } from 'primeng/selectbutton';
-import { SliderModule } from 'primeng/slider';
-import { TabMenuModule } from 'primeng/tabmenu';
+import { MenuItem, SelectItem } from 'ng_prime/api';
+import { BadgeModule } from 'ng_prime/badge';
+import { CalendarModule } from 'ng_prime/calendar';
+import { ChartModule } from 'ng_prime/chart';
+import { ChipModule } from 'ng_prime/chip';
+import { DropdownModule } from 'ng_prime/dropdown';
+import { InputNumberModule } from 'ng_prime/inputnumber';
+import { InputSwitchModule } from 'ng_prime/inputswitch';
+import { RadioButtonModule } from 'ng_prime/radiobutton';
+import { SelectButtonModule } from 'ng_prime/selectbutton';
+import { SliderModule } from 'ng_prime/slider';
+import { TabMenuModule } from 'ng_prime/tabmenu';
 import { Subscription, debounceTime } from 'rxjs';
 import { AppConfigService } from '@service/appconfigservice';
 
@@ -34,7 +34,7 @@ import { AppConfigService } from '@service/appconfigservice';
                             <span>Get Started</span>
                             <i class="pi pi-arrow-right ml-3"></i>
                         </a>
-                        <a href="https://github.com/primefaces/primeng" target="_blank" rel="noopener noreferrer" class="linkbox font-semibold py-3 px-4">
+                        <a href="https://github.com/primefaces/ng_prime" target="_blank" rel="noopener noreferrer" class="linkbox font-semibold py-3 px-4">
                             <span>Give a Star</span>
                             <i class="pi pi-star-fill ml-3 text-yellow-500"></i>
                         </a>
@@ -54,7 +54,7 @@ import { AppConfigService } from '@service/appconfigservice';
                                         <p-dropdown [(ngModel)]="user" [options]="users" optionLabel="name" placeholder="Select a User" styleClass="w-full">
                                             <ng-template pTemplate="content" let-slotProps>
                                                 <div class="flex align-items-center gap-2">
-                                                    <img [alt]="slotProps.name" src="https://primefaces.org/cdn/primeng/images/demo/avatar/{{ slotProps.image }}" width="28" />
+                                                    <img [alt]="slotProps.name" src="https://primefaces.org/cdn/ng_prime/images/demo/avatar/{{ slotProps.image }}" width="28" />
                                                     <span>{{ slotProps.name }}</span>
                                                 </div>
                                             </ng-template>
@@ -95,7 +95,7 @@ import { AppConfigService } from '@service/appconfigservice';
                         <div class="flex flex-column w-6 gap-5 pl-3">
                             <div class="box p-4 fadein animation-duration-500">
                                 <div class="surface-card mb-4 w-full text-center p-5" style="border-radius: '10px'">
-                                    <img src="https://primefaces.org/cdn/primeng/images/landing/air-jordan.png" alt="Watch" class="w-14rem" />
+                                    <img src="https://primefaces.org/cdn/ng_prime/images/landing/air-jordan.png" alt="Watch" class="w-14rem" />
                                 </div>
                                 <div class="flex align-items-center mb-4">
                                     <div class="flex flex-column">
@@ -110,7 +110,7 @@ import { AppConfigService } from '@service/appconfigservice';
                                 <ul class="list-none p-0 m-0">
                                     <li class="flex align-items-center mb-3">
                                         <span class="mr-3">
-                                            <img src="https://primefaces.org/cdn/primeng/images/landing/avatar.png" alt="Avatar" class="w-3rem h-3rem" />
+                                            <img src="https://primefaces.org/cdn/ng_prime/images/landing/avatar.png" alt="Avatar" class="w-3rem h-3rem" />
                                         </span>
                                         <div class="flex flex-column">
                                             <span class="font-bold mb-1">Amanda Williams</span>

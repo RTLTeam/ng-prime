@@ -45,11 +45,11 @@ describe('Breadcrumb', () => {
     });
 
     it('should change home icon', () => {
-        breadcrumb.home = { icon: 'primeng' };
+        breadcrumb.home = { icon: 'ng_prime' };
         fixture.detectChanges();
 
         const homeEl = fixture.debugElement.query(By.css('.p-breadcrumb-home')).query(By.css('span')).nativeElement;
-        expect(homeEl.className).toContain('primeng');
+        expect(homeEl.className).toContain('ng_prime');
     });
 
     it('should display items', () => {

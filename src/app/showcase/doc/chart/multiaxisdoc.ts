@@ -120,7 +120,7 @@ export class MultiAxisDoc implements OnInit {
     <p-chart type="line" [data]="data" [options]="options" />
 </div>`,
         typescript: `import { Component, OnInit } from '@angular/core';
-import { ChartModule } from 'primeng/chart';
+import { ChartModule } from 'ng_prime/chart';
 
 @Component({
     selector: 'chart-multi-axis-demo',
@@ -138,7 +138,7 @@ export class ChartMultiAxisDemo implements OnInit {
         const textColor = documentStyle.getPropertyValue('--text-color');
         const textColorSecondary = documentStyle.getPropertyValue('--text-color-secondary');
         const surfaceBorder = documentStyle.getPropertyValue('--surface-border');
-        
+
         this.data = {
             labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
             datasets: [
@@ -160,7 +160,7 @@ export class ChartMultiAxisDemo implements OnInit {
                 }
             ]
         };
-        
+
         this.options = {
             stacked: false,
             maintainAspectRatio: false,

@@ -51,10 +51,10 @@ export class BasicDoc {
     </p-panel>
 </div>`,
         typescript: `import { Component } from '@angular/core';
-import { BlockUIModule } from 'primeng/blockui';
-import { ButtonModule } from 'primeng/button';
-import { PanelModule } from 'primeng/panel';
-import { RippleModule } from 'primeng/ripple';
+import { BlockUIModule } from 'ng_prime/blockui';
+import { ButtonModule } from 'ng_prime/button';
+import { PanelModule } from 'ng_prime/panel';
+import { RippleModule } from 'ng_prime/ripple';
 
 @Component({
     selector: 'block-ui-basic-demo',

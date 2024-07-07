@@ -10,7 +10,7 @@ import { Code } from '@domain/code';
         <div class="card">
             <p-messages severity="info">
                 <ng-template pTemplate>
-                    <img src="https://primefaces.org/cdn/primeng/images/primeng.svg" width="32" />
+                    <img src="https://primefaces.org/cdn/ng_prime/images/ng_prime.svg" width="32" />
                     <div class="ml-2">Always bet on Prime.</div>
                 </ng-template>
             </p-messages>
@@ -22,20 +22,20 @@ export class StaticDoc {
     code: Code = {
         basic: `<p-messages severity="info">
     <ng-template pTemplate>
-        <img src="https://primefaces.org/cdn/primeng/images/primeng.svg" width="32" />
+        <img src="https://primefaces.org/cdn/ng_prime/images/ng_prime.svg" width="32" />
         <div class="ml-2">Always bet on Prime.</div>
     </ng-template>
 </p-messages>`,
         html: `<div class="card">
     <p-messages severity="info">
         <ng-template pTemplate>
-            <img src="https://primefaces.org/cdn/primeng/images/primeng.svg" width="32" />
+            <img src="https://primefaces.org/cdn/ng_prime/images/ng_prime.svg" width="32" />
             <div class="ml-2">Always bet on Prime.</div>
         </ng-template>
     </p-messages>
 </div>`,
         typescript: `import { Component } from '@angular/core';
-import { MessagesModule } from 'primeng/messages';
+import { MessagesModule } from 'ng_prime/messages';
 
 @Component({
     selector: 'messages-static-demo',

@@ -14,7 +14,7 @@ import { ProductService } from '@service/productservice';
                 <div *ngFor="let product of availableProducts">
                     <div class="product-item" pDraggable="products" (onDragStart)="dragStart(product)" (onDragEnd)="dragEnd()">
                         <div class="image-container">
-                            <img src="https://primefaces.org/cdn/primeng/images/demo/product/{{ product.image }}" [alt]="product.name" class="product-image" />
+                            <img src="https://primefaces.org/cdn/ng_prime/images/demo/product/{{ product.image }}" [alt]="product.name" class="product-image" />
                         </div>
                         <div class="product-list-detail">
                             <h5 class="mb-2">{{ product.name }}</h5>
@@ -116,7 +116,7 @@ export class DataTableDoc implements OnInit {
                 (onDragEnd)="dragEnd()">
                     <div class="image-container">
                         <img
-                            src="https://primefaces.org/cdn/primeng/images/demo/product/{{ product.image }}"
+                            src="https://primefaces.org/cdn/ng_prime/images/demo/product/{{ product.image }}"
                             [alt]="product.name"
                             class="product-image" />
                     </div>
@@ -187,7 +187,7 @@ export class DataTableDoc implements OnInit {
                 (onDragEnd)="dragEnd()">
                     <div class="image-container">
                         <img
-                            src="https://primefaces.org/cdn/primeng/images/demo/product/{{ product.image }}"
+                            src="https://primefaces.org/cdn/ng_prime/images/demo/product/{{ product.image }}"
                             [alt]="product.name"
                             class="product-image" />
                     </div>
@@ -251,10 +251,10 @@ export class DataTableDoc implements OnInit {
         typescript: `import { Component, OnInit } from '@angular/core';
 import { Product } from '@domain/product';
 import { ProductService } from '@service/productservice';
-import { DragDropModule } from 'primeng/dragdrop';
-import { TableModule } from 'primeng/table';
+import { DragDropModule } from 'ng_prime/dragdrop';
+import { TableModule } from 'ng_prime/table';
 import { CommonModule } from '@angular/common';
-import { TagModule } from 'primeng/tag';
+import { TagModule } from 'ng_prime/tag';
 
 @Component({
     selector: 'drag-drop-data-table-demo',

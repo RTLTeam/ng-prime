@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { MenuItem, MessageService } from 'primeng/api';
+import { MenuItem, MessageService } from 'ng_prime/api';
 import { Code } from '@domain/code';
-import { ContextMenu } from 'primeng/contextmenu';
+import { ContextMenu } from 'ng_prime/contextmenu';
 
 interface Users {
     id: number;
@@ -37,7 +37,7 @@ interface Users {
                     (contextmenu)="onContextMenu($event, user)"
                 >
                     <div class="flex align-items-center gap-2">
-                        <img [alt]="user.name" [src]="'https://primefaces.org/cdn/primeng/images/demo/avatar/' + user.image" style="width: 32px" />
+                        <img [alt]="user.name" [src]="'https://primefaces.org/cdn/ng_prime/images/demo/avatar/' + user.image" style="width: 32px" />
                         <span class="font-bold">{{ user.name }}</span>
                     </div>
                     <p-tag [value]="user.role" [severity]="getBadge(user)" />
@@ -141,9 +141,9 @@ export class CommandDoc implements OnInit {
         ]"
         (contextmenu)="onContextMenu($event, user)">
         <div class="flex align-items-center gap-2">
-            <img 
-                [alt]="user.name" 
-                [src]="'https://primefaces.org/cdn/primeng/images/demo/avatar/' + user.image" 
+            <img
+                [alt]="user.name"
+                [src]="'https://primefaces.org/cdn/ng_prime/images/demo/avatar/' + user.image"
                 style="width: 32px" />
             <span class="font-bold">
                 {{ user.name }}
@@ -174,9 +174,9 @@ export class CommandDoc implements OnInit {
             ]"
             (contextmenu)="onContextMenu($event, user)">
             <div class="flex align-items-center gap-2">
-                <img 
-                    [alt]="user.name" 
-                    [src]="'https://primefaces.org/cdn/primeng/images/demo/avatar/' + user.image" 
+                <img
+                    [alt]="user.name"
+                    [src]="'https://primefaces.org/cdn/ng_prime/images/demo/avatar/' + user.image"
                     style="width: 32px" />
                 <span class="font-bold">
                     {{ user.name }}
@@ -190,12 +190,12 @@ export class CommandDoc implements OnInit {
 </div>`,
 
         typescript: `import { Component, OnInit, ViewChild } from '@angular/core';
-import { ContextMenu } from 'primeng/contextmenu';
-import { MenuItem, MessageService } from 'primeng/api';
-import { ToastModule } from 'primeng/toast';
-import { ContextMenuModule } from 'primeng/contextmenu';
+import { ContextMenu } from 'ng_prime/contextmenu';
+import { MenuItem, MessageService } from 'ng_prime/api';
+import { ToastModule } from 'ng_prime/toast';
+import { ContextMenuModule } from 'ng_prime/contextmenu';
 import { CommonModule } from '@angular/common';
-import { TagModule } from 'primeng/tag';
+import { TagModule } from 'ng_prime/tag';
 
 interface Users {
     id: number;

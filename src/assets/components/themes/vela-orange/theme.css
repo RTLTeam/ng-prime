@@ -272,7 +272,7 @@
   color: #FFD54F;
 }
 
-@layer primeng {
+@layer ng_prime {
   * {
     box-sizing: border-box;
   }
@@ -6401,7 +6401,7 @@
   }
 }
 /* Customizations to the designer theme should be defined here */
-@layer primeng {
+@layer ng_prime {
   .p-carousel .p-carousel-indicators .p-carousel-indicator.p-highlight button {
     background-color: #FFD54F;
   }

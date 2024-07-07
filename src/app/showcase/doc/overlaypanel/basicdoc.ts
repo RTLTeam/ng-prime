@@ -14,7 +14,7 @@ import { Code } from '@domain/code';
                     <div>
                         <span class="font-medium text-900 block mb-2">Share this document</span>
                         <p-inputGroup>
-                            <input pInputText value="https://primeng.org/12323ff26t2g243g423g234gg52hy25XADXAG3" readonly class="w-25rem" />
+                            <input pInputText value="https://ng_prime.org/12323ff26t2g243g423g234gg52hy25XADXAG3" readonly class="w-25rem" />
                             <p-inputGroupAddon>
                                 <i class="pi pi-copy"></i>
                             </p-inputGroupAddon>
@@ -31,7 +31,7 @@ import { Code } from '@domain/code';
                         <span class="font-medium text-900 block mb-2">Team Members</span>
                         <ul class="list-none p-0 m-0 flex flex-column gap-3">
                             <li *ngFor="let member of members" class="flex align-items-center gap-2">
-                                <img [src]="'https://primefaces.org/cdn/primeng/images/demo/avatar/' + member.image" style="width: 32px" />
+                                <img [src]="'https://primefaces.org/cdn/ng_prime/images/demo/avatar/' + member.image" style="width: 32px" />
                                 <div>
                                     <span class="font-medium">{{ member.name }}</span>
                                     <div class="text-sm text-color-secondary">{{ member.email }}</div>
@@ -63,7 +63,7 @@ export class BasicDoc {
             <div>
                 <span class="font-medium text-900 block mb-2">Share this document</span>
                 <p-inputGroup>
-                    <input pInputText value="https://primeng.org/12323ff26t2g243g423g234gg52hy25XADXAG3" readonly class="w-25rem" />
+                    <input pInputText value="https://ng_prime.org/12323ff26t2g243g423g234gg52hy25XADXAG3" readonly class="w-25rem" />
                     <p-inputGroupAddon>
                         <i class="pi pi-copy"></i>
                     </p-inputGroupAddon>
@@ -80,7 +80,7 @@ export class BasicDoc {
                 <span class="font-medium text-900 block mb-2">Team Members</span>
                 <ul class="list-none p-0 m-0 flex flex-column gap-3">
                     <li *ngFor="let member of members" class="flex align-items-center gap-2">
-                        <img [src]="'https://primefaces.org/cdn/primeng/images/demo/avatar/' + member.image" style="width: 32px" />
+                        <img [src]="'https://primefaces.org/cdn/ng_prime/images/demo/avatar/' + member.image" style="width: 32px" />
                         <div>
                             <span class="font-medium">{{ member.name }}</span>
                             <div class="text-sm text-color-secondary">{{ member.email }}</div>
@@ -102,7 +102,7 @@ export class BasicDoc {
             <div>
                 <span class="font-medium text-900 block mb-2">Share this document</span>
                 <p-inputGroup>
-                    <input pInputText value="https://primeng.org/12323ff26t2g243g423g234gg52hy25XADXAG3" readonly class="w-25rem" />
+                    <input pInputText value="https://ng_prime.org/12323ff26t2g243g423g234gg52hy25XADXAG3" readonly class="w-25rem" />
                     <p-inputGroupAddon>
                         <i class="pi pi-copy"></i>
                     </p-inputGroupAddon>
@@ -119,7 +119,7 @@ export class BasicDoc {
                 <span class="font-medium text-900 block mb-2">Team Members</span>
                 <ul class="list-none p-0 m-0 flex flex-column gap-3">
                     <li *ngFor="let member of members" class="flex align-items-center gap-2">
-                        <img [src]="'https://primefaces.org/cdn/primeng/images/demo/avatar/' + member.image" style="width: 32px" />
+                        <img [src]="'https://primefaces.org/cdn/ng_prime/images/demo/avatar/' + member.image" style="width: 32px" />
                         <div>
                             <span class="font-medium">{{ member.name }}</span>
                             <div class="text-sm text-color-secondary">{{ member.email }}</div>
@@ -136,12 +136,12 @@ export class BasicDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { OverlayPanelModule } from 'primeng/overlaypanel';
-import { InputGroupModule } from 'primeng/inputgroup';
-import { InputGroupAddonModule } from 'primeng/inputgroupaddon';
-import { ButtonModule } from 'primeng/button';
-import { InputTextModule } from 'primeng/inputtext';
-import { ChipsModule } from 'primeng/chips';
+import { OverlayPanelModule } from 'ng_prime/overlaypanel';
+import { InputGroupModule } from 'ng_prime/inputgroup';
+import { InputGroupAddonModule } from 'ng_prime/inputgroupaddon';
+import { ButtonModule } from 'ng_prime/button';
+import { InputTextModule } from 'ng_prime/inputtext';
+import { ChipsModule } from 'ng_prime/chips';
 import { CommonModule } from '@angular/common';
 
 @Component({

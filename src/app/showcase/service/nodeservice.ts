@@ -381,7 +381,7 @@ export class NodeService {
                     {
                         key: '7-1',
                         data: {
-                            name: 'primeng.png',
+                            name: 'ng_prime.png',
                             size: '30kb',
                             type: 'Picture'
                         }
@@ -724,7 +724,7 @@ export class NodeService {
                     },
                     {
                         data: {
-                            name: 'primeng.png',
+                            name: 'ng_prime.png',
                             size: '30kb',
                             type: 'Picture'
                         }

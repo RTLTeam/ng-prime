@@ -30,8 +30,8 @@ export class DragHandleDoc {
     </div>
 </div>`,
         typescript: `import { Component } from '@angular/core';
-import { DragDropModule } from 'primeng/dragdrop';
-import { PanelModule } from 'primeng/panel';
+import { DragDropModule } from 'ng_prime/dragdrop';
+import { PanelModule } from 'ng_prime/panel';
 
 @Component({
     selector: 'drag-drop-drag-handle-demo',

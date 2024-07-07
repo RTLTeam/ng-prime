@@ -16,8 +16,8 @@ import { Code } from 'src/app/showcase/domain/code';
 })
 export class TailwindDoc {
     code: Code = {
-        basic: `@layer tailwind-base, primeng, tailwind-utilities;
-        
+        basic: `@layer tailwind-base, ng_prime, tailwind-utilities;
+
 @layer tailwind-base {
     @tailwind base;
 }

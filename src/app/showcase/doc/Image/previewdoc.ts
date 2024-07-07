@@ -8,29 +8,29 @@ import { Code } from '@domain/code';
             <p>Preview mode displays a modal layer when the image is clicked that provides transformation options such as rotating and zooming.</p>
         </app-docsectiontext>
         <div class="card flex justify-content-center">
-            <p-image src="https://primefaces.org/cdn/primeng/images/galleria/galleria10.jpg" alt="Image" width="250" [preview]="true" />
+            <p-image src="https://primefaces.org/cdn/ng_prime/images/galleria/galleria10.jpg" alt="Image" width="250" [preview]="true" />
         </div>
         <app-code [code]="code" selector="image-preview-demo"></app-code>
     `
 })
 export class PreviewDoc {
     code: Code = {
-        basic: `<p-image 
-    src="https://primefaces.org/cdn/primeng/images/galleria/galleria10.jpg" 
-    alt="Image" 
-    width="250" 
+        basic: `<p-image
+    src="https://primefaces.org/cdn/ng_prime/images/galleria/galleria10.jpg"
+    alt="Image"
+    width="250"
     [preview]="true" />`,
 
         html: `<div class="card flex justify-content-center">
-    <p-image 
-        src="https://primefaces.org/cdn/primeng/images/galleria/galleria10.jpg"
-        alt="Image" 
-        width="250" 
+    <p-image
+        src="https://primefaces.org/cdn/ng_prime/images/galleria/galleria10.jpg"
+        alt="Image"
+        width="250"
         [preview]="true" />
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { ImageModule } from 'primeng/image';
+import { ImageModule } from 'ng_prime/image';
 
 @Component({
     selector: 'image-preview-demo',

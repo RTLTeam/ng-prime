@@ -2,8 +2,8 @@ import { ChangeDetectionStrategy, ChangeDetectorRef, Component } from '@angular/
 import { Code } from '@domain/code';
 import { Product } from '@domain/product';
 import { ProductService } from '@service/productservice';
-import { MessageService } from 'primeng/api';
-import { TableRowCollapseEvent, TableRowExpandEvent } from 'primeng/table';
+import { MessageService } from 'ng_prime/api';
+import { TableRowCollapseEvent, TableRowExpandEvent } from 'ng_prime/table';
 
 @Component({
     selector: 'row-expansion-doc',
@@ -41,7 +41,7 @@ import { TableRowCollapseEvent, TableRowExpandEvent } from 'primeng/table';
                                 <p-button type="button" pRipple [pRowToggler]="product" [text]="true" [rounded]="true" [plain]="true" [icon]="expanded ? 'pi pi-chevron-down' : 'pi pi-chevron-right'" />
                             </td>
                             <td>{{ product.name }}</td>
-                            <td><img [src]="'https://primefaces.org/cdn/primeng/images/demo/product/' + product.image" [alt]="product.name" width="50" class="shadow-4" /></td>
+                            <td><img [src]="'https://primefaces.org/cdn/ng_prime/images/demo/product/' + product.image" [alt]="product.name" width="50" class="shadow-4" /></td>
                             <td>{{ product.price | currency: 'USD' }}</td>
                             <td>{{ product.category }}</td>
                             <td><p-rating [ngModel]="product.rating" [readonly]="true" [cancel]="false" /></td>
@@ -176,7 +176,7 @@ export class RowExpansionDoc {
                     <p-button type="button" pRipple [pRowToggler]="product" [text]="true" [rounded]="true" [plain]="true" [icon]="expanded ? 'pi pi-chevron-down' : 'pi pi-chevron-right'" />
                 </td>
                 <td>{{ product.name }}</td>
-                <td><img [src]="'https://primefaces.org/cdn/primeng/images/demo/product/' + product.image" [alt]="product.name" width="50" class="shadow-4" /></td>
+                <td><img [src]="'https://primefaces.org/cdn/ng_prime/images/demo/product/' + product.image" [alt]="product.name" width="50" class="shadow-4" /></td>
                 <td>{{ product.price | currency : 'USD' }}</td>
                 <td>{{ product.category }}</td>
                 <td><p-rating [ngModel]="product.rating" [readonly]="true" [cancel]="false" /></td>
@@ -249,7 +249,7 @@ export class RowExpansionDoc {
                     <p-button type="button" pRipple [pRowToggler]="product" [text]="true" [rounded]="true" [plain]="true" [icon]="expanded ? 'pi pi-chevron-down' : 'pi pi-chevron-right'" />
                 </td>
                 <td>{{ product.name }}</td>
-                <td><img [src]="'https://primefaces.org/cdn/primeng/images/demo/product/' + product.image" [alt]="product.name" width="50" class="shadow-4" /></td>
+                <td><img [src]="'https://primefaces.org/cdn/ng_prime/images/demo/product/' + product.image" [alt]="product.name" width="50" class="shadow-4" /></td>
                 <td>{{ product.price | currency : 'USD' }}</td>
                 <td>{{ product.category }}</td>
                 <td><p-rating [ngModel]="product.rating" [readonly]="true" [cancel]="false" /></td>
@@ -298,16 +298,16 @@ export class RowExpansionDoc {
     </p-table>
 </div>`,
         typescript: `import { Component, OnInit } from '@angular/core';
-import { TableModule } from 'primeng/table';
+import { TableModule } from 'ng_prime/table';
 import { Product } from '@domain/product';
-import { TagModule } from 'primeng/tag';
-import { RatingModule } from 'primeng/rating';
+import { TagModule } from 'ng_prime/tag';
+import { RatingModule } from 'ng_prime/rating';
 import { CommonModule } from '@angular/common';
-import { ButtonModule } from 'primeng/button';
+import { ButtonModule } from 'ng_prime/button';
 import { ProductService } from '@service/productservice';
-import { MessageService } from 'primeng/api';
-import { ToastModule } from 'primeng/toast';
-import { TableRowCollapseEvent, TableRowExpandEvent } from 'primeng/table';
+import { MessageService } from 'ng_prime/api';
+import { ToastModule } from 'ng_prime/toast';
+import { TableRowCollapseEvent, TableRowExpandEvent } from 'ng_prime/table';
 
 @Component({
     selector: 'table-row-expansion-demo',

@@ -3,7 +3,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { Component, Inject, OnInit, PLATFORM_ID, Renderer2, afterNextRender } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
-import { PrimeNGConfig } from 'primeng/api';
+import { PrimeNGConfig } from 'ng_prime/api';
 import { LandingComponent } from '@pages/landing/landing.component';
 import { AppConfigService } from '@service/appconfigservice';
 import { CarService } from '@service/carservice';
@@ -46,7 +46,7 @@ export class AppComponent implements OnInit {
     constructor(
         @Inject(DOCUMENT) private document: Document,
         private renderer: Renderer2,
-        private primeng: PrimeNGConfig,
+        private ng_prime: PrimeNGConfig,
         private configService: AppConfigService,
         private router: Router,
         @Inject(PLATFORM_ID) private platformId: any
@@ -60,7 +60,7 @@ export class AppComponent implements OnInit {
         });
     }
     ngOnInit(): void {
-        this.primeng.ripple = true;
+        this.ng_prime.ripple = true;
     }
 
     injectScripts() {
@@ -75,7 +75,7 @@ export class AppComponent implements OnInit {
           window.dataLayer = window.dataLayer || [];
           function gtag() { dataLayer.push(arguments); }
           gtag('js', new Date());
-    
+
           gtag('config', 'G-W297P962XH');
         `;
         this.renderer.appendChild(this.document.body, scriptBody);

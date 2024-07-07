@@ -54,8 +54,8 @@ export class FullScreenDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { SidebarModule } from 'primeng/sidebar';
-import { ButtonModule } from 'primeng/button';
+import { SidebarModule } from 'ng_prime/sidebar';
+import { ButtonModule } from 'ng_prime/button';
 
 @Component({
     selector: 'sidebar-full-screen-demo',

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MessageService } from 'primeng/api';
+import { MessageService } from 'ng_prime/api';
 import { Code } from '@domain/code';
 
 @Component({
@@ -34,10 +34,10 @@ export class BasicDoc {
     <p-button pRipple (click)="show()" label="Show" />
 </div>`,
         typescript: `import { Component } from '@angular/core';
-import { MessageService } from 'primeng/api';
-import { ToastModule } from 'primeng/toast';
-import { ButtonModule } from 'primeng/button';
-import { RippleModule } from 'primeng/ripple';
+import { MessageService } from 'ng_prime/api';
+import { ToastModule } from 'ng_prime/toast';
+import { ButtonModule } from 'ng_prime/button';
+import { RippleModule } from 'ng_prime/ripple';
 
 @Component({
     selector: 'toast-basic-demo',

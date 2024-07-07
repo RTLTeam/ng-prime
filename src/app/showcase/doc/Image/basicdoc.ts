@@ -8,27 +8,27 @@ import { Code } from '@domain/code';
             <p>Image is used as the native <i>img</i> element and supports all properties that the native element has. For multiple image, see <a [routerLink]="['/galleria']">Galleria.</a></p>
         </app-docsectiontext>
         <div class="card flex justify-content-center">
-            <p-image src="https://primefaces.org/cdn/primeng/images/galleria/galleria10.jpg" alt="Image" width="250" />
+            <p-image src="https://primefaces.org/cdn/ng_prime/images/galleria/galleria10.jpg" alt="Image" width="250" />
         </div>
         <app-code [code]="code" selector="image-basic-demo"></app-code>
     `
 })
 export class BasicDoc {
     code: Code = {
-        basic: `<p-image 
-    src="https://primefaces.org/cdn/primeng/images/galleria/galleria10.jpg" 
-    alt="Image" 
+        basic: `<p-image
+    src="https://primefaces.org/cdn/ng_prime/images/galleria/galleria10.jpg"
+    alt="Image"
     width="250" />`,
 
         html: `<div class="card flex justify-content-center">
-    <p-image 
-        src="https://primefaces.org/cdn/primeng/images/galleria/galleria10.jpg"
+    <p-image
+        src="https://primefaces.org/cdn/ng_prime/images/galleria/galleria10.jpg"
         alt="Image"
         width="250" />
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { ImageModule } from 'primeng/image';
+import { ImageModule } from 'ng_prime/image';
 
 @Component({
     selector: 'image-basic-demo',

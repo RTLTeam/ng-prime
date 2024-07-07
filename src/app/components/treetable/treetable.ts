@@ -29,23 +29,23 @@ import {
     booleanAttribute,
     numberAttribute
 } from '@angular/core';
-import { BlockableUI, FilterMetadata, FilterService, PrimeNGConfig, PrimeTemplate, ScrollerOptions, SharedModule, SortMeta, TreeNode, TreeTableNode } from 'primeng/api';
-import { DomHandler } from 'primeng/dom';
-import { ArrowDownIcon } from 'primeng/icons/arrowdown';
-import { ArrowUpIcon } from 'primeng/icons/arrowup';
-import { CheckIcon } from 'primeng/icons/check';
-import { ChevronDownIcon } from 'primeng/icons/chevrondown';
-import { ChevronRightIcon } from 'primeng/icons/chevronright';
-import { MinusIcon } from 'primeng/icons/minus';
-import { SortAltIcon } from 'primeng/icons/sortalt';
-import { SortAmountDownIcon } from 'primeng/icons/sortamountdown';
-import { SortAmountUpAltIcon } from 'primeng/icons/sortamountupalt';
-import { SpinnerIcon } from 'primeng/icons/spinner';
-import { PaginatorModule } from 'primeng/paginator';
-import { RippleModule } from 'primeng/ripple';
-import { Scroller, ScrollerModule } from 'primeng/scroller';
-import { Nullable, VoidListener } from 'primeng/ts-helpers';
-import { ObjectUtils } from 'primeng/utils';
+import { BlockableUI, FilterMetadata, FilterService, PrimeNGConfig, PrimeTemplate, ScrollerOptions, SharedModule, SortMeta, TreeNode, TreeTableNode } from 'ng_prime/api';
+import { DomHandler } from 'ng_prime/dom';
+import { ArrowDownIcon } from 'ng_prime/icons/arrowdown';
+import { ArrowUpIcon } from 'ng_prime/icons/arrowup';
+import { CheckIcon } from 'ng_prime/icons/check';
+import { ChevronDownIcon } from 'ng_prime/icons/chevrondown';
+import { ChevronRightIcon } from 'ng_prime/icons/chevronright';
+import { MinusIcon } from 'ng_prime/icons/minus';
+import { SortAltIcon } from 'ng_prime/icons/sortalt';
+import { SortAmountDownIcon } from 'ng_prime/icons/sortamountdown';
+import { SortAmountUpAltIcon } from 'ng_prime/icons/sortamountupalt';
+import { SpinnerIcon } from 'ng_prime/icons/spinner';
+import { PaginatorModule } from 'ng_prime/paginator';
+import { RippleModule } from 'ng_prime/ripple';
+import { Scroller, ScrollerModule } from 'ng_prime/scroller';
+import { Nullable, VoidListener } from 'ng_prime/ts-helpers';
+import { ObjectUtils } from 'ng_prime/utils';
 import { Subject, Subscription } from 'rxjs';
 import {
     TreeTableColResizeEvent,

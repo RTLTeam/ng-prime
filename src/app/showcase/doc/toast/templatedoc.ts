@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MessageService } from 'primeng/api';
+import { MessageService } from 'ng_prime/api';
 import { Code } from '@domain/code';
 
 @Component({
@@ -13,7 +13,7 @@ import { Code } from '@domain/code';
                 <ng-template let-message pTemplate="message">
                     <div class="flex flex-column align-items-start" style="flex: 1">
                         <div class="flex align-items-center gap-2">
-                            <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" shape="circle" />
+                            <p-avatar image="https://primefaces.org/cdn/ng_prime/images/demo/avatar/amyelsner.png" shape="circle" />
                             <span class="font-bold text-900">Amy Elsner</span>
                         </div>
                         <div class="font-medium text-lg my-3 text-900">{{ message.summary }}</div>
@@ -50,16 +50,16 @@ export class TemplateDoc {
     }
 
     code: Code = {
-        basic: `<p-toast 
-    position="bottom-center" 
-    key="confirm" 
-    (onClose)="onReject()" 
+        basic: `<p-toast
+    position="bottom-center"
+    key="confirm"
+    (onClose)="onReject()"
     [baseZIndex]="5000">
         <ng-template let-message pTemplate="message">
             <div class="flex flex-column align-items-start" style="flex: 1">
                 <div class="flex align-items-center gap-2">
-                    <p-avatar 
-                        image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" 
+                    <p-avatar
+                        image="https://primefaces.org/cdn/ng_prime/images/demo/avatar/amyelsner.png"
                         shape="circle" />
                     <span class="font-bold text-900">
                         Amy Elsner
@@ -74,16 +74,16 @@ export class TemplateDoc {
 </p-toast>
 <p-button pRipple (click)="showConfirm()" label="View" />`,
         html: `<div class="card flex justify-content-center">
-    <p-toast 
-        position="bottom-center" 
-        key="confirm" 
-        (onClose)="onReject()" 
+    <p-toast
+        position="bottom-center"
+        key="confirm"
+        (onClose)="onReject()"
         [baseZIndex]="5000">
             <ng-template let-message pTemplate="message">
                 <div class="flex flex-column align-items-start" style="flex: 1">
                     <div class="flex align-items-center gap-2">
-                        <p-avatar 
-                            image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" 
+                        <p-avatar
+                            image="https://primefaces.org/cdn/ng_prime/images/demo/avatar/amyelsner.png"
                             shape="circle" />
                         <span class="font-bold text-900">
                             Amy Elsner
@@ -99,11 +99,11 @@ export class TemplateDoc {
     <p-button pRipple (click)="showConfirm()" label="View" />
 </div>`,
         typescript: `import { Component } from '@angular/core';
-import { MessageService } from 'primeng/api';
-import { ToastModule } from 'primeng/toast';
-import { ButtonModule } from 'primeng/button';
-import { RippleModule } from 'primeng/ripple';
-import { AvatarModule } from 'primeng/avatar';
+import { MessageService } from 'ng_prime/api';
+import { ToastModule } from 'ng_prime/toast';
+import { ButtonModule } from 'ng_prime/button';
+import { RippleModule } from 'ng_prime/ripple';
+import { AvatarModule } from 'ng_prime/avatar';
 
 @Component({
     selector: 'toast-template-demo',

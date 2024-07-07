@@ -31,23 +31,23 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
-import { FilterService, Footer, Header, OverlayOptions, OverlayService, PrimeNGConfig, PrimeTemplate, SharedModule, TranslationKeys } from 'primeng/api';
-import { DomHandler } from 'primeng/dom';
-import { Overlay, OverlayModule } from 'primeng/overlay';
-import { RippleModule } from 'primeng/ripple';
-import { Scroller, ScrollerModule } from 'primeng/scroller';
-import { ScrollerOptions } from 'primeng/api';
-import { TooltipModule } from 'primeng/tooltip';
-import { ObjectUtils, UniqueComponentId } from 'primeng/utils';
-import { CheckIcon } from 'primeng/icons/check';
-import { SearchIcon } from 'primeng/icons/search';
-import { TimesCircleIcon } from 'primeng/icons/timescircle';
-import { TimesIcon } from 'primeng/icons/times';
-import { ChevronDownIcon } from 'primeng/icons/chevrondown';
-import { Nullable } from 'primeng/ts-helpers';
-import { AutoFocusModule } from 'primeng/autofocus';
+import { FilterService, Footer, Header, OverlayOptions, OverlayService, PrimeNGConfig, PrimeTemplate, SharedModule, TranslationKeys } from 'ng_prime/api';
+import { DomHandler } from 'ng_prime/dom';
+import { Overlay, OverlayModule } from 'ng_prime/overlay';
+import { RippleModule } from 'ng_prime/ripple';
+import { Scroller, ScrollerModule } from 'ng_prime/scroller';
+import { ScrollerOptions } from 'ng_prime/api';
+import { TooltipModule } from 'ng_prime/tooltip';
+import { ObjectUtils, UniqueComponentId } from 'ng_prime/utils';
+import { CheckIcon } from 'ng_prime/icons/check';
+import { SearchIcon } from 'ng_prime/icons/search';
+import { TimesCircleIcon } from 'ng_prime/icons/timescircle';
+import { TimesIcon } from 'ng_prime/icons/times';
+import { ChevronDownIcon } from 'ng_prime/icons/chevrondown';
+import { Nullable } from 'ng_prime/ts-helpers';
+import { AutoFocusModule } from 'ng_prime/autofocus';
 import { MultiSelectRemoveEvent, MultiSelectFilterOptions, MultiSelectFilterEvent, MultiSelectBlurEvent, MultiSelectChangeEvent, MultiSelectFocusEvent, MultiSelectLazyLoadEvent, MultiSelectSelectAllChangeEvent } from './multiselect.interface';
-import { MinusIcon } from 'primeng/icons/minus';
+import { MinusIcon } from 'ng_prime/icons/minus';
 
 export const MULTISELECT_VALUE_ACCESSOR: any = {
     provide: NG_VALUE_ACCESSOR,

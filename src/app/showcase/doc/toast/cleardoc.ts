@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MessageService } from 'primeng/api';
+import { MessageService } from 'ng_prime/api';
 import { Code } from '@domain/code';
 
 @Component({
@@ -33,32 +33,32 @@ export class ClearDoc {
 
     code: Code = {
         basic: `<p-toast key="myKey" />
-<p-button 
-    pRipple 
-    (click)="show()" 
+<p-button
+    pRipple
+    (click)="show()"
     label="Show" />
-<p-button 
-    pRipple 
-    (click)="clear()" 
-    label="Clear" 
+<p-button
+    pRipple
+    (click)="clear()"
+    label="Clear"
     severity="secondary" />`,
         html: `<div class="card flex justify-content-center gap-2">
     <p-toast key="myKey" />
-    <p-button 
-        pRipple 
-        (click)="show()" 
+    <p-button
+        pRipple
+        (click)="show()"
         label="Show" />
-    <p-button 
-        pRipple 
-        (click)="clear()" 
-        label="Clear" 
+    <p-button
+        pRipple
+        (click)="clear()"
+        label="Clear"
         severity="secondary" />
 </div>`,
         typescript: `import { Component } from '@angular/core';
-import { MessageService } from 'primeng/api';
-import { ToastModule } from 'primeng/toast';
-import { ButtonModule } from 'primeng/button';
-import { RippleModule } from 'primeng/ripple';
+import { MessageService } from 'ng_prime/api';
+import { ToastModule } from 'ng_prime/toast';
+import { ButtonModule } from 'ng_prime/button';
+import { RippleModule } from 'ng_prime/ripple';
 
 @Component({
     selector: 'toast-clear-demo',

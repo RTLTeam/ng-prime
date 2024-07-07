@@ -1,13 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { DropdownModule } from 'primeng/dropdown';
-import { InputTextModule } from 'primeng/inputtext';
-import { InputMaskModule } from 'primeng/inputmask';
-import { CheckboxModule } from 'primeng/checkbox';
-import { StepsModule } from 'primeng/steps';
-import { ToastModule } from 'primeng/toast';
-import { CardModule } from 'primeng/card';
+import { DropdownModule } from 'ng_prime/dropdown';
+import { InputTextModule } from 'ng_prime/inputtext';
+import { InputMaskModule } from 'ng_prime/inputmask';
+import { CheckboxModule } from 'ng_prime/checkbox';
+import { StepsModule } from 'ng_prime/steps';
+import { ToastModule } from 'ng_prime/toast';
+import { CardModule } from 'ng_prime/card';
 import { AppDocModule } from '@layout/doc/app.doc.module';
 import { AppCodeModule } from '@layout/doc/app.code.component';
 import { BasicDoc } from './basicdoc';
@@ -21,7 +21,7 @@ import { SeatDemo } from './seatdemo';
 import { StyleDoc } from './styledoc';
 import { TicketService } from '@service/ticketservice';
 import { AccessibilityDoc } from './accessibilitydoc';
-import { ButtonModule } from 'primeng/button';
+import { ButtonModule } from 'ng_prime/button';
 import { ControlledDoc } from './controlleddoc';
 
 @NgModule({

@@ -38,11 +38,11 @@ describe('InputTextarea', () => {
 
         const onResizeSpy = spyOn(component, 'onResize').and.callThrough();
         const inputTextEl = fixture.debugElement.query(By.css('textarea'));
-        inputTextEl.nativeElement.value = 'primeng';
+        inputTextEl.nativeElement.value = 'ng_prime';
         inputTextEl.nativeElement.dispatchEvent(new Event('input'));
         fixture.detectChanges();
 
-        inputTextEl.nativeElement.value = 'primeng rocks!';
+        inputTextEl.nativeElement.value = 'ng_prime rocks!';
         inputTextEl.nativeElement.dispatchEvent(new Event('input'));
         fixture.detectChanges();
 
@@ -57,14 +57,14 @@ describe('InputTextarea', () => {
         const inputTextEl = fixture.debugElement.query(By.css('textarea'));
         const initialScrollHeight = inputTextEl.nativeElement.scrollHeight;
 
-        inputTextEl.nativeElement.value = 'primeng';
+        inputTextEl.nativeElement.value = 'ng_prime';
         inputTextEl.nativeElement.dispatchEvent(new Event('input'));
         fixture.detectChanges();
 
         expect(inputTextEl.nativeElement.scrollHeight).toBeGreaterThan(initialScrollHeight);
         const newScrollHeight = inputTextEl.nativeElement.scrollHeight;
 
-        inputTextEl.nativeElement.value = 'primeng rocks!';
+        inputTextEl.nativeElement.value = 'ng_prime rocks!';
         inputTextEl.nativeElement.dispatchEvent(new Event('input'));
         fixture.detectChanges();
 
@@ -78,7 +78,7 @@ describe('InputTextarea', () => {
 
         const inputTextEl = fixture.debugElement.query(By.css('textarea'));
         let cachedHeight = parseInt(inputTextEl.nativeElement.style.height);
-        inputTextEl.nativeElement.value = 'primeng';
+        inputTextEl.nativeElement.value = 'ng_prime';
         inputTextEl.nativeElement.dispatchEvent(new Event('input'));
         fixture.detectChanges();
 
@@ -94,7 +94,7 @@ describe('InputTextarea', () => {
         inputTextEl.nativeElement.style.maxHeight = 70 + 'px';
         fixture.detectChanges();
 
-        inputTextEl.nativeElement.value = 'primeng rocks!';
+        inputTextEl.nativeElement.value = 'ng_prime rocks!';
         inputTextEl.nativeElement.dispatchEvent(new Event('input'));
         fixture.detectChanges();
 

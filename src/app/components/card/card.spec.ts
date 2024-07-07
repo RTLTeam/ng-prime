@@ -2,14 +2,14 @@ import { Component, NO_ERRORS_SCHEMA } from '@angular/core';
 import { ComponentFixture, TestBed, async } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { Footer, Header } from 'primeng/api';
+import { Footer, Header } from 'ng_prime/api';
 import { ButtonModule } from '../button/button';
 import { Card } from './card';
 
 @Component({
     template: `<p-card [header]="header" [subheader]="subheader" [style]="style" [styleClass]="styleClass">
         <p-header>
-            <img src="Card" src="https://primefaces.org/cdn/primeng/images/usercard.png" />
+            <img src="Card" src="https://primefaces.org/cdn/ng_prime/images/usercard.png" />
         </p-header>
         <div>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque quas!

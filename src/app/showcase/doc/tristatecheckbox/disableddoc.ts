@@ -26,7 +26,7 @@ export class DisabledDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { TriStateCheckboxModule } from 'primeng/tristatecheckbox';
+import { TriStateCheckboxModule } from 'ng_prime/tristatecheckbox';
 import { FormsModule } from '@angular/forms';
 
 @Component({

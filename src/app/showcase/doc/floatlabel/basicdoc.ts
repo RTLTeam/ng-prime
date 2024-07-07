@@ -33,7 +33,7 @@ export class BasicDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { FloatLabelModule } from "primeng/floatlabel"  
+import { FloatLabelModule } from "ng_prime/floatlabel"
 
 @Component({
     selector: 'float-label-basic-demo',

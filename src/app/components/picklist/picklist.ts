@@ -22,22 +22,22 @@ import {
     booleanAttribute,
     numberAttribute
 } from '@angular/core';
-import { FilterService, PrimeNGConfig, PrimeTemplate, SharedModule } from 'primeng/api';
-import { ButtonModule } from 'primeng/button';
-import { DomHandler } from 'primeng/dom';
-import { AngleDoubleDownIcon } from 'primeng/icons/angledoubledown';
-import { AngleDoubleLeftIcon } from 'primeng/icons/angledoubleleft';
-import { AngleDoubleRightIcon } from 'primeng/icons/angledoubleright';
-import { AngleDoubleUpIcon } from 'primeng/icons/angledoubleup';
-import { AngleDownIcon } from 'primeng/icons/angledown';
-import { AngleLeftIcon } from 'primeng/icons/angleleft';
-import { AngleRightIcon } from 'primeng/icons/angleright';
-import { AngleUpIcon } from 'primeng/icons/angleup';
-import { HomeIcon } from 'primeng/icons/home';
-import { SearchIcon } from 'primeng/icons/search';
-import { RippleModule } from 'primeng/ripple';
-import { Nullable, VoidListener } from 'primeng/ts-helpers';
-import { ObjectUtils, UniqueComponentId } from 'primeng/utils';
+import { FilterService, PrimeNGConfig, PrimeTemplate, SharedModule } from 'ng_prime/api';
+import { ButtonModule } from 'ng_prime/button';
+import { DomHandler } from 'ng_prime/dom';
+import { AngleDoubleDownIcon } from 'ng_prime/icons/angledoubledown';
+import { AngleDoubleLeftIcon } from 'ng_prime/icons/angledoubleleft';
+import { AngleDoubleRightIcon } from 'ng_prime/icons/angledoubleright';
+import { AngleDoubleUpIcon } from 'ng_prime/icons/angledoubleup';
+import { AngleDownIcon } from 'ng_prime/icons/angledown';
+import { AngleLeftIcon } from 'ng_prime/icons/angleleft';
+import { AngleRightIcon } from 'ng_prime/icons/angleright';
+import { AngleUpIcon } from 'ng_prime/icons/angleup';
+import { HomeIcon } from 'ng_prime/icons/home';
+import { SearchIcon } from 'ng_prime/icons/search';
+import { RippleModule } from 'ng_prime/ripple';
+import { Nullable, VoidListener } from 'ng_prime/ts-helpers';
+import { ObjectUtils, UniqueComponentId } from 'ng_prime/utils';
 import {
     PickListFilterOptions,
     PickListMoveAllToSourceEvent,

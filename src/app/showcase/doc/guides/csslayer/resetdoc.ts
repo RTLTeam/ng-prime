@@ -18,7 +18,7 @@ import { Code } from 'src/app/showcase/domain/code';
 export class ResetDoc {
     code: Code = {
         basic: `/* Order */
-@layer reset, primeng;
+@layer reset, ng_prime;
 
 /* Reset CSS */
 @layer reset {

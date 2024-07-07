@@ -13,7 +13,7 @@ import { Code } from 'src/app/showcase/domain/code';
 })
 export class NormalizeDoc {
     code: Code = {
-        basic: `@layer normalize, primeng;
+        basic: `@layer normalize, ng_prime;
 
 @import "normalize.css" layer(normalize-reset);`
     };

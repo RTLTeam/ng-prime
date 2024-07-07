@@ -2,12 +2,12 @@ import { ScrollingModule } from '@angular/cdk/scrolling';
 import { ComponentFixture, TestBed, fakeAsync, flush, tick } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { OverlayModule } from 'primeng/overlay';
-import { TooltipModule } from 'primeng/tooltip';
+import { OverlayModule } from 'ng_prime/overlay';
+import { TooltipModule } from 'ng_prime/tooltip';
 import { MultiSelect, MultiSelectItem } from './multiselect';
-import { ChevronDownIcon } from 'primeng/icons/chevrondown';
-import { SearchIcon } from 'primeng/icons/search';
-import { TimesIcon } from 'primeng/icons/times';
+import { ChevronDownIcon } from 'ng_prime/icons/chevrondown';
+import { SearchIcon } from 'ng_prime/icons/search';
+import { TimesIcon } from 'ng_prime/icons/times';
 import { NO_ERRORS_SCHEMA } from '@angular/core';
 
 describe('MultiSelect', () => {

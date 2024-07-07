@@ -272,7 +272,7 @@
   color: #7b95a3;
 }
 
-@layer primeng {
+@layer ng_prime {
   * {
     box-sizing: border-box;
   }
@@ -6352,7 +6352,7 @@
     font-size: 1rem;
   }
 }
-@layer primeng {
+@layer ng_prime {
   .p-panel .p-panel-header .p-panel-header-icon {
     color: #ffffff;
   }

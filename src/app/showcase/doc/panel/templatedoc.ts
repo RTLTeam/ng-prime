@@ -11,7 +11,7 @@ import { Code } from '@domain/code';
             <p-panel [toggleable]="true">
                 <ng-template pTemplate="header">
                     <div class="flex align-items-center gap-2">
-                        <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" size="large" shape="circle" />
+                        <p-avatar image="https://primefaces.org/cdn/ng_prime/images/demo/avatar/amyelsner.png" size="large" shape="circle" />
                         <span class="font-bold">Amy Elsner</span>
                     </div>
                 </ng-template>
@@ -66,9 +66,9 @@ export class TemplateDoc implements OnInit {
         basic: `<p-panel [toggleable]="true">
     <ng-template pTemplate="header">
         <div class="flex align-items-center gap-2">
-            <p-avatar 
-                image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" 
-                size="large" 
+            <p-avatar
+                image="https://primefaces.org/cdn/ng_prime/images/demo/avatar/amyelsner.png"
+                size="large"
                 shape="circle" />
             <span class="font-bold">
                 Amy Elsner
@@ -101,9 +101,9 @@ export class TemplateDoc implements OnInit {
     <p-panel [toggleable]="true">
     <ng-template pTemplate="header">
         <div class="flex align-items-center gap-2">
-            <p-avatar 
-                image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" 
-                size="large" 
+            <p-avatar
+                image="https://primefaces.org/cdn/ng_prime/images/demo/avatar/amyelsner.png"
+                size="large"
                 shape="circle" />
             <span class="font-bold">
                 Amy Elsner
@@ -135,9 +135,9 @@ export class TemplateDoc implements OnInit {
 </div>`,
 
         typescript: `import { Component, OnInit } from '@angular/core';
-import { PanelModule } from 'primeng/panel';
-import { AvatarModule } from 'primeng/avatar';
-import { ButtonModule } from 'primeng/button';
+import { PanelModule } from 'ng_prime/panel';
+import { AvatarModule } from 'ng_prime/avatar';
+import { ButtonModule } from 'ng_prime/button';
 
 @Component({
     selector: 'panel-template-demo',

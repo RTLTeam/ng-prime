@@ -4,8 +4,8 @@ import { TreeTable, TreeTableModule, TTScrollableView } from './treetable';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { Component } from '@angular/core';
-import { ContextMenuModule, ContextMenu } from 'primeng/contextmenu';
-import { MinusIcon } from 'primeng/icons/minus';
+import { ContextMenuModule, ContextMenu } from 'ng_prime/contextmenu';
+import { MinusIcon } from 'ng_prime/icons/minus';
 
 @Component({
     template: `
@@ -591,7 +591,7 @@ class TestTreeTableComponent {
                 },
                 {
                     data: {
-                        name: 'primeng.png',
+                        name: 'ng_prime.png',
                         size: '30kb',
                         type: 'Picture'
                     }

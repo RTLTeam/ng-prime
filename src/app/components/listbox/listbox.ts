@@ -24,17 +24,17 @@ import {
     numberAttribute
 } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SharedModule, PrimeTemplate, Footer, Header, FilterService, TranslationKeys, PrimeNGConfig, ScrollerOptions } from 'primeng/api';
-import { DomHandler } from 'primeng/dom';
-import { ObjectUtils, UniqueComponentId } from 'primeng/utils';
+import { SharedModule, PrimeTemplate, Footer, Header, FilterService, TranslationKeys, PrimeNGConfig, ScrollerOptions } from 'ng_prime/api';
+import { DomHandler } from 'ng_prime/dom';
+import { ObjectUtils, UniqueComponentId } from 'ng_prime/utils';
 import { NG_VALUE_ACCESSOR, ControlValueAccessor } from '@angular/forms';
-import { RippleModule } from 'primeng/ripple';
+import { RippleModule } from 'ng_prime/ripple';
 import { Subscription } from 'rxjs';
-import { SearchIcon } from 'primeng/icons/search';
-import { CheckIcon } from 'primeng/icons/check';
-import { Nullable } from 'primeng/ts-helpers';
+import { SearchIcon } from 'ng_prime/icons/search';
+import { CheckIcon } from 'ng_prime/icons/check';
+import { Nullable } from 'ng_prime/ts-helpers';
 import { ListboxChangeEvent, ListboxClickEvent, ListboxDoubleClickEvent, ListboxFilterEvent, ListboxFilterOptions, ListboxSelectAllChangeEvent } from './listbox.interface';
-import { Scroller, ScrollerModule } from 'primeng/scroller';
+import { Scroller, ScrollerModule } from 'ng_prime/scroller';
 
 export const LISTBOX_VALUE_ACCESSOR: any = {
     provide: NG_VALUE_ACCESSOR,

@@ -25,7 +25,7 @@ export class ReadOnlyDoc {
 
         typescript: `import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { EditorModule } from 'primeng/editor';
+import { EditorModule } from 'ng_prime/editor';
 
 @Component({
     selector: 'editor-readonly-demo',

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DialogService, DynamicDialogRef } from 'primeng/dynamicdialog';
+import { DialogService, DynamicDialogRef } from 'ng_prime/dynamicdialog';
 import { Product } from '@domain/product';
 import { ProductService } from '@service/productservice';
 import { InfoDemo } from './infodemo';
@@ -22,7 +22,7 @@ import { InfoDemo } from './infodemo';
                 <tr>
                     <td>{{ product.code }}</td>
                     <td>{{ product.name }}</td>
-                    <td><img src="https://primefaces.org/cdn/primeng/images/demo/product/{{ product.image }}" [alt]="product.image" class="w-4rem h-4rem shadow-2" /></td>
+                    <td><img src="https://primefaces.org/cdn/ng_prime/images/demo/product/{{ product.image }}" [alt]="product.image" class="w-4rem h-4rem shadow-2" /></td>
                     <td>{{ product.category }}</td>
                     <td>
                         {{ product.quantity }}

@@ -3,13 +3,13 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormsModule } from '@angular/forms';
 import { By } from '@angular/platform-browser';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { Message, MessageService } from 'primeng/api';
-import { Button } from 'primeng/button';
-import { CheckIcon } from 'primeng/icons/check';
-import { ExclamationTriangleIcon } from 'primeng/icons/exclamationtriangle';
-import { InfoCircleIcon } from 'primeng/icons/infocircle';
-import { TimesIcon } from 'primeng/icons/times';
-import { TimesCircleIcon } from 'primeng/icons/timescircle';
+import { Message, MessageService } from 'ng_prime/api';
+import { Button } from 'ng_prime/button';
+import { CheckIcon } from 'ng_prime/icons/check';
+import { ExclamationTriangleIcon } from 'ng_prime/icons/exclamationtriangle';
+import { InfoCircleIcon } from 'ng_prime/icons/infocircle';
+import { TimesIcon } from 'ng_prime/icons/times';
+import { TimesCircleIcon } from 'ng_prime/icons/timescircle';
 import { Messages } from './messages';
 
 @Component({
@@ -64,7 +64,7 @@ class TestMessagesComponent {
 
     showAllViaService() {
         this.messageService.addAll([
-            { severity: 'success', key: 'primeng', summary: 'Service Message', detail: 'Via MessageService' },
+            { severity: 'success', key: 'ng_prime', summary: 'Service Message', detail: 'Via MessageService' },
             { severity: 'success', summary: 'Service Message', detail: 'Via MessageService' }
         ]);
     }
@@ -79,7 +79,7 @@ class TestMessagesComponent {
     }
 
     clearWithServiceAndKey() {
-        this.messageService.clear('primeng');
+        this.messageService.clear('ng_prime');
     }
 }
 
@@ -206,7 +206,7 @@ describe('Messages', () => {
     });
 
     it('should show multiple with service', () => {
-        messages.key = 'primeng';
+        messages.key = 'ng_prime';
         fixture.detectChanges();
 
         const successButton = fixture.debugElement.queryAll(By.css('button'))[6];
@@ -218,7 +218,7 @@ describe('Messages', () => {
     });
 
     it('should clear with service', () => {
-        messages.key = 'primeng';
+        messages.key = 'ng_prime';
         fixture.detectChanges();
 
         const successButton = fixture.debugElement.queryAll(By.css('button'))[6];
@@ -234,7 +234,7 @@ describe('Messages', () => {
     });
 
     it('should clear with service and key', () => {
-        messages.key = 'primeng';
+        messages.key = 'ng_prime';
         fixture.detectChanges();
 
         const successButton = fixture.debugElement.queryAll(By.css('button'))[6];

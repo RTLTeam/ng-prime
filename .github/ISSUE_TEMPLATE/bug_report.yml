@@ -27,10 +27,10 @@ body:
     id: reproducer
     attributes:
       label: Reproducer
-      placeholder: https://stackblitz.com/github/primefaces/primeng-issue-template
+      placeholder: https://stackblitz.com/github/primefaces/ng_prime-issue-template
       description: |
         Please fork one of the issue template
-        [PrimeNG Issue Template](https://stackblitz.com/github/primefaces/primeng-issue-template)
+        [PrimeNG Issue Template](https://stackblitz.com/github/primefaces/ng_prime-issue-template)
         and create a case demonstrating your bug report. Issues **without** a StackBlitz example have much less possibility to be reviewed.
     validations:
       required: false
@@ -42,7 +42,7 @@ body:
     validations:
       required: true
   - type: input
-    id: primeng-version
+    id: ng_prime-version
     attributes:
       label: PrimeNG version
       placeholder: x.x.x

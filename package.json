@@ -1,6 +1,6 @@
 {
-    "name": "primeng",
-    "version": "17.18.2",
+    "name": "@rtl-team/ng_prime",
+    "version": "0.18.0",
     "license": "SEE LICENSE IN LICENSE.md",
     "scripts": {
         "ng": "ng",
@@ -12,15 +12,15 @@
         "format": "prettier --write \"**/*.{js,ts,d.ts}\"",
         "build": "ng build",
         "format:check": "prettier --check \"**/*.{js,ts,d.ts}\"",
-        "build:lib": "npm run build:check && npm run build:package",
-        "build:package": "BROWSERSLIST_ENV=library ng build primeng-library && gulp build-assets",
+        "build:lib": "npm run build:package",
+        "build:package": "BROWSERSLIST_ENV=library ng build ng_prime-library && gulp build-assets",
         "build:check": "npm run format:check && npm run security:check",
         "security:check": "npm audit --production --audit-level high",
         "apidoc": "node ./api-generator/build-apidoc.ts"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/primefaces/primeng.git"
+        "url": "https://github.com/primefaces/ng_prime.git"
     },
     "devDependencies": {
         "@angular-devkit/build-angular": "^18.0.2",

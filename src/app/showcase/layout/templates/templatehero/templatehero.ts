@@ -1,6 +1,6 @@
 import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { ChangeDetectionStrategy, Component, Input, NgModule, ViewEncapsulation } from '@angular/core';
-import { SharedModule } from 'primeng/api';
+import { SharedModule } from 'ng_prime/api';
 import { TemplateHeroLightModule } from './templateherolight';
 import { TemplateHeroRectangleModule } from './templateherorectangle';
 
@@ -27,7 +27,7 @@ import { TemplateHeroRectangleModule } from './templateherorectangle';
                     </a>
                 </div>
                 <div class="template-hero-card-links ">
-                    <a [href]="templateHeroData?.supportHref ?? 'https://github.com/orgs/primefaces/discussions/categories/primeng-templates'" target="_blank">
+                    <a [href]="templateHeroData?.supportHref ?? 'https://github.com/orgs/primefaces/discussions/categories/ng_prime-templates'" target="_blank">
                         <i class="pi pi-github " style="font-size: 1rem;"></i>
                         <span>{{ templateHeroData?.free ? 'Open Issues' : 'Get Support' }}</span>
                     </a>

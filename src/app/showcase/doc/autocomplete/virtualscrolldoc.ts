@@ -49,28 +49,28 @@ export class VirtualScrollDoc {
     }
 
     code: Code = {
-        basic: `<p-autoComplete 
-    [(ngModel)]="selectedItem" 
-    [virtualScroll]="true" 
-    [suggestions]="filteredItems" 
-    [virtualScrollItemSize]="34" 
-    (completeMethod)="filterItems($event)" 
-    field="label" 
+        basic: `<p-autoComplete
+    [(ngModel)]="selectedItem"
+    [virtualScroll]="true"
+    [suggestions]="filteredItems"
+    [virtualScrollItemSize]="34"
+    (completeMethod)="filterItems($event)"
+    field="label"
     [dropdown]="true" />`,
 
         html: `<div class="card flex justify-content-center">
-    <p-autoComplete 
-        [(ngModel)]="selectedItem" 
-        [virtualScroll]="true" 
-        [suggestions]="filteredItems" 
-        [virtualScrollItemSize]="34" 
-        (completeMethod)="filterItems($event)" 
-        field="label" 
+    <p-autoComplete
+        [(ngModel)]="selectedItem"
+        [virtualScroll]="true"
+        [suggestions]="filteredItems"
+        [virtualScrollItemSize]="34"
+        (completeMethod)="filterItems($event)"
+        field="label"
         [dropdown]="true" />
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { AutoCompleteModule } from 'primeng/autocomplete';
+import { AutoCompleteModule } from 'ng_prime/autocomplete';
 import { FormsModule } from '@angular/forms';
 
 interface AutoCompleteCompleteEvent {

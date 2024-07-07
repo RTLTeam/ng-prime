@@ -1,4 +1,4 @@
-@layer primeng {
+@layer ng_prime {
     .p-menubar {
         display: flex;
         align-items: center;
@@ -50,7 +50,7 @@
 
     .p-menubar .p-submenu-list > .p-menuitem-active > p-menubarsub > .p-submenu-list {
         display: block;
-        left: 100%;
+        right: 100%;
         top: 0;
     }
 

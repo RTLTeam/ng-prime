@@ -36,7 +36,7 @@ export class ToggleableDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { FieldsetModule } from 'primeng/fieldset';
+import { FieldsetModule } from 'ng_prime/fieldset';
 
 @Component({
     selector: 'fieldset-toggleable-demo',

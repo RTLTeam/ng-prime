@@ -19,7 +19,7 @@ import { ProductService } from '@service/productservice';
                     <div class="border-1 surface-border border-round m-2 p-3">
                         <div class="mb-3">
                             <div class="relative mx-auto">
-                                <img src="https://primefaces.org/cdn/primeng/images/demo/product/{{ product.image }}" [alt]="product.name" class="w-full border-round" />
+                                <img src="https://primefaces.org/cdn/ng_prime/images/demo/product/{{ product.image }}" [alt]="product.name" class="w-full border-round" />
                                 <p-tag [value]="product.inventoryStatus" [severity]="getSeverity(product.inventoryStatus)" class="absolute" [ngStyle]="{ 'left.px': 5, 'top.px': 5 }" />
                             </div>
                         </div>
@@ -85,23 +85,23 @@ export class ResponsiveDoc implements OnInit {
     }
 
     code: Code = {
-        basic: `<p-carousel 
-    [value]="products" 
-    [numVisible]="3" 
-    [numScroll]="1" 
+        basic: `<p-carousel
+    [value]="products"
+    [numVisible]="3"
+    [numScroll]="1"
     [responsiveOptions]="responsiveOptions">
         <ng-template let-product pTemplate="item">
             <div class="border-1 surface-border border-round m-2 p-3">
                 <div class="mb-3">
                     <div class="relative mx-auto">
-                        <img 
-                            src="https://primefaces.org/cdn/primeng/images/demo/product/{{ product.image }}" 
-                            [alt]="product.name" 
+                        <img
+                            src="https://primefaces.org/cdn/ng_prime/images/demo/product/{{ product.image }}"
+                            [alt]="product.name"
                             class="w-full border-round" />
-                        <p-tag 
-                            [value]="product.inventoryStatus" 
-                            [severity]="getSeverity(product.inventoryStatus)" 
-                            class="absolute" 
+                        <p-tag
+                            [value]="product.inventoryStatus"
+                            [severity]="getSeverity(product.inventoryStatus)"
+                            class="absolute"
                             [ngStyle]="{ 'left.px': 5, 'top.px': 5 }" />
                     </div>
                 </div>
@@ -121,23 +121,23 @@ export class ResponsiveDoc implements OnInit {
         </ng-template>
 </p-carousel>`,
         html: `<div class="card">
-    <p-carousel 
-        [value]="products" 
-        [numVisible]="3" 
-        [numScroll]="1" 
+    <p-carousel
+        [value]="products"
+        [numVisible]="3"
+        [numScroll]="1"
         [responsiveOptions]="responsiveOptions">
             <ng-template let-product pTemplate="item">
                 <div class="border-1 surface-border border-round m-2 p-3">
                     <div class="mb-3">
                         <div class="relative mx-auto">
-                            <img 
-                                src="https://primefaces.org/cdn/primeng/images/demo/product/{{ product.image }}" 
-                                [alt]="product.name" 
+                            <img
+                                src="https://primefaces.org/cdn/ng_prime/images/demo/product/{{ product.image }}"
+                                [alt]="product.name"
                                 class="w-full border-round" />
-                            <p-tag 
-                                [value]="product.inventoryStatus" 
-                                [severity]="getSeverity(product.inventoryStatus)" 
-                                class="absolute" 
+                            <p-tag
+                                [value]="product.inventoryStatus"
+                                [severity]="getSeverity(product.inventoryStatus)"
+                                class="absolute"
                                 [ngStyle]="{ 'left.px': 5, 'top.px': 5 }" />
                         </div>
                     </div>
@@ -160,9 +160,9 @@ export class ResponsiveDoc implements OnInit {
         typescript: `import { Component, OnInit } from '@angular/core';
 import { Product } from '@domain/product';
 import { ProductService } from '@service/productservice';
-import { CarouselModule } from 'primeng/carousel';
-import { ButtonModule } from 'primeng/button';
-import { TagModule } from 'primeng/tag';
+import { CarouselModule } from 'ng_prime/carousel';
+import { ButtonModule } from 'ng_prime/button';
+import { TagModule } from 'ng_prime/tag';
 
 @Component({
     selector: 'carousel-responsive-demo',
@@ -215,7 +215,7 @@ export class CarouselResponsiveDemo {
 }`,
 
         data: `
-/* ProductService */        
+/* ProductService */
 {
     id: '1000',
     code: 'f230fh0g3',

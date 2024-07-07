@@ -67,11 +67,11 @@ export class FrozenColumnsDoc {
     }
 
     code: Code = {
-        basic: `<p-toggleButton 
-    [(ngModel)]="balanceFrozen" 
+        basic: `<p-toggleButton
+    [(ngModel)]="balanceFrozen"
     [onIcon]="'pi pi-lock'"
-    offIcon="pi pi-lock-open" 
-    [onLabel]="'Balance'" 
+    offIcon="pi pi-lock-open"
+    [onLabel]="'Balance'"
     offLabel="Balance" />
 
 <p-table [value]="customers" [scrollable]="true" scrollHeight="400px" styleClass="mt-3">
@@ -103,10 +103,10 @@ export class FrozenColumnsDoc {
     </ng-template>
 </p-table>`,
         html: `<div class="card">
-    <p-toggleButton 
-        [(ngModel)]="balanceFrozen" 
-        [onIcon]="'pi pi-lock'" 
-        offIcon="pi pi-lock-open" 
+    <p-toggleButton
+        [(ngModel)]="balanceFrozen"
+        [onIcon]="'pi pi-lock'"
+        offIcon="pi pi-lock-open"
         [onLabel]="'Balance'"
         offLabel="Balance" />
 
@@ -142,8 +142,8 @@ export class FrozenColumnsDoc {
         typescript: `import { Component, OnInit } from '@angular/core';
 import { Customer } from '@domain/customer';
 import { CustomerService } from '@service/customerservice';
-import { TableModule } from 'primeng/table';
-import { ToggleButtonModule } from 'primeng/togglebutton';
+import { TableModule } from 'ng_prime/table';
+import { ToggleButtonModule } from 'ng_prime/togglebutton';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -177,7 +177,7 @@ export class TableFrozenColumnsDemo implements OnInit{
 
     formatCurrency(value: number) {
         return value.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
-    } 
+    }
 }`,
         scss: `
 :host ::ng-deep  .p-frozen-column {

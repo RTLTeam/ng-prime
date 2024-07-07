@@ -303,7 +303,7 @@
   color: #5472d4;
 }
 
-@layer primeng {
+@layer ng_prime {
   * {
     box-sizing: border-box;
   }
@@ -6433,7 +6433,7 @@
 }
 /* Customizations to the designer theme should be defined here */
 /* Customizations to the designer theme should be defined here */
-@layer primeng {
+@layer ng_prime {
   .p-button .p-button-label {
     font-weight: 600;
   }

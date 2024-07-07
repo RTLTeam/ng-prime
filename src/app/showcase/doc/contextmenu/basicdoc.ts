@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuItem } from 'primeng/api';
+import { MenuItem } from 'ng_prime/api';
 import { Code } from '@domain/code';
 
 @Component({
@@ -9,7 +9,7 @@ import { Code } from '@domain/code';
             <p>ContextMenu can be attached to a particular element whose local template variable name is defined using the <i>target</i> property.</p>
         </app-docsectiontext>
         <div class="card flex justify-content-center">
-            <img #img src="https://primefaces.org/cdn/primeng/images/demo/nature/nature2.jpg" alt="Logo" aria-haspopup="true" class="max-w-full" />
+            <img #img src="https://primefaces.org/cdn/ng_prime/images/demo/nature/nature2.jpg" alt="Logo" aria-haspopup="true" class="max-w-full" />
             <p-contextMenu [target]="img" [model]="items" />
         </div>
         <app-code [code]="code" selector="context-menu-basic-demo"></app-code>
@@ -26,27 +26,27 @@ export class BasicDoc implements OnInit {
     }
 
     code: Code = {
-        basic: `<img 
-    #img 
-    src="https://primefaces.org/cdn/primeng/images/demo/nature/nature2.jpg" 
-    alt="Logo" 
-    aria-haspopup="true" 
+        basic: `<img
+    #img
+    src="https://primefaces.org/cdn/ng_prime/images/demo/nature/nature2.jpg"
+    alt="Logo"
+    aria-haspopup="true"
     class="max-w-full" />
 <p-contextMenu [target]="img" [model]="items" />`,
 
         html: `<div class="card flex justify-content-center">
-    <img 
-        #img 
-        src="https://primefaces.org/cdn/primeng/images/demo/nature/nature2.jpg" 
+    <img
+        #img
+        src="https://primefaces.org/cdn/ng_prime/images/demo/nature/nature2.jpg"
         alt="Logo"
-        aria-haspopup="true" 
+        aria-haspopup="true"
         class="max-w-full" />
     <p-contextMenu [target]="img" [model]="items" />
 </div>`,
 
         typescript: `import { Component, OnInit } from '@angular/core';
-import { MenuItem } from 'primeng/api';
-import { ContextMenuModule } from 'primeng/contextmenu';
+import { MenuItem } from 'ng_prime/api';
+import { ContextMenuModule } from 'ng_prime/contextmenu';
 
 @Component({
     selector: 'context-menu-basic-demo',

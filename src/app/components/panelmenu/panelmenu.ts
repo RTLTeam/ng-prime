@@ -25,14 +25,14 @@ import {
     signal
 } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { MenuItem, PrimeTemplate, SharedModule } from 'primeng/api';
-import { DomHandler } from 'primeng/dom';
-import { AngleDownIcon } from 'primeng/icons/angledown';
-import { AngleRightIcon } from 'primeng/icons/angleright';
-import { ChevronDownIcon } from 'primeng/icons/chevrondown';
-import { ChevronRightIcon } from 'primeng/icons/chevronright';
-import { TooltipModule } from 'primeng/tooltip';
-import { ObjectUtils, UniqueComponentId } from 'primeng/utils';
+import { MenuItem, PrimeTemplate, SharedModule } from 'ng_prime/api';
+import { DomHandler } from 'ng_prime/dom';
+import { AngleDownIcon } from 'ng_prime/icons/angledown';
+import { AngleRightIcon } from 'ng_prime/icons/angleright';
+import { ChevronDownIcon } from 'ng_prime/icons/chevrondown';
+import { ChevronRightIcon } from 'ng_prime/icons/chevronright';
+import { TooltipModule } from 'ng_prime/tooltip';
+import { ObjectUtils, UniqueComponentId } from 'ng_prime/utils';
 
 @Component({
     selector: 'p-panelMenuSub',

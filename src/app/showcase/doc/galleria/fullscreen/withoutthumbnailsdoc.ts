@@ -71,15 +71,15 @@ export class WithoutThumbnailsDoc implements OnInit {
     [showItemNavigators]="true"
     [showThumbnails]="false">
         <ng-template pTemplate="item" let-item>
-            <img 
-                [src]="item.itemImageSrc" 
+            <img
+                [src]="item.itemImageSrc"
                 style="width: 100%; display: block;" />
         </ng-template>
 </p-galleria>`,
         html: `<div class="card flex justify-content-center">
-    <p-button 
-    icon="pi pi-external-link" 
-    label="Show" 
+    <p-button
+    icon="pi pi-external-link"
+    label="Show"
     (click)="displayBasic = true" />
         <p-galleria
             [(value)]="images"
@@ -92,16 +92,16 @@ export class WithoutThumbnailsDoc implements OnInit {
             [showItemNavigators]="true"
             [showThumbnails]="false">
                 <ng-template pTemplate="item" let-item>
-                    <img 
-                        [src]="item.itemImageSrc" 
+                    <img
+                        [src]="item.itemImageSrc"
                         style="width: 100%; display: block;" />
                 </ng-template>
         </p-galleria>
 </div>`,
         typescript: `import { Component, OnInit } from '@angular/core';
 import { PhotoService } from '@service/photoservice';
-import { GalleriaModule } from 'primeng/galleria';
-import { ButtonModule } from 'primeng/button';
+import { GalleriaModule } from 'ng_prime/galleria';
+import { ButtonModule } from 'ng_prime/button';
 
 @Component({
     selector: 'galleria-full-screen-without-thumbnails-demo',
@@ -143,8 +143,8 @@ export class GalleriaFullScreenWithoutThumbnailsDemo implements OnInit {
         data: `
 /* PhotoService */
 {
-    itemImageSrc: 'https://primeng.org/images/galleria/galleria1.jpg',
-    thumbnailImageSrc: 'https://primeng.org/images/galleria/galleria1s.jpg',
+    itemImageSrc: 'https://ng_prime.org/images/galleria/galleria1.jpg',
+    thumbnailImageSrc: 'https://ng_prime.org/images/galleria/galleria1s.jpg',
     alt: 'Description for Image 1',
     title: 'Title 1'
 },

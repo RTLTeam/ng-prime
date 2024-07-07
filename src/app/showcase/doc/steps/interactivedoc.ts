@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuItem, MessageService } from 'primeng/api';
+import { MenuItem, MessageService } from 'ng_prime/api';
 import { Code } from '@domain/code';
 
 @Component({
@@ -50,25 +50,25 @@ export class InteractiveDoc implements OnInit {
 
     code: Code = {
         basic: `<p-toast />
-<p-steps 
-    [model]="items" 
-    [readonly]="false" 
-    [activeIndex]="activeIndex" 
+<p-steps
+    [model]="items"
+    [readonly]="false"
+    [activeIndex]="activeIndex"
     (activeIndexChange)="onActiveIndexChange($event)" />`,
 
         html: `<div class="card">
     <p-toast />
-    <p-steps 
-        [model]="items" 
-        [readonly]="false" 
-        [activeIndex]="activeIndex" 
+    <p-steps
+        [model]="items"
+        [readonly]="false"
+        [activeIndex]="activeIndex"
         (activeIndexChange)="onActiveIndexChange($event)" />
 </div>`,
 
         typescript: `import { Component, OnInit } from '@angular/core';
-import { MenuItem, MessageService } from 'primeng/api';
-import { StepsModule } from 'primeng/steps';
-import { ToastModule } from 'primeng/toast';
+import { MenuItem, MessageService } from 'ng_prime/api';
+import { StepsModule } from 'ng_prime/steps';
+import { ToastModule } from 'ng_prime/toast';
 
 @Component({
     selector: 'steps-interactive-demo',

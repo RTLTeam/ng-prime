@@ -36,7 +36,7 @@ describe('InputText', () => {
         fixture.detectChanges();
 
         const inputEl = fixture.debugElement.query(By.css('input'));
-        inputEl.nativeElement.value = 'primeng';
+        inputEl.nativeElement.value = 'ng_prime';
         inputEl.nativeElement.dispatchEvent(new Event('input'));
         fixture.detectChanges();
 

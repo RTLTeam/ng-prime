@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Code } from '@domain/code';
-import { MessageService, PrimeNGConfig } from 'primeng/api';
+import { MessageService, PrimeNGConfig } from 'ng_prime/api';
 
 @Component({
     selector: 'file-upload-template-demo',
@@ -237,14 +237,14 @@ export class TemplateDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { MessageService, PrimeNGConfig} from 'primeng/api';
-import { FileUploadModule } from 'primeng/fileupload';
-import { ButtonModule } from 'primeng/button';
+import { MessageService, PrimeNGConfig} from 'ng_prime/api';
+import { FileUploadModule } from 'ng_prime/fileupload';
+import { ButtonModule } from 'ng_prime/button';
 import { CommonModule } from '@angular/common';
-import { BadgeModule } from 'primeng/badge';
+import { BadgeModule } from 'ng_prime/badge';
 import { HttpClientModule } from '@angular/common/http';
-import { ProgressBarModule } from 'primeng/progressbar';
-import { ToastModule } from 'primeng/toast';
+import { ProgressBarModule } from 'ng_prime/progressbar';
+import { ToastModule } from 'ng_prime/toast';
 
 @Component({
     selector: 'file-upload-template-demo',

@@ -497,7 +497,7 @@
                 },
                 {
                     "name": "SASS API",
-                    "href": "https://www.primefaces.org/designer/api/primeng/15.0.0"
+                    "href": "https://www.primefaces.org/designer/api/ng_prime/15.0.0"
                 }
             ]
         },
@@ -528,7 +528,7 @@
         {
             "name": "PrimeBlocks",
             "icon": "pi pi-server",
-            "href": "https://blocks.primeng.org"
+            "href": "https://blocks.ng_prime.org"
         },
         {
             "name": "Guides",
@@ -584,11 +584,11 @@
                 },
                 {
                     "name": "Source Code",
-                    "href": "https://github.com/primefaces/primeng"
+                    "href": "https://github.com/primefaces/ng_prime"
                 },
                 {
                     "name": "Changelog",
-                    "href": "https://github.com/primefaces/primeng/blob/master/CHANGELOG.md"
+                    "href": "https://github.com/primefaces/ng_prime/blob/master/CHANGELOG.md"
                 },
                 {
                     "name": "Store",

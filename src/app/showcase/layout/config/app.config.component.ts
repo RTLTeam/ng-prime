@@ -1,13 +1,13 @@
 import { CommonModule, DOCUMENT } from '@angular/common';
 import { Component, EventEmitter, Inject, Output, Renderer2 } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { ButtonModule } from 'primeng/button';
-import { InputSwitchModule, InputSwitchChangeEvent } from 'primeng/inputswitch';
-import { RadioButtonModule } from 'primeng/radiobutton';
-import { SelectButtonChangeEvent, SelectButtonModule } from 'primeng/selectbutton';
-import { SidebarModule } from 'primeng/sidebar';
+import { ButtonModule } from 'ng_prime/button';
+import { InputSwitchModule, InputSwitchChangeEvent } from 'ng_prime/inputswitch';
+import { RadioButtonModule } from 'ng_prime/radiobutton';
+import { SelectButtonChangeEvent, SelectButtonModule } from 'ng_prime/selectbutton';
+import { SidebarModule } from 'ng_prime/sidebar';
 import { AppConfigService } from '@service/appconfigservice';
-import { PrimeNGConfig } from 'primeng/api';
+import { PrimeNGConfig } from 'ng_prime/api';
 
 @Component({
     selector: 'app-config',

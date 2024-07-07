@@ -17,7 +17,7 @@ import { RouterModule } from '@angular/router';
                                 <a [routerLink]="['installation']" class="text-secondary font-medium hover:text-primary transition-colors transition-duration-150"> Get Started </a>
                             </li>
                             <li class="mb-4">
-                                <a href="https://github.com/primefaces/primeng-examples" target="_blank" rel="noopener noreferrer" class="text-secondary font-medium hover:text-primary transition-colors transition-duration-150">Examples</a>
+                                <a href="https://github.com/primefaces/ng_prime-examples" target="_blank" rel="noopener noreferrer" class="text-secondary font-medium hover:text-primary transition-colors transition-duration-150">Examples</a>
                             </li>
                         </ul>
                     </div>
@@ -45,7 +45,7 @@ import { RouterModule } from '@angular/router';
                                 <a href="https://www.primefaces.org/store/" target="_blank" rel="noopener noreferrer" class="text-secondary font-medium hover:text-primary transition-colors transition-duration-150">Store</a>
                             </li>
                             <li class="mb-4">
-                                <a href="https://github.com/primefaces/primeng" target="_blank" rel="noopener noreferrer" class="text-secondary font-medium hover:text-primary transition-colors transition-duration-150">Source Code</a>
+                                <a href="https://github.com/primefaces/ng_prime" target="_blank" rel="noopener noreferrer" class="text-secondary font-medium hover:text-primary transition-colors transition-duration-150">Source Code</a>
                             </li>
                             <li class="mb-4">
                                 <a href="https://twitter.com/prime_ng" target="_blank" rel="noopener noreferrer" class="text-secondary font-medium hover:text-primary transition-colors transition-duration-150">Twitter</a>
@@ -113,7 +113,7 @@ import { RouterModule } from '@angular/router';
                         <a href="https://twitter.com/prime_ng" target="_blank" rel="noopener noreferrer" class="linkbox block w-3rem h-3rem flex align-items-center justify-content-center">
                             <i class="pi pi-twitter"></i>
                         </a>
-                        <a href="https://github.com/primefaces/primeng" target="_blank" rel="noopener noreferrer" class="linkbox block w-3rem h-3rem flex align-items-center justify-content-center">
+                        <a href="https://github.com/primefaces/ng_prime" target="_blank" rel="noopener noreferrer" class="linkbox block w-3rem h-3rem flex align-items-center justify-content-center">
                             <i class="pi pi-github"></i>
                         </a>
                         <a href="https://discord.gg/gzKFYnpmCY" target="_blank" rel="noopener noreferrer" class="linkbox block w-3rem h-3rem flex align-items-center justify-content-center">

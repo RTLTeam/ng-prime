@@ -27,7 +27,7 @@ describe('RadioButton', () => {
     });
 
     it('should change name inputId value style styleClass label labelStyleClass and tabIndex', () => {
-        radiobutton.name = 'primeng';
+        radiobutton.name = 'ng_prime';
         radiobutton.inputId = 'prime';
         radiobutton.value = 'Primeng';
         radiobutton.style = { height: '300px' };
@@ -40,7 +40,7 @@ describe('RadioButton', () => {
         const radiobuttonEl = fixture.debugElement.query(By.css('div'));
         const inputEl = fixture.debugElement.query(By.css('input'));
         const labelEl = fixture.debugElement.query(By.css('label'));
-        expect(inputEl.nativeElement.name).toEqual('primeng');
+        expect(inputEl.nativeElement.name).toEqual('ng_prime');
         expect(inputEl.nativeElement.value).toEqual('Primeng');
         expect(inputEl.nativeElement.id).toEqual('prime');
         expect(inputEl.nativeElement.tabIndex).toEqual(13);

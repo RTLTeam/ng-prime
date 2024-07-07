@@ -12,7 +12,7 @@ import { Code } from '@domain/code';
             <p-dialog header="Header" [(visible)]="visible" [modal]="true" [style]="{ width: '25rem' }">
                 <ng-template pTemplate="header">
                     <div class="inline-flex align-items-center justify-content-center gap-2">
-                        <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" shape="circle" />
+                        <p-avatar image="https://primefaces.org/cdn/ng_prime/images/demo/avatar/amyelsner.png" shape="circle" />
                         <span class="font-bold white-space-nowrap">Amy Elsner</span>
                     </div>
                 </ng-template>
@@ -43,15 +43,15 @@ export class TemplateDoc {
 
     code: Code = {
         basic: `<p-button (click)="showDialog()" label="Show" />
-<p-dialog 
-    header="Header" 
-    [(visible)]="visible" 
-    [modal]="true" 
+<p-dialog
+    header="Header"
+    [(visible)]="visible"
+    [modal]="true"
     [style]="{ width: '25rem' }">
         <ng-template pTemplate="header">
             <div class="inline-flex align-items-center justify-content-center gap-2">
-                <p-avatar 
-                    image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" 
+                <p-avatar
+                    image="https://primefaces.org/cdn/ng_prime/images/demo/avatar/amyelsner.png"
                     shape="circle" />
                 <span class="font-bold white-space-nowrap">
                     Amy Elsner
@@ -70,31 +70,31 @@ export class TemplateDoc {
             <input pInputText id="email" class="flex-auto" autocomplete="off" />
         </div>
         <ng-template pTemplate="footer">
-            <p-button 
-                label="Cancel" 
-                [text]="true" 
-                severity="secondary" 
+            <p-button
+                label="Cancel"
+                [text]="true"
+                severity="secondary"
                 (click)="visible = false" />
-            <p-button 
-                label="Save" 
-                [outlined]="true" 
-                severity="secondary" 
-                (click)="visible = false" 
+            <p-button
+                label="Save"
+                [outlined]="true"
+                severity="secondary"
+                (click)="visible = false"
               />
         </ng-template>
 </p-dialog>`,
 
         html: `<div class="card flex justify-content-center">
     <p-button (click)="showDialog()" label="Show" />
-    <p-dialog 
-        header="Header" 
-        [(visible)]="visible" 
-        [modal]="true" 
+    <p-dialog
+        header="Header"
+        [(visible)]="visible"
+        [modal]="true"
         [style]="{ width: '25rem' }">
             <ng-template pTemplate="header">
                 <div class="inline-flex align-items-center justify-content-center gap-2">
-                    <p-avatar 
-                        image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png"
+                    <p-avatar
+                        image="https://primefaces.org/cdn/ng_prime/images/demo/avatar/amyelsner.png"
                         shape="circle" />
                     <span class="font-bold white-space-nowrap">
                         Amy Elsner
@@ -113,27 +113,27 @@ export class TemplateDoc {
                 <input pInputText id="email" class="flex-auto" autocomplete="off" />
             </div>
             <ng-template pTemplate="footer">
-                <p-button 
-                    label="Cancel" 
-                    [text]="true" 
-                    severity="secondary" 
+                <p-button
+                    label="Cancel"
+                    [text]="true"
+                    severity="secondary"
                     (click)="visible = false" />
-                <p-button 
-                    label="Save" 
-                    [outlined]="true" 
-                    severity="secondary" 
-                    (click)="visible = false" 
+                <p-button
+                    label="Save"
+                    [outlined]="true"
+                    severity="secondary"
+                    (click)="visible = false"
                   />
             </ng-template>
     </p-dialog>
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { DialogModule } from 'primeng/dialog';
-import { ButtonModule } from 'primeng/button';
-import { InputTextModule } from 'primeng/inputtext';
-import { AvatarModule } from 'primeng/avatar';
-        
+import { DialogModule } from 'ng_prime/dialog';
+import { ButtonModule } from 'ng_prime/button';
+import { InputTextModule } from 'ng_prime/inputtext';
+import { AvatarModule } from 'ng_prime/avatar';
+
 @Component({
     selector: 'dialog-template-demo',
     templateUrl: './dialog-template-demo.html',

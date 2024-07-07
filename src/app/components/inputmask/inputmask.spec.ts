@@ -42,7 +42,7 @@ describe('InputMask', () => {
         inputmask.style = { height: '300px' };
         inputmask.styleClass = 'PrimengRocks';
         inputmask.placeholder = 'GiveMeANumber';
-        inputmask.inputId = 'primeng';
+        inputmask.inputId = 'ng_prime';
         inputmask.size = 5;
         inputmask.tabindex = '1';
         inputmask.required = true;
@@ -54,7 +54,7 @@ describe('InputMask', () => {
         expect(inputMaskEl.nativeElement.style['height']).toEqual('300px');
         expect(inputMaskEl.nativeElement.className).toContain('PrimengRocks');
         expect(inputMaskEl.nativeElement.placeholder).toEqual('GiveMeANumber');
-        expect(inputMaskEl.nativeElement.id).toEqual('primeng');
+        expect(inputMaskEl.nativeElement.id).toEqual('ng_prime');
         expect(inputMaskEl.nativeElement.size).toEqual(5);
         expect(inputMaskEl.nativeElement.tabIndex).toEqual(1);
         expect(inputMaskEl.nativeElement.required).toBeTruthy();

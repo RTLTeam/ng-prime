@@ -24,14 +24,14 @@ import {
     signal
 } from '@angular/core';
 import { ActivatedRoute, NavigationEnd, Router, RouterModule } from '@angular/router';
-import { MenuItem, PrimeTemplate, SharedModule } from 'primeng/api';
-import { DomHandler } from 'primeng/dom';
-import { ChevronLeftIcon } from 'primeng/icons/chevronleft';
-import { ChevronRightIcon } from 'primeng/icons/chevronright';
-import { RippleModule } from 'primeng/ripple';
-import { TooltipModule } from 'primeng/tooltip';
-import { Nullable } from 'primeng/ts-helpers';
-import { ObjectUtils } from 'primeng/utils';
+import { MenuItem, PrimeTemplate, SharedModule } from 'ng_prime/api';
+import { DomHandler } from 'ng_prime/dom';
+import { ChevronLeftIcon } from 'ng_prime/icons/chevronleft';
+import { ChevronRightIcon } from 'ng_prime/icons/chevronright';
+import { RippleModule } from 'ng_prime/ripple';
+import { TooltipModule } from 'ng_prime/tooltip';
+import { Nullable } from 'ng_prime/ts-helpers';
+import { ObjectUtils } from 'ng_prime/utils';
 import { filter } from 'rxjs/operators';
 
 /**

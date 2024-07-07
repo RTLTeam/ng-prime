@@ -110,8 +110,8 @@ export class DataDoc {
         typescript: `import { Component } from '@angular/core';
 import { Car } from '@domain/car';
 import { CarService } from '@service/carservice';
-import { InplaceModule } from 'primeng/inplace';
-import { TableModule } from 'primeng/table';
+import { InplaceModule } from 'ng_prime/inplace';
+import { TableModule } from 'ng_prime/table';
 
 @Component({
     selector: 'inplace-data-demo',
@@ -127,7 +127,7 @@ export class InplaceDataDemo {
 
     ngOnInit() {
         this.carService.getCarsSmall().then((cars) => (this.cars = cars));
-    } 
+    }
 }`,
         service: ['CarService']
     };

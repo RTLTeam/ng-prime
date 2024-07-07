@@ -3,8 +3,8 @@ import { Component, ElementRef, EventEmitter, Inject, Input, OnDestroy, Output, 
 import { FormsModule } from '@angular/forms';
 import { Router, RouterModule } from '@angular/router';
 import docsearch from '@docsearch/js';
-import { DomHandler } from 'primeng/dom';
-import { StyleClassModule } from 'primeng/styleclass';
+import { DomHandler } from 'ng_prime/dom';
+import { StyleClassModule } from 'ng_prime/styleclass';
 import Versions from '../../data/versions.json';
 import { AppConfigService } from '@service/appconfigservice';
 
@@ -68,7 +68,7 @@ export class AppTopBarComponent implements OnDestroy {
         docsearch({
             appId: 'XG1L2MUWT9',
             apiKey: '6057fe1af77fee4e7e41907b0b3ec79d',
-            indexName: 'primeng',
+            indexName: 'ng_prime',
             container: '#docsearch'
         });
     }

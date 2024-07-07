@@ -45,22 +45,22 @@ export class ClickEventDoc implements OnInit {
     }
 
     code: Code = {
-        basic: `<p-galleria 
-    [(value)]="images" 
-    [showIndicators]="true" 
-    [showThumbnails]="false" 
-    [responsiveOptions]="responsiveOptions" 
+        basic: `<p-galleria
+    [(value)]="images"
+    [showIndicators]="true"
+    [showThumbnails]="false"
+    [responsiveOptions]="responsiveOptions"
     [containerStyle]="{ 'max-width': '640px' }">
     <ng-template pTemplate="item" let-item>
         <img [src]="item.itemImageSrc" style="width: 100%; display: block;" />
     </ng-template>
 </p-galleria>`,
         html: `<div class="card">
-    <p-galleria 
-        [(value)]="images" 
-        [showIndicators]="true" 
-        [showThumbnails]="false" 
-        [responsiveOptions]="responsiveOptions" 
+    <p-galleria
+        [(value)]="images"
+        [showIndicators]="true"
+        [showThumbnails]="false"
+        [responsiveOptions]="responsiveOptions"
         [containerStyle]="{ 'max-width': '640px' }">
             <ng-template pTemplate="item" let-item>
                 <img [src]="item.itemImageSrc" style="width: 100%; display: block;" />
@@ -69,7 +69,7 @@ export class ClickEventDoc implements OnInit {
 </div>`,
         typescript: `import { Component, OnInit } from '@angular/core';
 import { PhotoService } from '@service/photoservice';
-import { GalleriaModule } from 'primeng/galleria';
+import { GalleriaModule } from 'ng_prime/galleria';
 
 @Component({
     selector: 'galleria-indicator-click-event-demo',
@@ -107,8 +107,8 @@ export class GalleriaIndicatorClickEventDemo implements OnInit {
         data: `
 /* PhotoService */
 {
-    itemImageSrc: 'https://primeng.org/images/galleria/galleria1.jpg',
-    thumbnailImageSrc: 'https://primeng.org/images/galleria/galleria1s.jpg',
+    itemImageSrc: 'https://ng_prime.org/images/galleria/galleria1.jpg',
+    thumbnailImageSrc: 'https://ng_prime.org/images/galleria/galleria1s.jpg',
     alt: 'Description for Image 1',
     title: 'Title 1'
 },

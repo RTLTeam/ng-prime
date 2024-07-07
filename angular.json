@@ -3,7 +3,7 @@
     "version": 1,
     "newProjectRoot": "projects",
     "projects": {
-        "primeng-library": {
+        "ng_prime-library": {
             "root": "src",
             "projectType": "library",
             "architect": {
@@ -16,7 +16,7 @@
                 }
             }
         },
-        "primeng": {
+        "ng_prime": {
             "projectType": "application",
             "schematics": {
                 "@schematics/angular:component": {
@@ -30,7 +30,7 @@
                 "build": {
                     "builder": "@angular-devkit/build-angular:application",
                     "options": {
-                        "outputPath": "dist/primeng",
+                        "outputPath": "dist/ng_prime",
                         "index": "src/index.html",
                         "browser": "src/main.ts",
                         "polyfills": [
@@ -87,10 +87,10 @@
                     "builder": "@angular-devkit/build-angular:dev-server",
                     "configurations": {
                         "production": {
-                            "buildTarget": "primeng:build:production"
+                            "buildTarget": "ng_prime:build:production"
                         },
                         "development": {
-                            "buildTarget": "primeng:build:development"
+                            "buildTarget": "ng_prime:build:development"
                         }
                     },
                     "defaultConfiguration": "development"
@@ -98,7 +98,7 @@
                 "extract-i18n": {
                     "builder": "@angular-devkit/build-angular:extract-i18n",
                     "options": {
-                        "buildTarget": "primeng:build"
+                        "buildTarget": "ng_prime:build"
                     }
                 },
                 "test": {

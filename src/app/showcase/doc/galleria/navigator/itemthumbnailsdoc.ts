@@ -51,12 +51,12 @@ export class ItemThumbnailsDoc implements OnInit {
     }
 
     code: Code = {
-        basic: `<p-galleria 
-    [(value)]="images" 
-    [showItemNavigators]="true" 
-    [responsiveOptions]="responsiveOptions" 
-    [circular]="true" 
-    [numVisible]="5" 
+        basic: `<p-galleria
+    [(value)]="images"
+    [showItemNavigators]="true"
+    [responsiveOptions]="responsiveOptions"
+    [circular]="true"
+    [numVisible]="5"
     [containerStyle]="{ 'max-width': '640px' }">
         <ng-template pTemplate="item" let-item>
             <img [src]="item.itemImageSrc" style="width: 100%; display: block;" />
@@ -68,12 +68,12 @@ export class ItemThumbnailsDoc implements OnInit {
         </ng-template>
 </p-galleria>`,
         html: `<div class="card">
-    <p-galleria 
-        [(value)]="images" 
-        [showItemNavigators]="true" 
-        [responsiveOptions]="responsiveOptions" 
-        [circular]="true" 
-        [numVisible]="5" 
+    <p-galleria
+        [(value)]="images"
+        [showItemNavigators]="true"
+        [responsiveOptions]="responsiveOptions"
+        [circular]="true"
+        [numVisible]="5"
         [containerStyle]="{ 'max-width': '640px' }">
             <ng-template pTemplate="item" let-item>
                 <img [src]="item.itemImageSrc" style="width: 100%; display: block;" />
@@ -87,7 +87,7 @@ export class ItemThumbnailsDoc implements OnInit {
 </div>`,
         typescript: `import { Component, OnInit } from '@angular/core';
 import { PhotoService } from '@service/photoservice';
-import { GalleriaModule } from 'primeng/galleria';
+import { GalleriaModule } from 'ng_prime/galleria';
 
 @Component({
     selector: 'galleria-navigator-item-thumbnails-demo',
@@ -125,8 +125,8 @@ export class GalleriaNavigatorItemThumbnailsDemo implements OnInit {
         data: `
 /* PhotoService */
 {
-    itemImageSrc: 'https://primeng.org/images/galleria/galleria1.jpg',
-    thumbnailImageSrc: 'https://primeng.org/images/galleria/galleria1s.jpg',
+    itemImageSrc: 'https://ng_prime.org/images/galleria/galleria1.jpg',
+    thumbnailImageSrc: 'https://ng_prime.org/images/galleria/galleria1s.jpg',
     alt: 'Description for Image 1',
     title: 'Title 1'
 },

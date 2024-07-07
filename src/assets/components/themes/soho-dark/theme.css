@@ -294,7 +294,7 @@
   color: #b19df7;
 }
 
-@layer primeng {
+@layer ng_prime {
   * {
     box-sizing: border-box;
   }
@@ -6374,7 +6374,7 @@
     font-size: 1rem;
   }
 }
-@layer primeng {
+@layer ng_prime {
   .p-carousel .p-carousel-indicators .p-carousel-indicator.p-highlight button {
     background-color: #b19df7;
   }

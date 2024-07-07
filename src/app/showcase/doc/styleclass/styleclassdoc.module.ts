@@ -5,9 +5,9 @@ import { AppDocModule } from '@layout/doc/app.doc.module';
 import { AppCodeModule } from '@layout/doc/app.code.component';
 import { ToggleClassDoc } from './toggleclassdoc';
 import { ImportDoc } from './importdoc';
-import { StyleClassModule } from 'primeng/styleclass';
-import { ButtonModule } from 'primeng/button';
-import { InputTextModule } from 'primeng/inputtext';
+import { StyleClassModule } from 'ng_prime/styleclass';
+import { ButtonModule } from 'ng_prime/button';
+import { InputTextModule } from 'ng_prime/inputtext';
 import { AnimationDoc } from './animationdoc';
 
 @NgModule({

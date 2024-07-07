@@ -289,7 +289,7 @@
   color: #a3e635;
 }
 
-@layer primeng {
+@layer ng_prime {
   * {
     box-sizing: border-box;
   }
@@ -6526,7 +6526,7 @@
     font-size: 1rem;
   }
 }
-@layer primeng {
+@layer ng_prime {
   .p-accordion .p-accordion-header .p-accordion-header-link {
     border-radius: 6px !important;
     flex-direction: row-reverse;

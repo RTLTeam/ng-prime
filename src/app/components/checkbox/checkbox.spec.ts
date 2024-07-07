@@ -3,7 +3,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormsModule } from '@angular/forms';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { Checkbox } from './checkbox';
-import { CheckIcon } from 'primeng/icons/check';
+import { CheckIcon } from 'ng_prime/icons/check';
 
 @Component({
     template: ` <p-checkbox [(ngModel)]="checked"> </p-checkbox> `
@@ -41,7 +41,7 @@ describe('Checkbox', () => {
     });
 
     it('should disabled', () => {
-        checkbox.label = 'primeng';
+        checkbox.label = 'ng_prime';
         checkbox.disabled = true;
         checkbox.cd.detectChanges();
 
@@ -64,8 +64,8 @@ describe('Checkbox', () => {
     it('should get a label name inputId tabindex style styleClass and labelStyleClass', () => {
         checkbox.binary = true;
         checkbox.label = 'Primeng ROCKS!';
-        checkbox.name = 'primeng';
-        checkbox.inputId = 'primeng';
+        checkbox.name = 'ng_prime';
+        checkbox.inputId = 'ng_prime';
         checkbox.tabindex = 13;
         checkbox.style = { height: '300px' };
         checkbox.styleClass = 'Primeng Rocks!';
@@ -82,8 +82,8 @@ describe('Checkbox', () => {
         expect(labelEl).toBeTruthy();
         expect(labelEl.className).toContain('Primeng ROCKS');
         expect(labelEl.className).toContain('p-checkbox-label-active');
-        expect(input.name).toEqual('primeng');
-        expect(input.id).toEqual('primeng');
+        expect(input.name).toEqual('ng_prime');
+        expect(input.id).toEqual('ng_prime');
         expect(input.tabIndex).toEqual(13);
         expect(containerEl.className).toContain('Primeng Rocks!');
         expect(containerEl.style.height).toContain('300px');
@@ -117,7 +117,7 @@ describe('Checkbox', () => {
     });
 
     it('should call onBlur and onFocus', () => {
-        checkbox.label = 'primeng';
+        checkbox.label = 'ng_prime';
         fixture.detectChanges();
 
         const input = fixture.nativeElement.querySelector('input');

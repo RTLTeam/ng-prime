@@ -35,7 +35,7 @@ interface Column {
                     <ng-template pTemplate="body" let-product>
                         <tr>
                             <td>{{ product.name }}</td>
-                            <td><img [src]="'https://primefaces.org/cdn/primeng/images/demo/product/' + product.image" [alt]="product.name" width="100" class="shadow-4" /></td>
+                            <td><img [src]="'https://primefaces.org/cdn/ng_prime/images/demo/product/' + product.image" [alt]="product.name" width="100" class="shadow-4" /></td>
                             <td>{{ product.price | currency: 'USD' }}</td>
                             <td>{{ product.category }}</td>
                             <td><p-rating [(ngModel)]="product.rating" [readonly]="true" [cancel]="false" /></td>
@@ -109,7 +109,7 @@ export class TemplateDoc {
     <ng-template pTemplate="body" let-product>
         <tr>
             <td>{{product.name}}</td>
-            <td><img [src]="'https://primefaces.org/cdn/primeng/images/demo/product/' + product.image" [alt]="product.name" width="100" class="shadow-4" /></td>
+            <td><img [src]="'https://primefaces.org/cdn/ng_prime/images/demo/product/' + product.image" [alt]="product.name" width="100" class="shadow-4" /></td>
             <td>{{product.price | currency:'USD'}}</td>
             <td>{{product.category}}</td>
             <td><p-rating [(ngModel)]="product.rating" [readonly]="true" [cancel]="false" /></td>
@@ -143,7 +143,7 @@ export class TemplateDoc {
         <ng-template pTemplate="body" let-product>
             <tr>
                 <td>{{product.name}}</td>
-                <td><img [src]="'https://primefaces.org/cdn/primeng/images/demo/product/' + product.image" [alt]="product.name" width="100" class="shadow-4" /></td>
+                <td><img [src]="'https://primefaces.org/cdn/ng_prime/images/demo/product/' + product.image" [alt]="product.name" width="100" class="shadow-4" /></td>
                 <td>{{product.price | currency:'USD'}}</td>
                 <td>{{product.category}}</td>
                 <td><p-rating [(ngModel)]="product.rating" [readonly]="true" [cancel]="false" /></td>
@@ -160,11 +160,11 @@ export class TemplateDoc {
         typescript: `import { Component, OnInit } from '@angular/core';
 import { Product } from '@domain/product';
 import { ProductService } from '@service/productservice';
-import { TableModule } from 'primeng/table';
-import { TagModule } from 'primeng/tag';
-import { RatingModule } from 'primeng/rating';
+import { TableModule } from 'ng_prime/table';
+import { TagModule } from 'ng_prime/tag';
+import { RatingModule } from 'ng_prime/rating';
 import { CommonModule } from '@angular/common';
-import { ButtonModule } from 'primeng/button';
+import { ButtonModule } from 'ng_prime/button';
 
 @Component({
     selector: 'table-template-demo',

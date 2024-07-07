@@ -17,7 +17,7 @@ import { Code } from '@domain/code';
 
             <h3>CSS layer</h3>
             <p>
-                The style classes of PrimeNG are defined under the <i>primeng</i> CSS layer to be easier to customize by having low specificity. If you are using a CSS library that styles default HTML elements such as Tailwind Preflight, Bootstrap,
+                The style classes of PrimeNG are defined under the <i>ng_prime</i> CSS layer to be easier to customize by having low specificity. If you are using a CSS library that styles default HTML elements such as Tailwind Preflight, Bootstrap,
                 Normalize, or similar, a custom CSS layer configuration would be necessary for compatibility. View the <a [routerLink]="['/guides/csslayer']">CSS Layer</a> guide for more information.
             </p>
             <app-code [code]="code3" [hideToggleCode]="true"></app-code>
@@ -28,20 +28,20 @@ export class StylesDoc {
     code1: Code = {
         typescript: `...
 "styles": [
-    "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
-    "node_modules/primeng/resources/primeng.min.css",
+    "node_modules/ng_prime/resources/themes/lara-light-blue/theme.css",
+    "node_modules/ng_prime/resources/ng_prime.min.css",
     ...
 ]`
     };
 
     code2: Code = {
-        scss: `@import "primeng/resources/themes/lara-light-blue/theme.css";
-@import "primeng/resources/primeng.css";`
+        scss: `@import "ng_prime/resources/themes/lara-light-blue/theme.css";
+@import "ng_prime/resources/ng_prime.css";`
     };
 
     code3: Code = {
         scss: `/* Order */
-@layer reset, primeng;
+@layer reset, ng_prime;
 
 /* Reset CSS */
 @layer reset {

@@ -1,11 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { booleanAttribute, ChangeDetectionStrategy, ChangeDetectorRef, Component, ContentChildren, EventEmitter, forwardRef, Input, NgModule, numberAttribute, Output, QueryList, TemplateRef } from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
-import { RippleModule } from 'primeng/ripple';
+import { RippleModule } from 'ng_prime/ripple';
 import { ToggleButtonChangeEvent } from './togglebutton.interface';
-import { Nullable } from 'primeng/ts-helpers';
-import { PrimeTemplate, SharedModule } from 'primeng/api';
-import { AutoFocusModule } from 'primeng/autofocus';
+import { Nullable } from 'ng_prime/ts-helpers';
+import { PrimeTemplate, SharedModule } from 'ng_prime/api';
+import { AutoFocusModule } from 'ng_prime/autofocus';
 
 type ToggleButtonIconPosition = 'left' | 'right';
 

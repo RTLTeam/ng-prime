@@ -29,18 +29,18 @@ import {
     booleanAttribute,
     numberAttribute
 } from '@angular/core';
-import { PrimeNGConfig, PrimeTemplate, SharedModule } from 'primeng/api';
-import { DomHandler } from 'primeng/dom';
-import { ChevronLeftIcon } from 'primeng/icons/chevronleft';
-import { ChevronRightIcon } from 'primeng/icons/chevronright';
-import { TimesIcon } from 'primeng/icons/times';
-import { WindowMaximizeIcon } from 'primeng/icons/windowmaximize';
-import { WindowMinimizeIcon } from 'primeng/icons/windowminimize';
-import { RippleModule } from 'primeng/ripple';
-import { VoidListener } from 'primeng/ts-helpers';
-import { UniqueComponentId, ZIndexUtils } from 'primeng/utils';
+import { PrimeNGConfig, PrimeTemplate, SharedModule } from 'ng_prime/api';
+import { DomHandler } from 'ng_prime/dom';
+import { ChevronLeftIcon } from 'ng_prime/icons/chevronleft';
+import { ChevronRightIcon } from 'ng_prime/icons/chevronright';
+import { TimesIcon } from 'ng_prime/icons/times';
+import { WindowMaximizeIcon } from 'ng_prime/icons/windowmaximize';
+import { WindowMinimizeIcon } from 'ng_prime/icons/windowminimize';
+import { RippleModule } from 'ng_prime/ripple';
+import { VoidListener } from 'ng_prime/ts-helpers';
+import { UniqueComponentId, ZIndexUtils } from 'ng_prime/utils';
 import { GalleriaResponsiveOptions } from './galleria.interface';
-import { FocusTrapModule } from 'primeng/focustrap';
+import { FocusTrapModule } from 'ng_prime/focustrap';
 /**
  * Galleria is an advanced content gallery component.
  * @group Components

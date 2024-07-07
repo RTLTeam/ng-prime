@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MegaMenuItem } from 'primeng/api';
+import { MegaMenuItem } from 'ng_prime/api';
 import { Code } from '@domain/code';
 
 @Component({
@@ -124,8 +124,8 @@ export class VerticalDoc implements OnInit {
 </div>`,
 
         typescript: `import { Component, OnInit } from '@angular/core';
-import { MegaMenuItem } from 'primeng/api';
-import { MegaMenuModule } from 'primeng/megamenu';
+import { MegaMenuItem } from 'ng_prime/api';
+import { MegaMenuModule } from 'ng_prime/megamenu';
 
 @Component({
     selector: 'mega-menu-vertical-demo',

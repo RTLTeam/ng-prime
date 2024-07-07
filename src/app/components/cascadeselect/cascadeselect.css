@@ -1,4 +1,4 @@
-@layer primeng {
+@layer ng_prime {
     .p-cascadeselect {
         display: inline-flex;
         cursor: pointer;

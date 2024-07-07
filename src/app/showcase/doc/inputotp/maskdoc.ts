@@ -24,7 +24,7 @@ export class MaskDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { InputOtpModule } from 'primeng/inputotp';
+import { InputOtpModule } from 'ng_prime/inputotp';
 import { FormsModule } from '@angular/forms';
 
 @Component({

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { TreeNode } from 'primeng/api';
+import { TreeNode } from 'ng_prime/api';
 import { Code } from '@domain/code';
 
 @Component({
@@ -29,7 +29,7 @@ export class ColoredDoc {
             type: 'person',
             styleClass: 'bg-indigo-500 text-white',
             data: {
-                image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
+                image: 'https://primefaces.org/cdn/ng_prime/images/demo/avatar/amyelsner.png',
                 name: 'Amy Elsner',
                 title: 'CEO'
             },
@@ -39,7 +39,7 @@ export class ColoredDoc {
                     type: 'person',
                     styleClass: 'bg-purple-500 text-white',
                     data: {
-                        image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/annafali.png',
+                        image: 'https://primefaces.org/cdn/ng_prime/images/demo/avatar/annafali.png',
                         name: 'Anna Fali',
                         title: 'CMO'
                     },
@@ -61,7 +61,7 @@ export class ColoredDoc {
                     type: 'person',
                     styleClass: 'bg-teal-500 text-white',
                     data: {
-                        image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/stephenshaw.png',
+                        image: 'https://primefaces.org/cdn/ng_prime/images/demo/avatar/stephenshaw.png',
                         name: 'Stephen Shaw',
                         title: 'CTO'
                     },
@@ -84,8 +84,8 @@ export class ColoredDoc {
         basic: `<p-organizationChart [value]="data" [collapsible]="true">
     <ng-template let-node pTemplate="person">
         <div class="p-2 text-center">
-            <img 
-                [src]="node.data.image" 
+            <img
+                [src]="node.data.image"
                 class="mb-3 w-3rem h-3rem" />
             <div class="font-bold">
                 {{ node.data.name }}
@@ -101,8 +101,8 @@ export class ColoredDoc {
     <p-organizationChart [value]="data" [collapsible]="true">
         <ng-template let-node pTemplate="person">
             <div class="p-2 text-center">
-                <img 
-                    [src]="node.data.image" 
+                <img
+                    [src]="node.data.image"
                     class="mb-3 w-3rem h-3rem" />
                 <div class="font-bold">
                     {{ node.data.name }}
@@ -116,8 +116,8 @@ export class ColoredDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { TreeNode } from 'primeng/api';
-import { OrganizationChartModule } from 'primeng/organizationchart';
+import { TreeNode } from 'ng_prime/api';
+import { OrganizationChartModule } from 'ng_prime/organizationchart';
 
 @Component({
     selector: 'organization-chart-colored-demo',
@@ -132,7 +132,7 @@ export class OrganizationChartColoredDemo {
             type: 'person',
             styleClass: 'bg-indigo-500 text-white',
             data: {
-                image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png',
+                image: 'https://primefaces.org/cdn/ng_prime/images/demo/avatar/amyelsner.png',
                 name: 'Amy Elsner',
                 title: 'CEO'
             },
@@ -142,7 +142,7 @@ export class OrganizationChartColoredDemo {
                     type: 'person',
                     styleClass: 'bg-purple-500 text-white',
                     data: {
-                        image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/annafali.png',
+                        image: 'https://primefaces.org/cdn/ng_prime/images/demo/avatar/annafali.png',
                         name: 'Anna Fali',
                         title: 'CMO'
                     },
@@ -164,7 +164,7 @@ export class OrganizationChartColoredDemo {
                     type: 'person',
                     styleClass: 'bg-teal-500 text-white',
                     data: {
-                        image: 'https://primefaces.org/cdn/primeng/images/demo/avatar/stephenshaw.png',
+                        image: 'https://primefaces.org/cdn/ng_prime/images/demo/avatar/stephenshaw.png',
                         name: 'Stephen Shaw',
                         title: 'CTO'
                     },

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuItem, MessageService } from 'primeng/api';
+import { MenuItem, MessageService } from 'ng_prime/api';
 import { Code } from '@domain/code';
 
 @Component({
@@ -90,9 +90,9 @@ export class CommandDoc implements OnInit {
 </div>`,
 
         typescript: `import { Component, OnInit } from '@angular/core';
-import { MenuItem, MessageService } from 'primeng/api';
-import { PanelMenuModule } from 'primeng/panelmenu';
-import { ToastModule } from 'primeng/toast';
+import { MenuItem, MessageService } from 'ng_prime/api';
+import { PanelMenuModule } from 'ng_prime/panelmenu';
+import { ToastModule } from 'ng_prime/toast';
 
 @Component({
     selector: 'panel-menu-command-demo',

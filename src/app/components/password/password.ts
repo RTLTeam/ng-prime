@@ -31,15 +31,15 @@ import {
     numberAttribute
 } from '@angular/core';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
-import { OverlayService, PrimeNGConfig, PrimeTemplate, SharedModule, TranslationKeys } from 'primeng/api';
-import { ConnectedOverlayScrollHandler, DomHandler } from 'primeng/dom';
-import { EyeIcon } from 'primeng/icons/eye';
-import { EyeSlashIcon } from 'primeng/icons/eyeslash';
-import { TimesIcon } from 'primeng/icons/times';
-import { InputTextModule } from 'primeng/inputtext';
-import { Nullable, VoidListener } from 'primeng/ts-helpers';
-import { ZIndexUtils } from 'primeng/utils';
-import { AutoFocusModule } from 'primeng/autofocus';
+import { OverlayService, PrimeNGConfig, PrimeTemplate, SharedModule, TranslationKeys } from 'ng_prime/api';
+import { ConnectedOverlayScrollHandler, DomHandler } from 'ng_prime/dom';
+import { EyeIcon } from 'ng_prime/icons/eye';
+import { EyeSlashIcon } from 'ng_prime/icons/eyeslash';
+import { TimesIcon } from 'ng_prime/icons/times';
+import { InputTextModule } from 'ng_prime/inputtext';
+import { Nullable, VoidListener } from 'ng_prime/ts-helpers';
+import { ZIndexUtils } from 'ng_prime/utils';
+import { AutoFocusModule } from 'ng_prime/autofocus';
 import { Subscription } from 'rxjs';
 
 type Meter = {

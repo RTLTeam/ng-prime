@@ -20,15 +20,15 @@ import {
     numberAttribute
 } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { Aria, PrimeNGConfig, PrimeTemplate, SelectItem, SharedModule } from 'primeng/api';
-import { DropdownChangeEvent, DropdownModule } from 'primeng/dropdown';
-import { AngleDoubleLeftIcon } from 'primeng/icons/angledoubleleft';
-import { AngleDoubleRightIcon } from 'primeng/icons/angledoubleright';
-import { AngleLeftIcon } from 'primeng/icons/angleleft';
-import { AngleRightIcon } from 'primeng/icons/angleright';
-import { InputNumberModule } from 'primeng/inputnumber';
-import { RippleModule } from 'primeng/ripple';
-import { Nullable } from 'primeng/ts-helpers';
+import { Aria, PrimeNGConfig, PrimeTemplate, SelectItem, SharedModule } from 'ng_prime/api';
+import { DropdownChangeEvent, DropdownModule } from 'ng_prime/dropdown';
+import { AngleDoubleLeftIcon } from 'ng_prime/icons/angledoubleleft';
+import { AngleDoubleRightIcon } from 'ng_prime/icons/angledoubleright';
+import { AngleLeftIcon } from 'ng_prime/icons/angleleft';
+import { AngleRightIcon } from 'ng_prime/icons/angleright';
+import { InputNumberModule } from 'ng_prime/inputnumber';
+import { RippleModule } from 'ng_prime/ripple';
+import { Nullable } from 'ng_prime/ts-helpers';
 import { PaginatorState } from './paginator.interface';
 /**
  * Paginator is a generic component to display content in paged format.

@@ -26,7 +26,7 @@ export class TemplateDoc {
     </p-avatar>
 </div>`,
         typescript: `import { Component } from '@angular/core';
-import { AvatarModule } from 'primeng/avatar';
+import { AvatarModule } from 'ng_prime/avatar';
 
 @Component({
     selector: 'avatar-template-demo',

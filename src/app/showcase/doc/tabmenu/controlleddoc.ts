@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuItem } from 'primeng/api';
+import { MenuItem } from 'ng_prime/api';
 import { Code } from '@domain/code';
 
 @Component({
@@ -40,60 +40,60 @@ export class ControlledDoc implements OnInit {
 
     code: Code = {
         basic: `<div class="flex mb-2 gap-2 justify-content-end">
-    <p-button 
-        (click)="activeItem = items[0]" 
-        [rounded]="true" 
-        label="1" 
-        styleClass="w-2rem h-2rem p-0" 
+    <p-button
+        (click)="activeItem = items[0]"
+        [rounded]="true"
+        label="1"
+        styleClass="w-2rem h-2rem p-0"
         [outlined]="activeItem !== items[0]" />
-    <p-button 
-        (click)="activeItem = items[1]" 
-        [rounded]="true" 
-        label="2" 
-        styleClass="w-2rem h-2rem p-0" 
+    <p-button
+        (click)="activeItem = items[1]"
+        [rounded]="true"
+        label="2"
+        styleClass="w-2rem h-2rem p-0"
         [outlined]="activeItem !== items[1]" />
-    <p-button 
-        (click)="activeItem = items[2]" 
-        [rounded]="true" 
-        label="3" 
-        styleClass="w-2rem h-2rem p-0" 
+    <p-button
+        (click)="activeItem = items[2]"
+        [rounded]="true"
+        label="3"
+        styleClass="w-2rem h-2rem p-0"
         [outlined]="activeItem !== items[2]" />
 </div>
-<p-tabMenu 
-    [model]="items" 
-    [activeItem]="activeItem" 
+<p-tabMenu
+    [model]="items"
+    [activeItem]="activeItem"
     (activeItemChange)="onActiveItemChange($event)" />`,
 
         html: `<div class="card">
     <div class="flex mb-2 gap-2 justify-content-end">
-        <p-button 
-            (click)="activeItem = items[0]" 
-            [rounded]="true" label="1" 
-            styleClass="w-2rem h-2rem p-0" 
+        <p-button
+            (click)="activeItem = items[0]"
+            [rounded]="true" label="1"
+            styleClass="w-2rem h-2rem p-0"
             [outlined]="activeItem !== items[0]" />
-        <p-button 
-            (click)="activeItem = items[1]" 
-            [rounded]="true" 
-            label="2" 
-            styleClass="w-2rem h-2rem p-0" 
+        <p-button
+            (click)="activeItem = items[1]"
+            [rounded]="true"
+            label="2"
+            styleClass="w-2rem h-2rem p-0"
             [outlined]="activeItem !== items[1]" />
-        <p-button 
-            (click)="activeItem = items[2]" 
-            [rounded]="true" 
-            label="3" 
-            styleClass="w-2rem h-2rem p-0" 
+        <p-button
+            (click)="activeItem = items[2]"
+            [rounded]="true"
+            label="3"
+            styleClass="w-2rem h-2rem p-0"
             [outlined]="activeItem !== items[2]" />
     </div>
-    <p-tabMenu 
-        [model]="items" 
-        [activeItem]="activeItem" 
+    <p-tabMenu
+        [model]="items"
+        [activeItem]="activeItem"
         (activeItemChange)="onActiveItemChange($event)" />
 </div>`,
 
         typescript: `import { Component, OnInit } from '@angular/core';
-import { MenuItem } from 'primeng/api';
-import { TabMenuModule } from 'primeng/tabmenu';
-import { ButtonModule } from 'primeng/button';
+import { MenuItem } from 'ng_prime/api';
+import { TabMenuModule } from 'ng_prime/tabmenu';
+import { ButtonModule } from 'ng_prime/button';
 
 @Component({
     selector: 'tab-menu-controlled-demo',
@@ -124,10 +124,10 @@ export class TabMenuControlledDemo implements OnInit {
         module: `
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { TabMenuModule } from 'primeng/tabmenu';
-import { TabMenuModule } from 'primeng/tabmenu';
-import { ButtonModule } from 'primeng/button';
-import { RippleModule } from 'primeng/ripple';
+import { TabMenuModule } from 'ng_prime/tabmenu';
+import { TabMenuModule } from 'ng_prime/tabmenu';
+import { ButtonModule } from 'ng_prime/button';
+import { RippleModule } from 'ng_prime/ripple';
 import { TabMenuDemo } from './tabmenudemo';
 
 @NgModule({

@@ -3,7 +3,7 @@
     padding-left: var(--scrollbar-width);
 }
 
-@layer primeng {
+@layer ng_prime {
     .p-component,
     .p-component * {
         box-sizing: border-box;

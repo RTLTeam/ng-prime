@@ -1,10 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { AfterContentInit, ChangeDetectionStrategy, ChangeDetectorRef, Component, ContentChildren, EventEmitter, Input, NgModule, Output, QueryList, TemplateRef, ViewEncapsulation, booleanAttribute, forwardRef } from '@angular/core';
-import { PrimeTemplate, SharedModule } from 'primeng/api';
-import { InputTextModule } from 'primeng/inputtext';
+import { PrimeTemplate, SharedModule } from 'ng_prime/api';
+import { InputTextModule } from 'ng_prime/inputtext';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
-import { Nullable } from 'primeng/ts-helpers';
-import { AutoFocusModule } from 'primeng/autofocus';
+import { Nullable } from 'ng_prime/ts-helpers';
+import { AutoFocusModule } from 'ng_prime/autofocus';
 import { InputOtpChangeEvent } from './inputotp.interface';
 
 export const INPUT_OTP_VALUE_ACCESSOR: any = {

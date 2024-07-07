@@ -24,7 +24,7 @@ export class DisabledDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { InputSwitchModule } from 'primeng/inputswitch';
+import { InputSwitchModule } from 'ng_prime/inputswitch';
 import { FormsModule } from '@angular/forms';
 
 @Component({

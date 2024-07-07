@@ -12,7 +12,7 @@ import { Code } from '@domain/code';
                 <p-accordionTab>
                     <ng-template pTemplate="header">
                         <span class="flex align-items-center gap-2 w-full">
-                            <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" shape="circle" />
+                            <p-avatar image="https://primefaces.org/cdn/ng_prime/images/demo/avatar/amyelsner.png" shape="circle" />
                             <span class="font-bold white-space-nowrap">Amy Elsner</span>
                             <p-badge value="3" class="ml-auto mr-2" />
                         </span>
@@ -25,7 +25,7 @@ import { Code } from '@domain/code';
                 <p-accordionTab>
                     <ng-template pTemplate="header">
                         <span class="flex align-items-center gap-2 w-full">
-                            <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/onyamalimba.png" shape="circle" />
+                            <p-avatar image="https://primefaces.org/cdn/ng_prime/images/demo/avatar/onyamalimba.png" shape="circle" />
                             <span class="font-bold white-space-nowrap">Onyama Limba</span>
                             <p-badge value="4" class="ml-auto mr-2" />
                         </span>
@@ -38,7 +38,7 @@ import { Code } from '@domain/code';
                 <p-accordionTab>
                     <ng-template pTemplate="header">
                         <span class="flex align-items-center gap-2 w-full">
-                            <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/ionibowcher.png" shape="circle" />
+                            <p-avatar image="https://primefaces.org/cdn/ng_prime/images/demo/avatar/ionibowcher.png" shape="circle" />
                             <span class="font-bold white-space-nowrap">Ioni Bowcher</span>
                             <p-badge value="2" class="ml-auto mr-2" />
                         </span>
@@ -59,8 +59,8 @@ export class TemplateDoc {
         <p-accordionTab>
             <ng-template pTemplate="header">
                 <span class="flex align-items-center gap-2 w-full">
-                    <p-avatar 
-                        image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" 
+                    <p-avatar
+                        image="https://primefaces.org/cdn/ng_prime/images/demo/avatar/amyelsner.png"
                         shape="circle" />
                     <span class="font-bold white-space-nowrap">
                         Amy Elsner
@@ -75,8 +75,8 @@ export class TemplateDoc {
         <p-accordionTab>
             <ng-template pTemplate="header">
                 <span class="flex align-items-center gap-2 w-full">
-                    <p-avatar 
-                        image="https://primefaces.org/cdn/primeng/images/demo/avatar/onyamalimba.png" 
+                    <p-avatar
+                        image="https://primefaces.org/cdn/ng_prime/images/demo/avatar/onyamalimba.png"
                         shape="circle" />
                     <span class="font-bold white-space-nowrap">
                         Onyama Limba
@@ -91,8 +91,8 @@ export class TemplateDoc {
         <p-accordionTab>
             <ng-template pTemplate="header">
                 <span class="flex align-items-center gap-2 w-full">
-                    <p-avatar 
-                        image="https://primefaces.org/cdn/primeng/images/demo/avatar/ionibowcher.png" 
+                    <p-avatar
+                        image="https://primefaces.org/cdn/ng_prime/images/demo/avatar/ionibowcher.png"
                         shape="circle" />
                     <span class="font-bold white-space-nowrap">
                         Ioni Bowcher
@@ -111,8 +111,8 @@ export class TemplateDoc {
     <p-accordionTab>
         <ng-template pTemplate="header">
             <span class="flex align-items-center gap-2 w-full">
-                <p-avatar 
-                    image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" 
+                <p-avatar
+                    image="https://primefaces.org/cdn/ng_prime/images/demo/avatar/amyelsner.png"
                     shape="circle" />
                 <span class="font-bold white-space-nowrap">
                     Amy Elsner
@@ -128,8 +128,8 @@ export class TemplateDoc {
     <p-accordionTab>
         <ng-template pTemplate="header">
             <span class="flex align-items-center gap-2 w-full">
-                <p-avatar 
-                    image="https://primefaces.org/cdn/primeng/images/demo/avatar/onyamalimba.png" 
+                <p-avatar
+                    image="https://primefaces.org/cdn/ng_prime/images/demo/avatar/onyamalimba.png"
                     shape="circle" />
                 <span class="font-bold white-space-nowrap">
                     Onyama Limba
@@ -145,8 +145,8 @@ export class TemplateDoc {
 <p-accordionTab>
     <ng-template pTemplate="header">
         <span class="flex align-items-center gap-2 w-full">
-            <p-avatar 
-                image="https://primefaces.org/cdn/primeng/images/demo/avatar/ionibowcher.png" 
+            <p-avatar
+                image="https://primefaces.org/cdn/ng_prime/images/demo/avatar/ionibowcher.png"
                 shape="circle" />
             <span class="font-bold white-space-nowrap">
                 Ioni Bowcher
@@ -163,9 +163,9 @@ export class TemplateDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { AccordionModule } from 'primeng/accordion';
-import { AvatarModule } from 'primeng/avatar';
-import { BadgeModule } from 'primeng/badge';
+import { AccordionModule } from 'ng_prime/accordion';
+import { AvatarModule } from 'ng_prime/avatar';
+import { BadgeModule } from 'ng_prime/badge';
 
 @Component({
     selector: 'accordion-template-demo',

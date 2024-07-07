@@ -111,17 +111,17 @@ describe('PanelMenu', () => {
                     { separator: true },
                     { label: 'Quit', icon: 'pi pi-fw pi-times' }
                 ],
-                title: 'primeng',
-                target: 'primeng',
-                url: 'primeng'
+                title: 'ng_prime',
+                target: 'ng_prime',
+                url: 'ng_prime'
             }
         ];
         fixture.detectChanges();
 
         const panelHeaderLinkEl = fixture.debugElement.query(By.css('.p-panelmenu-header-action'));
-        expect(panelHeaderLinkEl.nativeElement.href).toContain('primeng');
-        expect(panelHeaderLinkEl.nativeElement.title).toEqual('primeng');
-        expect(panelHeaderLinkEl.nativeElement.target).toEqual('primeng');
+        expect(panelHeaderLinkEl.nativeElement.href).toContain('ng_prime');
+        expect(panelHeaderLinkEl.nativeElement.title).toEqual('ng_prime');
+        expect(panelHeaderLinkEl.nativeElement.target).toEqual('ng_prime');
         expect(panelHeaderLinkEl.query(By.css('.p-menuitem-icon')).nativeElement.className).toContain('Primeng ROCKS!');
     });
 
@@ -184,25 +184,25 @@ describe('PanelMenu', () => {
                     {
                         label: 'New',
                         icon: 'Primeng ROCKS!',
-                        title: 'primeng',
-                        target: 'primeng',
-                        url: 'primeng',
+                        title: 'ng_prime',
+                        target: 'ng_prime',
+                        url: 'ng_prime',
                         disabled: true
                     },
                     {
                         label: 'Open',
                         icon: 'Primeng ROCKS!',
-                        title: 'primeng',
-                        target: 'primeng',
-                        url: 'primeng',
+                        title: 'ng_prime',
+                        target: 'ng_prime',
+                        url: 'ng_prime',
                         disabled: true
                     },
                     {
                         label: 'Quit',
                         icon: 'Primeng ROCKS!',
-                        title: 'primeng',
-                        target: 'primeng',
-                        url: 'primeng',
+                        title: 'ng_prime',
+                        target: 'ng_prime',
+                        url: 'ng_prime',
                         disabled: true
                     }
                 ]
@@ -211,8 +211,8 @@ describe('PanelMenu', () => {
         fixture.detectChanges();
 
         const panelHeaderLinkEl = fixture.debugElement.query(By.css('.p-menuitem-link'));
-        expect(panelHeaderLinkEl.nativeElement.href).toContain('primeng');
-        expect(panelHeaderLinkEl.nativeElement.target).toEqual('primeng');
+        expect(panelHeaderLinkEl.nativeElement.href).toContain('ng_prime');
+        expect(panelHeaderLinkEl.nativeElement.target).toEqual('ng_prime');
         expect(panelHeaderLinkEl.nativeElement.disabled).toBeTruthy;
         expect(panelHeaderLinkEl.query(By.css('.p-menuitem-icon')).nativeElement.className).toContain('Primeng ROCKS!');
         expect(panelHeaderLinkEl.nativeElement.innerHTML).toContain('New');

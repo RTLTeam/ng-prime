@@ -1,4 +1,4 @@
-import { app } from '../dist/primeng/server/server.mjs';
+import { app } from '../dist/ng_prime/server/server.mjs';
 
 const server = app();
 

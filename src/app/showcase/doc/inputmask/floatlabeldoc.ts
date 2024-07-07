@@ -21,27 +21,27 @@ export class FloatlabelDoc {
 
     code: Code = {
         basic: `<p-floatLabel>
-    <p-inputMask 
-        mask="999-99-9999" 
-        [(ngModel)]="value" 
+    <p-inputMask
+        mask="999-99-9999"
+        [(ngModel)]="value"
         id="ssn_input" />
     <label for="ssn_input">SSN</label>
 </p-floatLabel>`,
 
         html: `<div class="card flex justify-content-center">
     <p-floatLabel>
-        <p-inputMask 
-            mask="999-99-9999" 
-            [(ngModel)]="value" 
+        <p-inputMask
+            mask="999-99-9999"
+            [(ngModel)]="value"
             id="ssn_input" />
         <label for="ssn_input">SSN</label>
     </p-floatLabel>
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { InputMaskModule } from 'primeng/inputmask';
+import { InputMaskModule } from 'ng_prime/inputmask';
 import { FormsModule } from '@angular/forms';
-import { FloatLabelModule } from "primeng/floatlabel"
+import { FloatLabelModule } from "ng_prime/floatlabel"
 
 @Component({
     selector: 'input-mask-floatlabel-demo',

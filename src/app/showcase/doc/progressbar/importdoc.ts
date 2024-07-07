@@ -7,8 +7,8 @@ import { Code } from '@domain/code';
 })
 export class ImportDoc {
     code: Code = {
-        typescript: `import { ProgressBarModule } from 'primeng/progressbar';
+        typescript: `import { ProgressBarModule } from 'ng_prime/progressbar';
 // For dynamic progressbar demo
-import { ToastModule } from 'primeng/toast';`
+import { ToastModule } from 'ng_prime/toast';`
     };
 }

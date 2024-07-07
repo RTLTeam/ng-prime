@@ -12,7 +12,7 @@ import { Code } from '@domain/code';
                 <p-tabPanel>
                     <ng-template pTemplate="header">
                         <div class="flex align-items-center gap-2">
-                            <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" shape="circle" />
+                            <p-avatar image="https://primefaces.org/cdn/ng_prime/images/demo/avatar/amyelsner.png" shape="circle" />
                             <span class="font-bold white-space-nowrap m-0">Amy Elsner</span>
                         </div>
                     </ng-template>
@@ -24,7 +24,7 @@ import { Code } from '@domain/code';
                 <p-tabPanel header="Header II">
                     <ng-template pTemplate="header">
                         <div class="flex align-items-center gap-2">
-                            <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/onyamalimba.png" shape="circle" />
+                            <p-avatar image="https://primefaces.org/cdn/ng_prime/images/demo/avatar/onyamalimba.png" shape="circle" />
                             <span class="font-bold white-space-nowrap m-0">Onyama Limba</span>
                         </div>
                     </ng-template>
@@ -36,7 +36,7 @@ import { Code } from '@domain/code';
                 <p-tabPanel header="Header III">
                     <ng-template pTemplate="header">
                         <div class="flex align-items-center gap-2">
-                            <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/ionibowcher.png" shape="circle" />
+                            <p-avatar image="https://primefaces.org/cdn/ng_prime/images/demo/avatar/ionibowcher.png" shape="circle" />
                             <span class="font-bold white-space-nowrap m-0">Ioni Bowcher</span>
                             <p-badge value="2" />
                         </div>
@@ -57,8 +57,8 @@ export class TemplateDoc {
     <p-tabPanel>
         <ng-template pTemplate="header">
             <div class="flex align-items-center gap-2">
-                <p-avatar 
-                    image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" 
+                <p-avatar
+                    image="https://primefaces.org/cdn/ng_prime/images/demo/avatar/amyelsner.png"
                     shape="circle" />
                 <span class="font-bold white-space-nowrap m-0">
                     Amy Elsner
@@ -72,8 +72,8 @@ export class TemplateDoc {
     <p-tabPanel header="Header II">
         <ng-template pTemplate="header">
             <div class="flex align-items-center gap-2">
-                <p-avatar 
-                    image="https://primefaces.org/cdn/primeng/images/demo/avatar/onyamalimba.png" 
+                <p-avatar
+                    image="https://primefaces.org/cdn/ng_prime/images/demo/avatar/onyamalimba.png"
                     shape="circle" />
                 <span class="font-bold white-space-nowrap m-0">
                     Onyama Limba
@@ -87,8 +87,8 @@ export class TemplateDoc {
     <p-tabPanel header="Header III">
         <ng-template pTemplate="header">
             <div class="flex align-items-center gap-2">
-                <p-avatar 
-                    image="https://primefaces.org/cdn/primeng/images/demo/avatar/ionibowcher.png" 
+                <p-avatar
+                    image="https://primefaces.org/cdn/ng_prime/images/demo/avatar/ionibowcher.png"
                     shape="circle" />
                 <span class="font-bold white-space-nowrap m-0">
                     Ioni Bowcher
@@ -107,8 +107,8 @@ export class TemplateDoc {
         <p-tabPanel>
             <ng-template pTemplate="header">
                 <div class="flex align-items-center gap-2">
-                    <p-avatar 
-                        image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" 
+                    <p-avatar
+                        image="https://primefaces.org/cdn/ng_prime/images/demo/avatar/amyelsner.png"
                         shape="circle" />
                     <span class="font-bold white-space-nowrap m-0">
                         Amy Elsner
@@ -122,8 +122,8 @@ export class TemplateDoc {
         <p-tabPanel header="Header II">
             <ng-template pTemplate="header">
                 <div class="flex align-items-center gap-2">
-                    <p-avatar 
-                        image="https://primefaces.org/cdn/primeng/images/demo/avatar/onyamalimba.png" 
+                    <p-avatar
+                        image="https://primefaces.org/cdn/ng_prime/images/demo/avatar/onyamalimba.png"
                         shape="circle" />
                     <span class="font-bold white-space-nowrap m-0">
                         Onyama Limba
@@ -137,8 +137,8 @@ export class TemplateDoc {
         <p-tabPanel header="Header III">
             <ng-template pTemplate="header">
                 <div class="flex align-items-center gap-2">
-                    <p-avatar 
-                        image="https://primefaces.org/cdn/primeng/images/demo/avatar/ionibowcher.png" 
+                    <p-avatar
+                        image="https://primefaces.org/cdn/ng_prime/images/demo/avatar/ionibowcher.png"
                         shape="circle" />
                     <span class="font-bold white-space-nowrap m-0">
                         Ioni Bowcher
@@ -154,9 +154,9 @@ export class TemplateDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { TabViewModule } from 'primeng/tabview';
-import { BadgeModule } from 'primeng/badge';
-import { AvatarModule } from 'primeng/avatar';
+import { TabViewModule } from 'ng_prime/tabview';
+import { BadgeModule } from 'ng_prime/badge';
+import { AvatarModule } from 'ng_prime/avatar';
 
 @Component({
     selector: 'tab-view-template-demo',

@@ -10,7 +10,7 @@ import { Code } from '@domain/code';
         <div class="card flex justify-content-center">
             <p-card header="Advanced Card" subheader="Card Subheader" [style]="{ width: '360px' }">
                 <ng-template pTemplate="header">
-                    <img alt="Card" src="https://primefaces.org/cdn/primeng/images/card-ng.jpg" />
+                    <img alt="Card" src="https://primefaces.org/cdn/ng_prime/images/card-ng.jpg" />
                 </ng-template>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque
@@ -31,7 +31,7 @@ export class AdvancedDoc {
     code: Code = {
         basic: `<p-card header="Advanced Card" subheader="Card Subheader" [style]="{ width: '360px' }">
     <ng-template pTemplate="header">
-        <img alt="Card" src="https://primefaces.org/cdn/primeng/images/card-ng.jpg" />
+        <img alt="Card" src="https://primefaces.org/cdn/ng_prime/images/card-ng.jpg" />
     </ng-template>
     <p>
         Lorem ipsum dolor sit amet...
@@ -47,7 +47,7 @@ export class AdvancedDoc {
         html: `<div class="card flex justify-content-center">
     <p-card header="Advanced Card" subheader="Card Subheader" [style]="{ width: '360px' }">
         <ng-template pTemplate="header">
-            <img alt="Card" src="https://primefaces.org/cdn/primeng/images/card-ng.jpg" />
+            <img alt="Card" src="https://primefaces.org/cdn/ng_prime/images/card-ng.jpg" />
         </ng-template>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore sed consequuntur error repudiandae numquam deserunt quisquam repellat libero asperiores earum nam nobis, culpa ratione quam perferendis esse, cupiditate neque
@@ -63,9 +63,9 @@ export class AdvancedDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { CardModule } from 'primeng/card';
-import { ButtonModule } from 'primeng/button';
-        
+import { CardModule } from 'ng_prime/card';
+import { ButtonModule } from 'ng_prime/button';
+
 @Component({
     selector: 'card-advanced-demo',
     templateUrl: './card-advanced-demo.html',

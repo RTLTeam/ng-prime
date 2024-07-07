@@ -289,7 +289,7 @@
   color: #f59e0b;
 }
 
-@layer primeng {
+@layer ng_prime {
   * {
     box-sizing: border-box;
   }
@@ -6257,7 +6257,7 @@
     font-size: 1rem;
   }
 }
-@layer primeng {
+@layer ng_prime {
   .p-button-label {
     font-weight: 700;
   }

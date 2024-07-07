@@ -36,7 +36,7 @@ export class BasicDoc {
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { CardModule } from 'primeng/card';
+import { CardModule } from 'ng_prime/card';
 
 @Component({
     selector: 'card-basic-demo',

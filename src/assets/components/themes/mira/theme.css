@@ -298,7 +298,7 @@
   color: #5e81ac;
 }
 
-@layer primeng {
+@layer ng_prime {
   * {
     box-sizing: border-box;
   }
@@ -6427,7 +6427,7 @@
   }
 }
 /* Customizations to the designer theme should be defined here */
-@layer primeng {
+@layer ng_prime {
   .p-inputtext:enabled:hover {
     background-color: #eceff4;
   }

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuItem } from 'primeng/api';
+import { MenuItem } from 'ng_prime/api';
 import { Code } from '../../domain/code';
 
 @Component({
@@ -97,8 +97,8 @@ export class BasicDoc implements OnInit {
 </div>`,
 
         typescript: `import { Component, OnInit } from '@angular/core';
-import { MenuItem } from 'primeng/api';
-import { TieredMenuModule } from 'primeng/tieredmenu';
+import { MenuItem } from 'ng_prime/api';
+import { TieredMenuModule } from 'ng_prime/tieredmenu';
 
 @Component({
     selector: 'tiered-menu-basic-demo',

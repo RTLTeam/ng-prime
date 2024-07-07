@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, Input, NgModule, ViewEncapsulation } from '@angular/core';
-import { SharedModule } from 'primeng/api';
+import { SharedModule } from 'ng_prime/api';
 
 @Component({
     selector: 'template-configuration',
@@ -18,7 +18,7 @@ import { SharedModule } from 'primeng/api';
                         <p>&gt; ng new my-apollo-app</p>
                         <p>&gt; cd my-apollo-app</p>
                         <p>&gt; ng serve</p>
-                        <img class="template-configuration-screen-bottom-logo" src="https://primefaces.org/cdn/primeng/images/templates/angular-3d-logo.png" alt="Angular 3D Logo" />
+                        <img class="template-configuration-screen-bottom-logo" src="https://primefaces.org/cdn/ng_prime/images/templates/angular-3d-logo.png" alt="Angular 3D Logo" />
                     </div>
                 </div>
                 <h3 class="template-configuration-title">{{ title }}</h3>

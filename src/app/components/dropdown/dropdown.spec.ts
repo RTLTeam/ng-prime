@@ -5,11 +5,11 @@ import { Dropdown, DropdownItem } from './dropdown';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { Component } from '@angular/core';
-import { TooltipModule } from 'primeng/tooltip';
-import { OverlayModule } from 'primeng/overlay';
-import { ChevronDownIcon } from 'primeng/icons/chevrondown';
-import { SearchIcon } from 'primeng/icons/search';
-import { TimesIcon } from 'primeng/icons/times';
+import { TooltipModule } from 'ng_prime/tooltip';
+import { OverlayModule } from 'ng_prime/overlay';
+import { ChevronDownIcon } from 'ng_prime/icons/chevrondown';
+import { SearchIcon } from 'ng_prime/icons/search';
+import { TimesIcon } from 'ng_prime/icons/times';
 
 @Component({
     template: `
@@ -285,9 +285,9 @@ describe('Dropdown', () => {
         const filterDiv = fixture.debugElement.query(By.css('.p-dropdown-filter-container'));
         expect(filterDiv).toBeTruthy();
         const filterInputEl = fixture.debugElement.query(By.css('.p-dropdown-filter'));
-        filterInputEl.nativeElement.value = 'primeng';
+        filterInputEl.nativeElement.value = 'ng_prime';
         filterInputEl.nativeElement.dispatchEvent(new Event('keydown'));
-        const event = { target: { value: 'primeng' } };
+        const event = { target: { value: 'ng_prime' } };
         dropdown.onFilterInputChange(event);
         fixture.detectChanges();
 

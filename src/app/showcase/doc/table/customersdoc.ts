@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, ChangeDetectorRef, Component } from '@angular/
 import { Code } from '@domain/code';
 import { Customer, Representative } from '@domain/customer';
 import { CustomerService } from '@service/customerservice';
-import { Table } from 'primeng/table';
+import { Table } from 'ng_prime/table';
 
 @Component({
     selector: 'customers-doc',
@@ -70,7 +70,7 @@ import { Table } from 'primeng/table';
                                             <p-multiSelect [(ngModel)]="value" [options]="representatives" placeholder="Any" (onChange)="filter($event.value)" optionLabel="name">
                                                 <ng-template let-option pTemplate="item">
                                                     <div class="inline-block vertical-align-middle">
-                                                        <img [alt]="option.label" src="https://primefaces.org/cdn/primeng/images/demo/avatar/{{ option.image }}" width="24" class="vertical-align-middle" />
+                                                        <img [alt]="option.label" src="https://primefaces.org/cdn/ng_prime/images/demo/avatar/{{ option.image }}" width="24" class="vertical-align-middle" />
                                                         <span class="ml-1 mt-1">{{ option.name }}</span>
                                                     </div>
                                                 </ng-template>
@@ -137,12 +137,12 @@ import { Table } from 'primeng/table';
                             </td>
                             <td>
                                 <span class="p-column-title">Country</span>
-                                <img src="https://primefaces.org/cdn/primeng/images/demo/flag/flag_placeholder.png" [class]="'flag flag-' + customer.country.code" style="width: 20px" />
+                                <img src="https://primefaces.org/cdn/ng_prime/images/demo/flag/flag_placeholder.png" [class]="'flag flag-' + customer.country.code" style="width: 20px" />
                                 <span class="ml-1 vertical-align-middle">{{ customer.country.name }}</span>
                             </td>
                             <td>
                                 <span class="p-column-title">Representative</span>
-                                <img [alt]="customer.representative.name" src="https://primefaces.org/cdn/primeng/images/demo/avatar/{{ customer.representative.image }}" width="32" style="vertical-align: middle" />
+                                <img [alt]="customer.representative.name" src="https://primefaces.org/cdn/ng_prime/images/demo/avatar/{{ customer.representative.image }}" width="32" style="vertical-align: middle" />
                                 <span class="ml-1 vertical-align-middle">{{ customer.representative.name }}</span>
                             </td>
                             <td>
@@ -313,7 +313,7 @@ export class CustomersDoc {
                             <p-multiSelect [(ngModel)]="value" [options]="representatives" placeholder="Any" (onChange)="filter($event.value)" optionLabel="name">
                                 <ng-template let-option pTemplate="item">
                                     <div class="inline-block vertical-align-middle">
-                                        <img [alt]="option.label" src="https://primefaces.org/cdn/primeng/images/demo/avatar/{{ option.image }}" width="24" class="vertical-align-middle" />
+                                        <img [alt]="option.label" src="https://primefaces.org/cdn/ng_prime/images/demo/avatar/{{ option.image }}" width="24" class="vertical-align-middle" />
                                         <span class="ml-1 mt-1">{{ option.name }}</span>
                                     </div>
                                 </ng-template>
@@ -380,12 +380,12 @@ export class CustomersDoc {
             </td>
             <td>
                 <span class="p-column-title">Country</span>
-                <img src="https://primefaces.org/cdn/primeng/images/demo/flag/flag_placeholder.png" [class]="'flag flag-' + customer.country.code" style="width: 20px" />
+                <img src="https://primefaces.org/cdn/ng_prime/images/demo/flag/flag_placeholder.png" [class]="'flag flag-' + customer.country.code" style="width: 20px" />
                 <span class="ml-1 vertical-align-middle">{{ customer.country.name }}</span>
             </td>
             <td>
                 <span class="p-column-title">Representative</span>
-                <img [alt]="customer.representative.name" src="https://primefaces.org/cdn/primeng/images/demo/avatar/{{ customer.representative.image }}" width="32" style="vertical-align: middle" />
+                <img [alt]="customer.representative.name" src="https://primefaces.org/cdn/ng_prime/images/demo/avatar/{{ customer.representative.image }}" width="32" style="vertical-align: middle" />
                 <span class="ml-1 vertical-align-middle">{{ customer.representative.name }}</span>
             </td>
             <td>
@@ -475,7 +475,7 @@ export class CustomersDoc {
                             <p-multiSelect [(ngModel)]="value" [options]="representatives" placeholder="Any" (onChange)="filter($event.value)" optionLabel="name">
                                 <ng-template let-option pTemplate="item">
                                     <div class="inline-block vertical-align-middle">
-                                        <img [alt]="option.label" src="https://primefaces.org/cdn/primeng/images/demo/avatar/{{ option.image }}" width="24" class="vertical-align-middle" />
+                                        <img [alt]="option.label" src="https://primefaces.org/cdn/ng_prime/images/demo/avatar/{{ option.image }}" width="24" class="vertical-align-middle" />
                                         <span class="ml-1 mt-1">{{ option.name }}</span>
                                     </div>
                                 </ng-template>
@@ -542,12 +542,12 @@ export class CustomersDoc {
             </td>
             <td>
                 <span class="p-column-title">Country</span>
-                <img src="https://primefaces.org/cdn/primeng/images/demo/flag/flag_placeholder.png" [class]="'flag flag-' + customer.country.code" style="width: 20px" />
+                <img src="https://primefaces.org/cdn/ng_prime/images/demo/flag/flag_placeholder.png" [class]="'flag flag-' + customer.country.code" style="width: 20px" />
                 <span class="ml-1 vertical-align-middle">{{ customer.country.name }}</span>
             </td>
             <td>
                 <span class="p-column-title">Representative</span>
-                <img [alt]="customer.representative.name" src="https://primefaces.org/cdn/primeng/images/demo/avatar/{{ customer.representative.image }}" width="32" style="vertical-align: middle" />
+                <img [alt]="customer.representative.name" src="https://primefaces.org/cdn/ng_prime/images/demo/avatar/{{ customer.representative.image }}" width="32" style="vertical-align: middle" />
                 <span class="ml-1 vertical-align-middle">{{ customer.representative.name }}</span>
             </td>
             <td>
@@ -581,18 +581,18 @@ export class CustomersDoc {
         typescript: `import { Component, OnInit } from '@angular/core';
 import { Customer, Representative } from '@domain/customer';
 import { CustomerService } from '@service/customerservice';
-import { TableModule } from 'primeng/table';
-import { TagModule } from 'primeng/tag';
-import { ButtonModule } from 'primeng/button';
-import { InputIconModule } from 'primeng/inputicon';
-import { IconFieldModule } from 'primeng/iconfield';
+import { TableModule } from 'ng_prime/table';
+import { TagModule } from 'ng_prime/tag';
+import { ButtonModule } from 'ng_prime/button';
+import { InputIconModule } from 'ng_prime/inputicon';
+import { IconFieldModule } from 'ng_prime/iconfield';
 import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
-import { MultiSelectModule } from 'primeng/multiselect';
-import { InputTextModule } from 'primeng/inputtext';
-import { DropdownModule } from 'primeng/dropdown';
-import { SliderModule } from 'primeng/slider';
-import { ProgressBarModule } from 'primeng/progressbar';
+import { MultiSelectModule } from 'ng_prime/multiselect';
+import { InputTextModule } from 'ng_prime/inputtext';
+import { DropdownModule } from 'ng_prime/dropdown';
+import { SliderModule } from 'ng_prime/slider';
+import { ProgressBarModule } from 'ng_prime/progressbar';
 
 @Component({
     selector: 'table-customers-demo',

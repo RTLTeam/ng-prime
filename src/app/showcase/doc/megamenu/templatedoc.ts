@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MegaMenuItem } from 'primeng/api';
+import { MegaMenuItem } from 'ng_prime/api';
 import { Code } from '@domain/code';
 
 @Component({
@@ -62,7 +62,7 @@ import { Code } from '@domain/code';
                     </div>
                 </ng-template>
                 <ng-template pTemplate="end">
-                    <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" shape="circle" />
+                    <p-avatar image="https://primefaces.org/cdn/ng_prime/images/demo/avatar/amyelsner.png" shape="circle" />
                 </ng-template>
             </p-megaMenu>
         </div>
@@ -107,7 +107,7 @@ export class TemplateDoc implements OnInit {
                     ],
                     [
                         {
-                            items: [{ image: 'https://primefaces.org/cdn/primeng/images/uikit/uikit-system.png', label: 'GET STARTED', subtext: 'Build spectacular apps in no time.' }]
+                            items: [{ image: 'https://primefaces.org/cdn/ng_prime/images/uikit/uikit-system.png', label: 'GET STARTED', subtext: 'Build spectacular apps in no time.' }]
                         }
                     ]
                 ]
@@ -177,7 +177,7 @@ export class TemplateDoc implements OnInit {
         </div>
     </ng-template>
     <ng-template pTemplate="end">
-        <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" shape="circle" />
+        <p-avatar image="https://primefaces.org/cdn/ng_prime/images/demo/avatar/amyelsner.png" shape="circle" />
     </ng-template>
 </p-megaMenu>`,
 
@@ -235,17 +235,17 @@ export class TemplateDoc implements OnInit {
             </div>
         </ng-template>
         <ng-template pTemplate="end">
-            <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" shape="circle" />
+            <p-avatar image="https://primefaces.org/cdn/ng_prime/images/demo/avatar/amyelsner.png" shape="circle" />
         </ng-template>
     </p-megaMenu>
 </div>`,
 
         typescript: `import { Component, OnInit } from '@angular/core';
-import { MegaMenuItem } from 'primeng/api';
-import { MegaMenuModule } from 'primeng/megamenu';
-import { ButtonModule } from 'primeng/button';
+import { MegaMenuItem } from 'ng_prime/api';
+import { MegaMenuModule } from 'ng_prime/megamenu';
+import { ButtonModule } from 'ng_prime/button';
 import { CommonModule } from '@angular/common';
-import { AvatarModule } from 'primeng/avatar';
+import { AvatarModule } from 'ng_prime/avatar';
 
 
 @Component({
@@ -292,7 +292,7 @@ export class MegaMenuTemplateDemo implements OnInit {
                     ],
                     [
                         {
-                            items: [{ image: 'https://primefaces.org/cdn/primeng/images/uikit/uikit-system.png', label: 'GET STARTED', subtext: 'Build spectacular apps in no time.' }]
+                            items: [{ image: 'https://primefaces.org/cdn/ng_prime/images/uikit/uikit-system.png', label: 'GET STARTED', subtext: 'Build spectacular apps in no time.' }]
                         }
                     ]
                 ]

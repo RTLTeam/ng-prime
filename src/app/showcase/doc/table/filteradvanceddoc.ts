@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component } from '@angular/core';
-import { Table } from 'primeng/table';
+import { Table } from 'ng_prime/table';
 import { Code } from '../../domain/code';
 import { Customer, Representative } from '../../domain/customer';
 import { CustomerService } from '../../service/customerservice';
@@ -48,7 +48,7 @@ import { CustomerService } from '../../service/customerservice';
                                             <p-multiSelect [(ngModel)]="value" [options]="representatives" placeholder="Any" (onChange)="filter($event.value)" optionLabel="name">
                                                 <ng-template let-option pTemplate="item">
                                                     <div class="inline-block vertical-align-middle">
-                                                        <img [alt]="option.label" src="https://primefaces.org/cdn/primeng/images/demo/avatar/{{ option.image }}" width="24" class="vertical-align-middle" />
+                                                        <img [alt]="option.label" src="https://primefaces.org/cdn/ng_prime/images/demo/avatar/{{ option.image }}" width="24" class="vertical-align-middle" />
                                                         <span class="ml-1 mt-1">{{ option.name }}</span>
                                                     </div>
                                                 </ng-template>
@@ -111,11 +111,11 @@ import { CustomerService } from '../../service/customerservice';
                                 {{ customer.name }}
                             </td>
                             <td>
-                                <img src="https://primefaces.org/cdn/primeng/images/demo/flag/flag_placeholder.png" [class]="'flag flag-' + customer.country.code" style="width: 20px" />
+                                <img src="https://primefaces.org/cdn/ng_prime/images/demo/flag/flag_placeholder.png" [class]="'flag flag-' + customer.country.code" style="width: 20px" />
                                 <span class="ml-1 vertical-align-middle">{{ customer.country.name }}</span>
                             </td>
                             <td>
-                                <img [alt]="customer.representative.name" src="https://primefaces.org/cdn/primeng/images/demo/avatar/{{ customer.representative.image }}" width="32" style="vertical-align: middle" />
+                                <img [alt]="customer.representative.name" src="https://primefaces.org/cdn/ng_prime/images/demo/avatar/{{ customer.representative.image }}" width="32" style="vertical-align: middle" />
                                 <span class="ml-1 vertical-align-middle">{{ customer.representative.name }}</span>
                             </td>
                             <td>
@@ -267,7 +267,7 @@ export class FilterAdvancedDoc {
                             <p-multiSelect [(ngModel)]="value" [options]="representatives" placeholder="Any" (onChange)="filter($event.value)" optionLabel="name">
                                 <ng-template let-option pTemplate="item">
                                     <div class="inline-block vertical-align-middle">
-                                        <img [alt]="option.label" src="https://primefaces.org/cdn/primeng/images/demo/avatar/{{ option.image }}" width="24" class="vertical-align-middle" />
+                                        <img [alt]="option.label" src="https://primefaces.org/cdn/ng_prime/images/demo/avatar/{{ option.image }}" width="24" class="vertical-align-middle" />
                                         <span class="ml-1 mt-1">{{ option.name }}</span>
                                     </div>
                                 </ng-template>
@@ -330,11 +330,11 @@ export class FilterAdvancedDoc {
                 {{ customer.name }}
             </td>
             <td>
-                <img src="https://primefaces.org/cdn/primeng/images/demo/flag/flag_placeholder.png" [class]="'flag flag-' + customer.country.code" style="width: 20px" />
+                <img src="https://primefaces.org/cdn/ng_prime/images/demo/flag/flag_placeholder.png" [class]="'flag flag-' + customer.country.code" style="width: 20px" />
                 <span class="ml-1 vertical-align-middle">{{ customer.country.name }}</span>
             </td>
             <td>
-                <img [alt]="customer.representative.name" src="https://primefaces.org/cdn/primeng/images/demo/avatar/{{ customer.representative.image }}" width="32" style="vertical-align: middle" />
+                <img [alt]="customer.representative.name" src="https://primefaces.org/cdn/ng_prime/images/demo/avatar/{{ customer.representative.image }}" width="32" style="vertical-align: middle" />
                 <span class="ml-1 vertical-align-middle">{{ customer.representative.name }}</span>
             </td>
             <td>
@@ -407,7 +407,7 @@ export class FilterAdvancedDoc {
                                 <p-multiSelect [(ngModel)]="value" [options]="representatives" placeholder="Any" (onChange)="filter($event.value)" optionLabel="name">
                                     <ng-template let-option pTemplate="item">
                                         <div class="inline-block vertical-align-middle">
-                                            <img [alt]="option.label" src="https://primefaces.org/cdn/primeng/images/demo/avatar/{{ option.image }}" width="24" class="vertical-align-middle" />
+                                            <img [alt]="option.label" src="https://primefaces.org/cdn/ng_prime/images/demo/avatar/{{ option.image }}" width="24" class="vertical-align-middle" />
                                             <span class="ml-1 mt-1">{{ option.name }}</span>
                                         </div>
                                     </ng-template>
@@ -470,11 +470,11 @@ export class FilterAdvancedDoc {
                     {{ customer.name }}
                 </td>
                 <td>
-                    <img src="https://primefaces.org/cdn/primeng/images/demo/flag/flag_placeholder.png" [class]="'flag flag-' + customer.country.code" style="width: 20px" />
+                    <img src="https://primefaces.org/cdn/ng_prime/images/demo/flag/flag_placeholder.png" [class]="'flag flag-' + customer.country.code" style="width: 20px" />
                     <span class="ml-1 vertical-align-middle">{{ customer.country.name }}</span>
                 </td>
                 <td>
-                    <img [alt]="customer.representative.name" src="https://primefaces.org/cdn/primeng/images/demo/avatar/{{ customer.representative.image }}" width="32" style="vertical-align: middle" />
+                    <img [alt]="customer.representative.name" src="https://primefaces.org/cdn/ng_prime/images/demo/avatar/{{ customer.representative.image }}" width="32" style="vertical-align: middle" />
                     <span class="ml-1 vertical-align-middle">{{ customer.representative.name }}</span>
                 </td>
                 <td>
@@ -502,7 +502,7 @@ export class FilterAdvancedDoc {
     </p-table>
 </div>`,
         typescript: `import { Component, OnInit } from '@angular/core';
-import { Table } from 'primeng/table';
+import { Table } from 'ng_prime/table';
 import { Customer, Representative } from '../domain/customer';
 import { CustomerService } from '../service/customerservice';
 
@@ -510,7 +510,7 @@ import { CustomerService } from '../service/customerservice';
     selector: 'table-filter-advanced-demo',
     templateUrl: 'table-filter-advanced-demo.html',
     standalone: true,
-    imports: [TableModule, HttpClientModule, CommonModule, InputTextModule, TagModule, 
+    imports: [TableModule, HttpClientModule, CommonModule, InputTextModule, TagModule,
     DropdownModule, MultiSelectModule, ProgressBarModule, ButtonModule ],
     providers: [CustomerService]
 })
@@ -589,7 +589,7 @@ export class TableFilterAdvancedDemo implements OnInit {
     .p-progressbar {
         height: .5rem;
         background-color: #D8DADC;
-    
+
         .p-progressbar-value {
             background-color: #607D8B;
         }

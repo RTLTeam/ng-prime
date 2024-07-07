@@ -79,7 +79,7 @@ export class VirtualScrollDoc {
 
         typescript: `import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { ListboxModule } from 'primeng/listbox';
+import { ListboxModule } from 'ng_prime/listbox';
 
 @Component({
     selector: 'listbox-virtual-scroll-demo',

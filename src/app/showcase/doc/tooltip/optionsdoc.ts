@@ -22,25 +22,25 @@ export class OptionsDoc {
     };
 
     code: Code = {
-        basic: `<input 
-    type="text" 
-    pInputText 
-    pTooltip="Enter your username" 
-    [tooltipOptions]="tooltipOptions" 
+        basic: `<input
+    type="text"
+    pInputText
+    pTooltip="Enter your username"
+    [tooltipOptions]="tooltipOptions"
     placeholder="hover to display tooltip" />`,
 
         html: `<div class="card flex justify-content-center">
-    <input 
-        type="text" 
-        pInputText 
-        pTooltip="Enter your username" 
-        [tooltipOptions]="tooltipOptions" 
+    <input
+        type="text"
+        pInputText
+        pTooltip="Enter your username"
+        [tooltipOptions]="tooltipOptions"
         placeholder="hover to display tooltip" />
 </div>`,
 
         typescript: `import { Component } from '@angular/core';
-import { TooltipModule } from 'primeng/tooltip';
-import { InputTextModule } from 'primeng/inputtext';
+import { TooltipModule } from 'ng_prime/tooltip';
+import { InputTextModule } from 'ng_prime/inputtext';
 
 @Component({
     selector: 'tooltip-options-demo',

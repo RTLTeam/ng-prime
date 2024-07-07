@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 import { Subscription } from 'rxjs';
 
 @Component({
-    template: `<p-terminal welcomeMessage="Welcome to PrimeNG" prompt="primeng $"></p-terminal>`
+    template: `<p-terminal welcomeMessage="Welcome to PrimeNG" prompt="ng_prime $"></p-terminal>`
 })
 class TestTerminalComponent {
     subscription: Subscription;

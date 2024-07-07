@@ -2,13 +2,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { PrimeTemplate } from 'primeng/api';
-import { ButtonModule } from 'primeng/button';
-import { PlusIcon } from 'primeng/icons/plus';
-import { TimesIcon } from 'primeng/icons/times';
-import { UploadIcon } from 'primeng/icons/upload';
-import { MessagesModule } from 'primeng/messages';
-import { ProgressBarModule } from 'primeng/progressbar';
+import { PrimeTemplate } from 'ng_prime/api';
+import { ButtonModule } from 'ng_prime/button';
+import { PlusIcon } from 'ng_prime/icons/plus';
+import { TimesIcon } from 'ng_prime/icons/times';
+import { UploadIcon } from 'ng_prime/icons/upload';
+import { MessagesModule } from 'ng_prime/messages';
+import { ProgressBarModule } from 'ng_prime/progressbar';
 import { FileUpload } from './fileupload';
 
 describe('FileUpload', () => {
@@ -48,9 +48,9 @@ describe('FileUpload', () => {
     it('should change style, styleClass, chooseLabel, uploadLabel, cancelLabel, showUploadButton and showCancelButton (advanced)', () => {
         fileupload.style = { height: '300px' };
         fileupload.styleClass = 'Primeng ROCKS!';
-        fileupload.chooseLabel = 'primeng';
-        fileupload.uploadLabel = 'primeng';
-        fileupload.cancelLabel = 'primeng';
+        fileupload.chooseLabel = 'ng_prime';
+        fileupload.uploadLabel = 'ng_prime';
+        fileupload.cancelLabel = 'ng_prime';
         fixture.detectChanges();
 
         const fileuploadEl = fixture.debugElement.query(By.css('div'));
@@ -62,9 +62,9 @@ describe('FileUpload', () => {
         expect(fileuploadEl.nativeElement.style.height).toContain('300px');
         expect(uploadButton).toBeTruthy();
         expect(cancelButton).toBeTruthy();
-        expect(uploadButton.nativeElement.textContent).toEqual('primeng');
-        expect(cancelButton.nativeElement.textContent).toEqual('primeng');
-        expect(chooseButton.nativeElement.textContent).toEqual('primeng');
+        expect(uploadButton.nativeElement.textContent).toEqual('ng_prime');
+        expect(cancelButton.nativeElement.textContent).toEqual('ng_prime');
+        expect(chooseButton.nativeElement.textContent).toEqual('ng_prime');
     });
 
     it('should call onFileSelect (advanced)', () => {
@@ -76,7 +76,7 @@ describe('FileUpload', () => {
                 files: [
                     {
                         lastModified: 1533276674178,
-                        name: 'primeng.txt',
+                        name: 'ng_prime.txt',
                         size: 179,
                         type: 'text/plain'
                     }
@@ -97,7 +97,7 @@ describe('FileUpload', () => {
         expect(fileNameEl).toBeTruthy();
         expect(fileNameEl).toBeTruthy();
         expect(removeButtonEl).toBeTruthy();
-        expect(fileNameEl.nativeElement.textContent).toEqual('primeng.txt');
+        expect(fileNameEl.nativeElement.textContent).toEqual('ng_prime.txt');
         expect(fileSizeEl.nativeElement.textContent).toEqual('179.000 B');
         expect(fileupload.hasFiles()).toEqual(true);
         expect(uploadButton.nativeElement.disabled).toEqual(false);
@@ -116,7 +116,7 @@ describe('FileUpload', () => {
                 JSON.stringify([
                     {
                         lastModified: 1533276674178,
-                        name: 'primeng.txt',
+                        name: 'ng_prime.txt',
                         size: 179,
                         type: 'text/plain'
                     }
@@ -124,7 +124,7 @@ describe('FileUpload', () => {
             ],
             { type: 'application/json' }
         );
-        let blobFile = new File([blob], 'primeng.txt');
+        let blobFile = new File([blob], 'ng_prime.txt');
         event = {
             target: { files: [blobFile] },
             stopPropagation() {},
@@ -149,7 +149,7 @@ describe('FileUpload', () => {
                 JSON.stringify([
                     {
                         lastModified: 1533276674178,
-                        name: 'primeng.txt',
+                        name: 'ng_prime.txt',
                         size: 179,
                         type: 'text/plain'
                     }
@@ -157,7 +157,7 @@ describe('FileUpload', () => {
             ],
             { type: 'application/json' }
         );
-        let blobFile = new File([blob], 'primeng.txt');
+        let blobFile = new File([blob], 'ng_prime.txt');
         event = {
             target: { files: [blobFile] },
             stopPropagation() {},
@@ -187,7 +187,7 @@ describe('FileUpload', () => {
                 JSON.stringify([
                     {
                         lastModified: 1533276674178,
-                        name: 'primeng.txt',
+                        name: 'ng_prime.txt',
                         size: 179,
                         type: 'text/plain'
                     },
@@ -201,7 +201,7 @@ describe('FileUpload', () => {
             ],
             { type: 'application/json' }
         );
-        let blobFile = new File([blob], 'primeng.txt');
+        let blobFile = new File([blob], 'ng_prime.txt');
         let blobFile2 = new File([blob], 'primeng2.txt');
         event = {
             target: { files: [blobFile, blobFile2] },
@@ -230,7 +230,7 @@ describe('FileUpload', () => {
                 files: [
                     {
                         lastModified: 1533276674178,
-                        name: 'primeng.txt',
+                        name: 'ng_prime.txt',
                         size: 179,
                         type: 'text/plain'
                     }
@@ -256,7 +256,7 @@ describe('FileUpload', () => {
                 files: [
                     {
                         lastModified: 1533276674178,
-                        name: 'primeng.txt',
+                        name: 'ng_prime.txt',
                         size: 179,
                         type: 'text/plain'
                     }
@@ -319,7 +319,7 @@ describe('FileUpload', () => {
                 files: [
                     {
                         lastModified: 1533276674178,
-                        name: 'primeng.txt',
+                        name: 'ng_prime.txt',
                         size: 179,
                         type: 'text/plain'
                     }
@@ -379,7 +379,7 @@ describe('FileUpload', () => {
                 JSON.stringify([
                     {
                         lastModified: 1533276674178,
-                        name: 'primeng.txt',
+                        name: 'ng_prime.txt',
                         size: 179,
                         type: 'text/plain'
                     }
@@ -387,7 +387,7 @@ describe('FileUpload', () => {
             ],
             { type: 'application/json' }
         );
-        let blobFile = new File([blob], 'primeng.txt');
+        let blobFile = new File([blob], 'ng_prime.txt');
         event = {
             target: { files: [blobFile] },
             stopPropagation() {},

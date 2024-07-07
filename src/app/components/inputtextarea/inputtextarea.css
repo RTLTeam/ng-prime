@@ -1,4 +1,4 @@
-@layer primeng {
+@layer ng_prime {
     .p-inputtextarea-resizable {
         overflow: hidden;
         resize: none;

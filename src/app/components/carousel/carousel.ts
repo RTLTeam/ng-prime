@@ -23,16 +23,16 @@ import {
     booleanAttribute,
     numberAttribute
 } from '@angular/core';
-import { Footer, Header, PrimeTemplate, SharedModule } from 'primeng/api';
-import { ChevronDownIcon } from 'primeng/icons/chevrondown';
-import { ChevronLeftIcon } from 'primeng/icons/chevronleft';
-import { ChevronRightIcon } from 'primeng/icons/chevronright';
-import { ChevronUpIcon } from 'primeng/icons/chevronup';
-import { RippleModule } from 'primeng/ripple';
-import { UniqueComponentId } from 'primeng/utils';
+import { Footer, Header, PrimeTemplate, SharedModule } from 'ng_prime/api';
+import { ChevronDownIcon } from 'ng_prime/icons/chevrondown';
+import { ChevronLeftIcon } from 'ng_prime/icons/chevronleft';
+import { ChevronRightIcon } from 'ng_prime/icons/chevronright';
+import { ChevronUpIcon } from 'ng_prime/icons/chevronup';
+import { RippleModule } from 'ng_prime/ripple';
+import { UniqueComponentId } from 'ng_prime/utils';
 import { CarouselPageEvent, CarouselResponsiveOptions } from './carousel.interface';
-import { PrimeNGConfig } from 'primeng/api';
-import { DomHandler } from 'primeng/dom';
+import { PrimeNGConfig } from 'ng_prime/api';
+import { DomHandler } from 'ng_prime/dom';
 /**
  * Carousel is a content slider featuring various customization options.
  * @group Components

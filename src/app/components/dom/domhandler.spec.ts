@@ -3,35 +3,35 @@ import { DomHandler } from './domhandler';
 describe('DomHandler', () => {
     it('should add single and multiple class to element', () => {
         const element = document.createElement('div');
-        DomHandler.addClass(element, 'primeng');
+        DomHandler.addClass(element, 'ng_prime');
         let mockElement = { classList: undefined, className: '' };
-        DomHandler.addClass(mockElement, 'primeng');
-        expect(element.classList).toContain('primeng');
-        expect(mockElement.className).toContain('primeng');
+        DomHandler.addClass(mockElement, 'ng_prime');
+        expect(element.classList).toContain('ng_prime');
+        expect(mockElement.className).toContain('ng_prime');
         DomHandler.addMultipleClasses(element, 'rocks! vamos!');
         DomHandler.addMultipleClasses(mockElement, 'rocks! vamos!');
-        expect(element.classList.value).toContain('primeng rocks! vamos!');
+        expect(element.classList.value).toContain('ng_prime rocks! vamos!');
         expect(mockElement.className).toContain('rocks! vamos!');
     });
 
     it('should remove class from element', () => {
         const element = document.createElement('div');
-        DomHandler.addClass(element, 'primeng');
+        DomHandler.addClass(element, 'ng_prime');
         let mockElement = { classList: undefined, className: '' };
-        DomHandler.addClass(mockElement, 'primeng');
-        DomHandler.removeClass(element, 'primeng');
-        DomHandler.removeClass(mockElement, 'primeng');
-        expect(element.classList).not.toContain('primeng');
-        expect(mockElement.className).not.toContain('primeng');
+        DomHandler.addClass(mockElement, 'ng_prime');
+        DomHandler.removeClass(element, 'ng_prime');
+        DomHandler.removeClass(mockElement, 'ng_prime');
+        expect(element.classList).not.toContain('ng_prime');
+        expect(mockElement.className).not.toContain('ng_prime');
     });
 
     it('should check elemets class', () => {
         const element = document.createElement('div');
-        DomHandler.addClass(element, 'primeng');
+        DomHandler.addClass(element, 'ng_prime');
         let mockElement = { classList: undefined, className: '' };
-        DomHandler.addClass(mockElement, 'primeng');
-        expect(DomHandler.hasClass(element, 'primeng')).toBeTruthy();
-        expect(DomHandler.hasClass(mockElement, 'primeng')).toBeTruthy();
+        DomHandler.addClass(mockElement, 'ng_prime');
+        expect(DomHandler.hasClass(element, 'ng_prime')).toBeTruthy();
+        expect(DomHandler.hasClass(mockElement, 'ng_prime')).toBeTruthy();
     });
 
     it('should get siblings', () => {
@@ -68,7 +68,7 @@ describe('DomHandler', () => {
         const childEl2 = document.createElement('a');
         const childEl3 = document.createElement('a');
         const childEl4 = document.createElement('button');
-        childEl2.setAttribute('href', 'https://primeng.org');
+        childEl2.setAttribute('href', 'https://ng_prime.org');
         element.appendChild(childEl);
         element.appendChild(childEl2);
         element.appendChild(childEl3);
@@ -94,8 +94,8 @@ describe('DomHandler', () => {
         const childEl = document.createElement('p');
         const childEl2 = document.createElement('a');
         const childEl3 = document.createElement('a');
-        DomHandler.addClass(childEl, 'primeng');
-        DomHandler.addClass(childEl3, 'primeng');
+        DomHandler.addClass(childEl, 'ng_prime');
+        DomHandler.addClass(childEl3, 'ng_prime');
         element.appendChild(childEl);
         element.appendChild(childEl2);
         element.appendChild(childEl3);
@@ -109,8 +109,8 @@ describe('DomHandler', () => {
         const childEl = document.createElement('p');
         const childEl2 = document.createElement('a');
         const childEl3 = document.createElement('a');
-        DomHandler.addClass(childEl, 'primeng');
-        DomHandler.addClass(childEl3, 'primeng');
+        DomHandler.addClass(childEl, 'ng_prime');
+        DomHandler.addClass(childEl3, 'ng_prime');
         element.appendChild(childEl);
         element.appendChild(childEl2);
         element.appendChild(childEl3);
@@ -124,8 +124,8 @@ describe('DomHandler', () => {
         const childEl3 = document.createElement('a');
         childEl2.setAttribute('height', '300px');
         childEl3.setAttribute('height', '300px');
-        DomHandler.addClass(childEl, 'primeng');
-        DomHandler.addClass(childEl3, 'primeng');
+        DomHandler.addClass(childEl, 'ng_prime');
+        DomHandler.addClass(childEl3, 'ng_prime');
         element.appendChild(childEl);
         element.appendChild(childEl2);
         element.appendChild(childEl3);
@@ -137,10 +137,10 @@ describe('DomHandler', () => {
         const childEl = document.createElement('p');
         const childEl2 = document.createElement('a');
         const childEl3 = document.createElement('a');
-        childEl2.setAttribute('primeng', 'rocks!');
-        childEl3.setAttribute('primeng', 'rocks!');
-        DomHandler.addClass(childEl, 'primeng');
-        DomHandler.addClass(childEl3, 'primeng');
+        childEl2.setAttribute('ng_prime', 'rocks!');
+        childEl3.setAttribute('ng_prime', 'rocks!');
+        DomHandler.addClass(childEl, 'ng_prime');
+        DomHandler.addClass(childEl3, 'ng_prime');
         element.style.height = '200px';
         element.style.width = '200px';
         childEl3.style.height = '100px';
@@ -187,10 +187,10 @@ describe('DomHandler', () => {
         const childEl = document.createElement('p');
         const childEl2 = document.createElement('a');
         const childEl3 = document.createElement('a');
-        childEl2.setAttribute('primeng', 'rocks!');
-        childEl3.setAttribute('primeng', 'rocks!');
-        DomHandler.addClass(childEl, 'primeng');
-        DomHandler.addClass(childEl3, 'primeng');
+        childEl2.setAttribute('ng_prime', 'rocks!');
+        childEl3.setAttribute('ng_prime', 'rocks!');
+        DomHandler.addClass(childEl, 'ng_prime');
+        DomHandler.addClass(childEl3, 'ng_prime');
         element.style.height = '200px';
         element.style.width = '200px';
         childEl3.style.height = '100px';

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuItem } from 'primeng/api';
+import { MenuItem } from 'ng_prime/api';
 import { Code } from '@domain/code';
 
 @Component({
@@ -60,7 +60,7 @@ import { Code } from '@domain/code';
                 </ng-template>
                 <ng-template pTemplate="end">
                     <button pRipple class="relative overflow-hidden w-full p-link flex align-items-center p-2 pl-3 text-color hover:surface-200 border-noround">
-                        <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" class="mr-2" shape="circle" />
+                        <p-avatar image="https://primefaces.org/cdn/ng_prime/images/demo/avatar/amyelsner.png" class="mr-2" shape="circle" />
                         <span class="inline-flex flex-column">
                             <span class="font-bold">Amy Elsner</span>
                             <span class="text-sm">Admin</span>
@@ -174,7 +174,7 @@ export class TemplateDoc implements OnInit {
     </ng-template>
     <ng-template pTemplate="end">
         <button pRipple class="relative overflow-hidden w-full p-link flex align-items-center p-2 pl-3 text-color hover:surface-200 border-noround">
-            <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" class="mr-2" shape="circle" />
+            <p-avatar image="https://primefaces.org/cdn/ng_prime/images/demo/avatar/amyelsner.png" class="mr-2" shape="circle" />
             <span class="inline-flex flex-column">
                 <span class="font-bold">Amy Elsner</span>
                 <span class="text-sm">Admin</span>
@@ -232,7 +232,7 @@ export class TemplateDoc implements OnInit {
         </ng-template>
         <ng-template pTemplate="end">
             <button pRipple class="relative overflow-hidden w-full p-link flex align-items-center p-2 pl-3 text-color hover:surface-200 border-noround">
-                <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png" class="mr-2" shape="circle" />
+                <p-avatar image="https://primefaces.org/cdn/ng_prime/images/demo/avatar/amyelsner.png" class="mr-2" shape="circle" />
                 <span class="inline-flex flex-column">
                     <span class="font-bold">Amy Elsner</span>
                     <span class="text-sm">Admin</span>
@@ -243,11 +243,11 @@ export class TemplateDoc implements OnInit {
 </div>`,
 
         typescript: `import { Component, OnInit } from '@angular/core';
-import { MenuItem } from 'primeng/api';
-import { MenuModule } from 'primeng/menu';
-import { BadgeModule } from 'primeng/badge';
-import { RippleModule } from 'primeng/ripple';
-import { AvatarModule } from 'primeng/avatar';
+import { MenuItem } from 'ng_prime/api';
+import { MenuModule } from 'ng_prime/menu';
+import { BadgeModule } from 'ng_prime/badge';
+import { RippleModule } from 'ng_prime/ripple';
+import { AvatarModule } from 'ng_prime/avatar';
 
 @Component({
     selector: 'menu-template-demo',
