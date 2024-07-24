@@ -1,6 +1,6 @@
 {
     "name": "ng_prime",
-    "version": "0.18.0",
+    "version": "0.18.1",
     "repository": {
         "type": "git",
         "url": "https://github.com/primefaces/ng_prime"
