@@ -79,16 +79,16 @@
     .p-button-group p-button:first-of-type:not(:only-of-type) .p-button,
     .p-buttonset .p-button:first-of-type:not(:only-of-type),
     .p-buttonset p-button:first-of-type:not(:only-of-type) .p-button {
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
     }
 
     .p-button-group .p-button:last-of-type:not(:only-of-type),
     .p-button-group p-button:last-of-type:not(:only-of-type) .p-button,
     .p-buttonset .p-button:last-of-type:not(:only-of-type),
     .p-buttonset p-button:last-of-type:not(:only-of-type) .p-button {
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
     }
 
     p-button[iconpos='right'] spinnericon {

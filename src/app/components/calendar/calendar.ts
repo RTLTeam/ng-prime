@@ -169,10 +169,18 @@ export const CALENDAR_VALUE_ACCESSOR: any = {
                     <div class="p-datepicker-group-container">
                         <div class="p-datepicker-group" *ngFor="let month of months; let i = index">
                             <div class="p-datepicker-header">
-                                <button (keydown)="onContainerButtonKeydown($event)" class="p-datepicker-prev p-link" (click)="onPrevButtonClick($event)" *ngIf="i === 0" type="button" [attr.aria-label]="prevIconAriaLabel" pRipple>
-                                    <ChevronLeftIcon [styleClass]="'p-datepicker-prev-icon'" *ngIf="!previousIconTemplate" />
-                                    <span *ngIf="previousIconTemplate" class="p-datepicker-prev-icon">
-                                        <ng-template *ngTemplateOutlet="previousIconTemplate"></ng-template>
+                                <button
+                                    (keydown)="onContainerButtonKeydown($event)"
+                                    class="p-datepicker-next p-link"
+                                    (click)="onNextButtonClick($event)"
+                                    [style.display]="numberOfMonths === 1 ? 'inline-flex' : i === numberOfMonths - 1 ? 'inline-flex' : 'none'"
+                                    type="button"
+                                    [attr.aria-label]="nextIconAriaLabel"
+                                    pRipple
+                                >
+                                    <ChevronRightIcon [styleClass]="'p-datepicker-next-icon'" *ngIf="!nextIconTemplate" />
+                                    <span *ngIf="nextIconTemplate" class="p-datepicker-next-icon">
+                                        <ng-template *ngTemplateOutlet="nextIconTemplate"></ng-template>
                                     </span>
                                 </button>
                                 <div class="p-datepicker-title">
@@ -203,20 +211,13 @@ export const CALENDAR_VALUE_ACCESSOR: any = {
                                         <ng-container *ngTemplateOutlet="decadeTemplate; context: { $implicit: yearPickerValues }"></ng-container>
                                     </span>
                                 </div>
-                                <button
-                                    (keydown)="onContainerButtonKeydown($event)"
-                                    class="p-datepicker-next p-link"
-                                    (click)="onNextButtonClick($event)"
-                                    [style.display]="numberOfMonths === 1 ? 'inline-flex' : i === numberOfMonths - 1 ? 'inline-flex' : 'none'"
-                                    type="button"
-                                    [attr.aria-label]="nextIconAriaLabel"
-                                    pRipple
-                                >
-                                    <ChevronRightIcon [styleClass]="'p-datepicker-next-icon'" *ngIf="!nextIconTemplate" />
-                                    <span *ngIf="nextIconTemplate" class="p-datepicker-next-icon">
-                                        <ng-template *ngTemplateOutlet="nextIconTemplate"></ng-template>
+                                <button (keydown)="onContainerButtonKeydown($event)" class="p-datepicker-prev p-link" (click)="onPrevButtonClick($event)" *ngIf="i === 0" type="button" [attr.aria-label]="prevIconAriaLabel" pRipple>
+                                    <ChevronLeftIcon [styleClass]="'p-datepicker-prev-icon'" *ngIf="!previousIconTemplate" />
+                                    <span *ngIf="previousIconTemplate" class="p-datepicker-prev-icon">
+                                        <ng-template *ngTemplateOutlet="previousIconTemplate"></ng-template>
                                     </span>
                                 </button>
+<!--                                Prev-->
                             </div>
                             <div class="p-datepicker-calendar-container" *ngIf="currentView === 'date'">
                                 <table class="p-datepicker-calendar" role="grid">

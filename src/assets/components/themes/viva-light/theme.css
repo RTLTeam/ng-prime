@@ -1073,7 +1073,7 @@
     margin-left: -1.75rem;
   }
   .p-dropdown-panel .p-dropdown-header .p-dropdown-filter-icon {
-    right: 0.75rem;
+      left: 0.75rem;
     color: #898989;
   }
   .p-dropdown-panel .p-dropdown-items {

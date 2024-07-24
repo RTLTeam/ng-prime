@@ -373,7 +373,7 @@
   margin-left: -1.75rem;
 }
 .landing-themes .p-dropdown-panel .p-dropdown-header .p-dropdown-filter-icon {
-  right: 0.75rem;
+  left: 0.75rem;
   color: rgba(255, 255, 255, 0.6);
 }
 .landing-themes .p-dropdown-panel .p-dropdown-header .p-dropdown-clearable-filter .p-dropdown-filter {

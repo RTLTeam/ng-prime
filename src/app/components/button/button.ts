@@ -343,6 +343,7 @@ export class ButtonDirective implements AfterViewInit, OnDestroy {
                 <ng-template [ngIf]="!icon && iconTemplate" *ngTemplateOutlet="iconTemplate; context: { class: iconClass() }"></ng-template>
             </ng-container>
             <span class="p-button-label" [attr.aria-hidden]="icon && !label" *ngIf="!contentTemplate && label" [attr.data-pc-section]="'label'">{{ label }}</span>
+
             <span [ngClass]="badgeStyleClass()" [class]="badgeClass" *ngIf="!contentTemplate && badge" [attr.data-pc-section]="'badge'">{{ badge }}</span>
         </button>
     `,
@@ -362,7 +363,7 @@ export class Button implements AfterContentInit {
      * Position of the icon.
      * @group Props
      */
-    @Input() iconPos: ButtonIconPosition = 'left';
+    @Input() iconPos: ButtonIconPosition = 'right';
     /**
      * Name of the icon.
      * @group Props
@@ -504,8 +505,8 @@ export class Button implements AfterContentInit {
     iconClass() {
         const iconClasses = {
             'p-button-icon': true,
-            'p-button-icon-left': this.iconPos === 'left' && this.label,
-            'p-button-icon-right': this.iconPos === 'right' && this.label,
+            'p-button-icon-right': this.iconPos === 'left' && this.label,
+            'p-button-icon-left': this.iconPos === 'right' && this.label,
             'p-button-icon-top': this.iconPos === 'top' && this.label,
             'p-button-icon-bottom': this.iconPos === 'bottom' && this.label
         };

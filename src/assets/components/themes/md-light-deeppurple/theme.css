@@ -1065,7 +1065,7 @@
     margin-left: -2rem;
   }
   .p-dropdown-panel .p-dropdown-header .p-dropdown-filter-icon {
-    right: 1rem;
+      left: 1rem;
     color: rgba(0, 0, 0, 0.6);
   }
   .p-dropdown-panel .p-dropdown-items {
